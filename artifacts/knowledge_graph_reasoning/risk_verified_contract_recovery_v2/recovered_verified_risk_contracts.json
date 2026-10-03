@@ -1,0 +1,1261 @@
+{
+  "summary": {
+    "recovery_name": "risk_xgboost_verified_contract_recovery_v2",
+    "timestamp_utc": "2026-10-01T14:30:11.280872+00:00",
+    "artifacts_checked": 15,
+    "artifacts_found": 15,
+    "artifacts_missing": [],
+    "execution": {
+      "cpu_only": true,
+      "gpu_used": false,
+      "model_inference": false,
+      "training": false,
+      "existing_files_modified": false
+    },
+    "recovery_principle": "RECOVER_BEFORE_REBUILD"
+  },
+  "artifacts": {
+    "risk_exact_contract": {
+      "contract_name": "TrustCircle Investigator Risk XGBoost Exact Contract",
+      "version": "1.0.0",
+      "created_utc": "2026-10-01T14:22:06.878714+00:00",
+      "source_artifact": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+      "execution_policy": {
+        "cpu_only": true,
+        "gpu_used": false,
+        "model_inference_executed": false,
+        "training_executed": false,
+        "fabricated_features": false,
+        "fabricated_case_data": false
+      },
+      "model_metadata": {
+        "discovered_fields": [
+          {
+            "path": "root.learner.learner_model_param.num_class",
+            "key": "num_class"
+          },
+          {
+            "path": "root.learner.objective",
+            "key": "objective"
+          }
+        ]
+      },
+      "feature_contract": {
+        "feature_collections": [
+          {
+            "path": "root.learner.feature_names",
+            "count": 8,
+            "features": [
+              "company_type",
+              "jurisdiction",
+              "country_codes",
+              "sourceID",
+              "service_provider",
+              "company_age",
+              "is_tax_haven",
+              "is_sanctioned"
+            ]
+          }
+        ],
+        "unique_feature_names": [
+          "company_age",
+          "company_type",
+          "country_codes",
+          "is_sanctioned",
+          "is_tax_haven",
+          "jurisdiction",
+          "service_provider",
+          "sourceID"
+        ],
+        "feature_count": 8,
+        "duplicate_features": {}
+      },
+      "class_metadata": {
+        "discovered_fields": []
+      },
+      "upstream_contract": {
+        "ner": {
+          "label_count": 43,
+          "entity_types": [
+            "ADDRESS",
+            "ALIAS",
+            "AMOUNT",
+            "CRYPTO_WALLET",
+            "DOMAIN",
+            "EMAIL",
+            "INTERMEDIARY",
+            "IP",
+            "JURISDICTION",
+            "LOC",
+            "NATL",
+            "OFFICER",
+            "ORG",
+            "PER",
+            "PHONE",
+            "RELATIONSHIP",
+            "SANCTION",
+            "SHELL_CO",
+            "UPI",
+            "URL"
+          ]
+        },
+        "hybrid_rules": {
+          "version": "3.0.0",
+          "rule_engine": "post_processing",
+          "cleanup_rule_count": 9,
+          "context_rule_count": 2
+        }
+      },
+      "pipeline_position": {
+        "before": [
+          "NER",
+          "Hybrid Rules V3"
+        ],
+        "current": "Investigator Risk XGBoost",
+        "after": [
+          "Risk Signals",
+          "Claim + Evidence Engine"
+        ]
+      },
+      "decision_boundary": {
+        "risk_xgboost_is_person_verdict": false,
+        "risk_xgboost_is_lie_verdict": false,
+        "risk_xgboost_output_is_downstream_signal": true
+      }
+    },
+    "risk_feature_inventory": {
+      "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+      "created_utc": "2026-10-01T14:22:06.880092+00:00",
+      "feature_candidates": [
+        {
+          "path": "root.learner.feature_names",
+          "features": [
+            "company_type",
+            "jurisdiction",
+            "country_codes",
+            "sourceID",
+            "service_provider",
+            "company_age",
+            "is_tax_haven",
+            "is_sanctioned"
+          ]
+        }
+      ],
+      "unique_features": [
+        "company_age",
+        "company_type",
+        "country_codes",
+        "is_sanctioned",
+        "is_tax_haven",
+        "jurisdiction",
+        "service_provider",
+        "sourceID"
+      ],
+      "feature_count": 8,
+      "duplicate_features": {},
+      "feature_upstream_matches": [
+        {
+          "feature": "company_age",
+          "matched_upstream_terms": [],
+          "match_found": false
+        },
+        {
+          "feature": "company_type",
+          "matched_upstream_terms": [],
+          "match_found": false
+        },
+        {
+          "feature": "country_codes",
+          "matched_upstream_terms": [],
+          "match_found": false
+        },
+        {
+          "feature": "is_sanctioned",
+          "matched_upstream_terms": [
+            "sanction"
+          ],
+          "match_found": true
+        },
+        {
+          "feature": "is_tax_haven",
+          "matched_upstream_terms": [],
+          "match_found": false
+        },
+        {
+          "feature": "jurisdiction",
+          "matched_upstream_terms": [
+            "jurisdiction"
+          ],
+          "match_found": true
+        },
+        {
+          "feature": "service_provider",
+          "matched_upstream_terms": [],
+          "match_found": false
+        },
+        {
+          "feature": "sourceID",
+          "matched_upstream_terms": [],
+          "match_found": false
+        }
+      ],
+      "fabricated": false
+    },
+    "risk_validation": {
+      "report_name": "Investigator Risk XGBoost Contract Inspection",
+      "version": "1.0.0",
+      "timestamp_utc": "2026-10-01T14:22:06.881455+00:00",
+      "status": "PASS",
+      "validation_errors": [],
+      "feature_collections": 1,
+      "unique_features": 8,
+      "duplicate_features": 0,
+      "class_metadata_fields": 0,
+      "model_metadata_fields": 2,
+      "execution": {
+        "cpu_only": true,
+        "gpu_used": false,
+        "model_inference": false,
+        "training": false,
+        "fabricated_features": false,
+        "fabricated_case_data": false
+      }
+    },
+    "risk_manifest": {
+      "package_name": "trustcircle_investigator_risk_xgboost_v1",
+      "version": "1.0.0",
+      "created_utc": "2026-10-01T14:22:06.882211+00:00",
+      "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+      "cpu_only": true,
+      "gpu_used": false,
+      "model_inference": false,
+      "training": false,
+      "fabricated_features": false,
+      "fabricated_case_data": false,
+      "files": [
+        {
+          "file": "risk_xgboost_exact_contract.json",
+          "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_exact_contract.json",
+          "size_bytes": 2466,
+          "sha256": "bc4717a1b5be8d0f06a6503fcb77a9dd2230fb8e74d2b657d7d5bb28eeff0a0c"
+        },
+        {
+          "file": "risk_xgboost_feature_inventory.json",
+          "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_feature_inventory.json",
+          "size_bytes": 1712,
+          "sha256": "af8882da65cf4c3f998261bdde9e72fed62c9565a22e67d203e908f565aecc0b"
+        },
+        {
+          "file": "validation_report.json",
+          "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/validation_report.json",
+          "size_bytes": 519,
+          "sha256": "41d56db806dc2a77665e9d37eaa85ef22d2d5e8a6b80d2466c975878d9ef5824"
+        }
+      ]
+    },
+    "ner_hybrid_risk_handoff": {
+      "contract_name": "Investigator Risk XGBoost Upstream Handoff",
+      "version": "1.0.0",
+      "source_adapter": "trustcircle_ner_hybrid_rules_adapter_v1",
+      "input_features": {
+        "entities": {
+          "source": "NER + Hybrid Rules",
+          "fields": [
+            "entity_id",
+            "text",
+            "label",
+            "bio_label",
+            "token_start",
+            "token_end",
+            "source",
+            "cleanup_applied",
+            "applied_rules",
+            "rule_processed"
+          ]
+        },
+        "hybrid_rule_signals": {
+          "source": "Hybrid Rules V3",
+          "fields": [
+            "signal_id",
+            "rule_id",
+            "signal_type",
+            "entity_id",
+            "entity_text",
+            "original_label",
+            "result_label",
+            "source",
+            "description"
+          ]
+        }
+      },
+      "model_execution": false,
+      "gpu_used": false,
+      "training": false
+    },
+    "hybrid_rules_integration": {
+      "contract_name": "TrustCircle NER + Hybrid Rules Exact Integration Contract",
+      "version": "1.0.0",
+      "created_utc": "2026-10-01T14:19:23.566170+00:00",
+      "execution": {
+        "cpu_only": true,
+        "gpu_used": false,
+        "model_inference": false,
+        "training": false,
+        "fabricated_rules": false,
+        "fabricated_case_data": false
+      },
+      "ner": {
+        "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/config.json",
+        "label_count": 43,
+        "entity_types": [
+          "ADDRESS",
+          "ALIAS",
+          "AMOUNT",
+          "CRYPTO_WALLET",
+          "DOMAIN",
+          "EMAIL",
+          "INTERMEDIARY",
+          "IP",
+          "JURISDICTION",
+          "LOC",
+          "NATL",
+          "OFFICER",
+          "ORG",
+          "PER",
+          "PHONE",
+          "RELATIONSHIP",
+          "SANCTION",
+          "SHELL_CO",
+          "UPI",
+          "URL"
+        ],
+        "label_map": {
+          "0": "O",
+          "1": "B-PER",
+          "2": "I-PER",
+          "3": "B-ORG",
+          "4": "I-ORG",
+          "5": "B-LOC",
+          "6": "I-LOC",
+          "7": "B-NATL",
+          "8": "I-NATL",
+          "9": "B-ALIAS",
+          "10": "I-ALIAS",
+          "11": "B-AMOUNT",
+          "12": "I-AMOUNT",
+          "13": "B-EMAIL",
+          "14": "I-EMAIL",
+          "15": "B-UPI",
+          "16": "I-UPI",
+          "17": "B-CRYPTO_WALLET",
+          "18": "I-CRYPTO_WALLET",
+          "19": "B-PHONE",
+          "20": "I-PHONE",
+          "21": "B-IP",
+          "22": "I-IP",
+          "23": "B-DOMAIN",
+          "24": "I-DOMAIN",
+          "25": "B-URL",
+          "26": "I-URL",
+          "27": "B-ALIAS",
+          "28": "I-ALIAS",
+          "29": "B-JURISDICTION",
+          "30": "I-JURISDICTION",
+          "31": "B-SANCTION",
+          "32": "I-SANCTION",
+          "33": "B-RELATIONSHIP",
+          "34": "I-RELATIONSHIP",
+          "35": "B-SHELL_CO",
+          "36": "I-SHELL_CO",
+          "37": "B-OFFICER",
+          "38": "I-OFFICER",
+          "39": "B-INTERMEDIARY",
+          "40": "I-INTERMEDIARY",
+          "41": "B-ADDRESS",
+          "42": "I-ADDRESS"
+        }
+      },
+      "hybrid_rules": {
+        "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/hybrid_rules/hybrid_rules_v3.json",
+        "version": "3.0.0",
+        "top_level_keys": [
+          "version",
+          "rule_engine",
+          "strip_entity_suffix_punctuation",
+          "ignored_tokens",
+          "drop_special_tokens",
+          "special_tokens",
+          "entity_cleanup",
+          "context_rules"
+        ],
+        "context_rules_type": "list",
+        "context_rules_count": 2
+      },
+      "pipeline": [
+        {
+          "stage": 1,
+          "component": "Investigator NER",
+          "input": "text",
+          "output": "ner_entities"
+        },
+        {
+          "stage": 2,
+          "component": "Entity Cleanup",
+          "input": "ner_entities",
+          "output": "clean_entities"
+        },
+        {
+          "stage": 3,
+          "component": "Hybrid Rules V3",
+          "input": [
+            "clean_entities",
+            "context"
+          ],
+          "output": "structured_rule_signals"
+        },
+        {
+          "stage": 4,
+          "component": "Investigator Risk XGBoost",
+          "input": [
+            "clean_entities",
+            "structured_rule_signals"
+          ],
+          "output": "risk_signals"
+        }
+      ],
+      "decision_boundary": {
+        "ner_is_signal": true,
+        "rule_output_is_signal": true,
+        "risk_xgboost_is_risk_assessment": true,
+        "none_of_above_is_person_verdict": true
+      }
+    },
+    "hybrid_rules_snapshot": {
+      "source_artifact": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/hybrid_rules/hybrid_rules_v3.json",
+      "snapshot_created_utc": "2026-10-01T14:17:20.260613+00:00",
+      "fabricated": false,
+      "modified": false,
+      "rule_records_discovered": 0,
+      "rules": {
+        "version": "3.0.0",
+        "rule_engine": "post_processing",
+        "strip_entity_suffix_punctuation": true,
+        "ignored_tokens": [
+          ".",
+          ",",
+          ";",
+          ":",
+          "!",
+          "?",
+          "(",
+          ")",
+          "[",
+          "]",
+          "{",
+          "}"
+        ],
+        "drop_special_tokens": true,
+        "special_tokens": [
+          "[CLS]",
+          "[SEP]",
+          "<s>",
+          "</s>",
+          "<pad>"
+        ],
+        "entity_cleanup": {
+          "LOC": {
+            "remove_trailing_punctuation": true
+          },
+          "NATL": {
+            "remove_trailing_punctuation": true
+          },
+          "PER": {
+            "remove_trailing_punctuation": true
+          },
+          "ORG": {
+            "remove_trailing_punctuation": true
+          },
+          "EMAIL": {
+            "remove_trailing_punctuation": true
+          },
+          "UPI": {
+            "remove_trailing_punctuation": true
+          },
+          "DOMAIN": {
+            "remove_trailing_punctuation": true
+          },
+          "URL": {
+            "remove_trailing_punctuation": true
+          },
+          "IP": {
+            "remove_trailing_punctuation": true
+          }
+        },
+        "context_rules": [
+          {
+            "name": "city_override",
+            "entity": "LOC",
+            "values": [
+              "Dubai",
+              "Bangkok",
+              "Delhi",
+              "Mumbai",
+              "Yangon",
+              "Karachi"
+            ]
+          },
+          {
+            "name": "country_override",
+            "entity": "NATL",
+            "values": [
+              "India",
+              "Myanmar",
+              "Thailand",
+              "Pakistan",
+              "North Korea",
+              "China"
+            ]
+          }
+        ]
+      }
+    },
+    "feature_builder_contract": {
+      "contract_name": "TrustCircle Investigator Risk Feature Builder",
+      "version": "1.0.0",
+      "created_utc": "2026-10-01T14:23:59.211250+00:00",
+      "execution": {
+        "cpu_only": true,
+        "gpu_used": false,
+        "model_loading": false,
+        "model_inference": false,
+        "training": false,
+        "fabricated_feature_values": false
+      },
+      "verified_model": {
+        "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+        "objective": "binary:logistic",
+        "num_features": 8,
+        "feature_order": [
+          "company_type",
+          "jurisdiction",
+          "country_codes",
+          "sourceID",
+          "service_provider",
+          "company_age",
+          "is_tax_haven",
+          "is_sanctioned"
+        ],
+        "feature_types": [
+          "int",
+          "int",
+          "int",
+          "int",
+          "int",
+          "int",
+          "int",
+          "int"
+        ]
+      },
+      "feature_sources": {
+        "company_type": {
+          "expected_model_type": "int",
+          "possible_sources": [
+            "knowledge_graph",
+            "company_registry",
+            "document_evidence",
+            "case_evidence"
+          ],
+          "status_without_source": "NOT_AVAILABLE"
+        },
+        "jurisdiction": {
+          "expected_model_type": "int",
+          "possible_sources": [
+            "NER",
+            "hybrid_rules",
+            "knowledge_graph",
+            "document_evidence",
+            "company_registry"
+          ],
+          "status_without_source": "NOT_AVAILABLE"
+        },
+        "country_codes": {
+          "expected_model_type": "int",
+          "possible_sources": [
+            "NER",
+            "knowledge_graph",
+            "company_registry",
+            "document_evidence"
+          ],
+          "status_without_source": "NOT_AVAILABLE"
+        },
+        "sourceID": {
+          "expected_model_type": "int",
+          "possible_sources": [
+            "source_registry",
+            "knowledge_graph",
+            "case_source"
+          ],
+          "status_without_source": "NOT_AVAILABLE"
+        },
+        "service_provider": {
+          "expected_model_type": "int",
+          "possible_sources": [
+            "document_evidence",
+            "company_registry",
+            "knowledge_graph",
+            "case_evidence"
+          ],
+          "status_without_source": "NOT_AVAILABLE"
+        },
+        "company_age": {
+          "expected_model_type": "int",
+          "possible_sources": [
+            "company_registry",
+            "document_evidence",
+            "knowledge_graph"
+          ],
+          "status_without_source": "NOT_AVAILABLE"
+        },
+        "is_tax_haven": {
+          "expected_model_type": "int",
+          "possible_sources": [
+            "verified_jurisdiction_reference",
+            "knowledge_graph",
+            "external_verified_source"
+          ],
+          "status_without_source": "NOT_AVAILABLE"
+        },
+        "is_sanctioned": {
+          "expected_model_type": "int",
+          "possible_sources": [
+            "NER",
+            "sanctions_evidence",
+            "knowledge_graph",
+            "verified_sanctions_source"
+          ],
+          "status_without_source": "NOT_AVAILABLE"
+        }
+      },
+      "current_state": {
+        "case_id": null,
+        "feature_order": [
+          "company_type",
+          "jurisdiction",
+          "country_codes",
+          "sourceID",
+          "service_provider",
+          "company_age",
+          "is_tax_haven",
+          "is_sanctioned"
+        ],
+        "feature_types": [
+          "int",
+          "int",
+          "int",
+          "int",
+          "int",
+          "int",
+          "int",
+          "int"
+        ],
+        "features": {
+          "company_type": {
+            "value": null,
+            "status": "NOT_AVAILABLE",
+            "provenance": [],
+            "source_count": 0
+          },
+          "jurisdiction": {
+            "value": null,
+            "status": "NOT_AVAILABLE",
+            "provenance": [],
+            "source_count": 0
+          },
+          "country_codes": {
+            "value": null,
+            "status": "NOT_AVAILABLE",
+            "provenance": [],
+            "source_count": 0
+          },
+          "sourceID": {
+            "value": null,
+            "status": "NOT_AVAILABLE",
+            "provenance": [],
+            "source_count": 0
+          },
+          "service_provider": {
+            "value": null,
+            "status": "NOT_AVAILABLE",
+            "provenance": [],
+            "source_count": 0
+          },
+          "company_age": {
+            "value": null,
+            "status": "NOT_AVAILABLE",
+            "provenance": [],
+            "source_count": 0
+          },
+          "is_tax_haven": {
+            "value": null,
+            "status": "NOT_AVAILABLE",
+            "provenance": [],
+            "source_count": 0
+          },
+          "is_sanctioned": {
+            "value": null,
+            "status": "NOT_AVAILABLE",
+            "provenance": [],
+            "source_count": 0
+          }
+        },
+        "vector": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "vector_ready_for_inference": false,
+        "reason": "No verified case-specific feature values are available.",
+        "provenance": {
+          "risk_model": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+          "ner_config": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/config.json",
+          "hybrid_rules": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/hybrid_rules/hybrid_rules_v3.json"
+        }
+      },
+      "inference_gate": {
+        "model": "Investigator Risk XGBoost",
+        "required_features": [
+          "company_type",
+          "jurisdiction",
+          "country_codes",
+          "sourceID",
+          "service_provider",
+          "company_age",
+          "is_tax_haven",
+          "is_sanctioned"
+        ],
+        "available_features": [],
+        "missing_features": [
+          "company_type",
+          "jurisdiction",
+          "country_codes",
+          "sourceID",
+          "service_provider",
+          "company_age",
+          "is_tax_haven",
+          "is_sanctioned"
+        ],
+        "inference_allowed": false,
+        "reason": "All case-specific feature values are currently unavailable.",
+        "gpu_required": false,
+        "training": false
+      },
+      "decision_boundary": {
+        "risk_model_output_is_person_verdict": false,
+        "risk_model_output_is_lie_verdict": false,
+        "risk_model_output_is_risk_signal": true
+      }
+    },
+    "feature_builder_manifest": {
+      "package_name": "trustcircle_risk_feature_builder_v1",
+      "version": "1.0.0",
+      "created_utc": "2026-10-01T14:23:59.212892+00:00",
+      "source_model": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+      "cpu_only": true,
+      "gpu_used": false,
+      "model_loading": false,
+      "model_inference": false,
+      "training": false,
+      "fabricated_feature_values": false,
+      "feature_count": 8,
+      "feature_order": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "inference_allowed": false,
+      "files": [
+        {
+          "file": "knowledge_graph_risk_feature_handoff.json",
+          "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/knowledge_graph_risk_feature_handoff.json",
+          "size_bytes": 594,
+          "sha256": "3edb740d3d604fada16521b76a9611d74d2d1266dfbc617beb127dc75c8b1d20"
+        },
+        {
+          "file": "risk_inference_gate.json",
+          "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_inference_gate.json",
+          "size_bytes": 600,
+          "sha256": "7057a94ab895db4ed9972e163ecc9bb7b5b1af459cc01c7bf47211bfaf452bcd"
+        },
+        {
+          "file": "risk_feature_builder_contract.json",
+          "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_feature_builder_contract.json",
+          "size_bytes": 5972,
+          "sha256": "6e9270871709088c658b28f3b6c335f2d4e0bf355c280c67c8b68a1246235034"
+        },
+        {
+          "file": "validation_report.json",
+          "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/validation_report.json",
+          "size_bytes": 620,
+          "sha256": "70733edc52ac98ab0035fcf1a3729f36293a1dbb12ababdee991266471bfccbb"
+        }
+      ]
+    },
+    "feature_builder_gate": {
+      "model": "Investigator Risk XGBoost",
+      "required_features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "available_features": [],
+      "missing_features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "inference_allowed": false,
+      "reason": "All case-specific feature values are currently unavailable.",
+      "gpu_required": false,
+      "training": false
+    },
+    "knowledge_graph_handoff": {
+      "contract_name": "TrustCircle Knowledge Graph → Risk Feature Builder",
+      "version": "1.0.0",
+      "required_entity_evidence": {
+        "company_type": "company_type",
+        "jurisdiction": "jurisdiction",
+        "country_codes": "country_codes",
+        "sourceID": "sourceID",
+        "service_provider": "service_provider",
+        "company_age": "company_age",
+        "is_tax_haven": "is_tax_haven",
+        "is_sanctioned": "is_sanctioned"
+      },
+      "policy": {
+        "missing_value": "NOT_AVAILABLE",
+        "unknown_value_is_not_zero": true,
+        "unknown_value_is_not_false": true,
+        "fabrication_allowed": false
+      }
+    },
+    "resolution_contract": {
+      "company_type": {
+        "allowed_sources": [
+          "knowledge_graph",
+          "case_graph",
+          "case_evidence",
+          "company_registry",
+          "document_evidence"
+        ],
+        "description": "Verified company/entity type from evidence or registry."
+      },
+      "jurisdiction": {
+        "allowed_sources": [
+          "ner",
+          "hybrid_rules",
+          "knowledge_graph",
+          "case_graph",
+          "case_evidence",
+          "company_registry",
+          "document_evidence"
+        ],
+        "description": "Verified jurisdiction evidence."
+      },
+      "country_codes": {
+        "allowed_sources": [
+          "ner",
+          "knowledge_graph",
+          "case_graph",
+          "case_evidence",
+          "company_registry",
+          "document_evidence"
+        ],
+        "description": "Verified country/country-code evidence."
+      },
+      "sourceID": {
+        "allowed_sources": [
+          "knowledge_graph",
+          "case_graph",
+          "source_registry",
+          "case_evidence"
+        ],
+        "description": "Identifier of the evidence/source record."
+      },
+      "service_provider": {
+        "allowed_sources": [
+          "knowledge_graph",
+          "case_graph",
+          "case_evidence",
+          "company_registry",
+          "document_evidence"
+        ],
+        "description": "Verified service provider associated with the entity."
+      },
+      "company_age": {
+        "allowed_sources": [
+          "knowledge_graph",
+          "case_graph",
+          "case_evidence",
+          "company_registry",
+          "document_evidence"
+        ],
+        "description": "Verified company age derived from reliable dates."
+      },
+      "is_tax_haven": {
+        "allowed_sources": [
+          "knowledge_graph",
+          "case_graph",
+          "case_evidence",
+          "verified_jurisdiction_reference"
+        ],
+        "description": "Tax-haven classification supported by a verified reference."
+      },
+      "is_sanctioned": {
+        "allowed_sources": [
+          "ner",
+          "knowledge_graph",
+          "case_graph",
+          "case_evidence",
+          "sanctions_evidence",
+          "verified_sanctions_source"
+        ],
+        "description": "Sanctions status supported by actual evidence."
+      }
+    },
+    "resolved_features": {
+      "contract_name": "investigator_risk_xgboost_feature_resolution_v1",
+      "created_at_utc": "2026-10-01T14:25:30.161876+00:00",
+      "execution_mode": "CPU_ONLY",
+      "gpu_used": false,
+      "model_loading": false,
+      "model_inference": false,
+      "training": false,
+      "fabricated_values": false,
+      "risk_model_feature_count": 8,
+      "feature_order": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "features": {
+        "company_type": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "jurisdiction": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "country_codes": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "sourceID": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "service_provider": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "company_age": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "is_tax_haven": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "is_sanctioned": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        }
+      },
+      "inference_gate": {
+        "inference_allowed": false,
+        "blockers": [
+          {
+            "feature": "company_type",
+            "reason": "NOT_AVAILABLE"
+          },
+          {
+            "feature": "company_type",
+            "reason": "MISSING_PROVENANCE"
+          },
+          {
+            "feature": "jurisdiction",
+            "reason": "NOT_AVAILABLE"
+          },
+          {
+            "feature": "jurisdiction",
+            "reason": "MISSING_PROVENANCE"
+          },
+          {
+            "feature": "country_codes",
+            "reason": "NOT_AVAILABLE"
+          },
+          {
+            "feature": "country_codes",
+            "reason": "MISSING_PROVENANCE"
+          },
+          {
+            "feature": "sourceID",
+            "reason": "NOT_AVAILABLE"
+          },
+          {
+            "feature": "sourceID",
+            "reason": "MISSING_PROVENANCE"
+          },
+          {
+            "feature": "service_provider",
+            "reason": "NOT_AVAILABLE"
+          },
+          {
+            "feature": "service_provider",
+            "reason": "MISSING_PROVENANCE"
+          },
+          {
+            "feature": "company_age",
+            "reason": "NOT_AVAILABLE"
+          },
+          {
+            "feature": "company_age",
+            "reason": "MISSING_PROVENANCE"
+          },
+          {
+            "feature": "is_tax_haven",
+            "reason": "NOT_AVAILABLE"
+          },
+          {
+            "feature": "is_tax_haven",
+            "reason": "MISSING_PROVENANCE"
+          },
+          {
+            "feature": "is_sanctioned",
+            "reason": "NOT_AVAILABLE"
+          },
+          {
+            "feature": "is_sanctioned",
+            "reason": "MISSING_PROVENANCE"
+          }
+        ],
+        "policy": "ALL_FEATURES_MUST_BE_RESOLVED_VERIFIED_AND_PROVENANCE_BACKED"
+      }
+    },
+    "resolution_handoff": {
+      "handoff_name": "investigator_risk_xgboost_feature_handoff_v1",
+      "feature_count": 8,
+      "feature_order": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "features": {
+        "company_type": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "jurisdiction": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "country_codes": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "sourceID": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "service_provider": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "company_age": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "is_tax_haven": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        },
+        "is_sanctioned": {
+          "value": null,
+          "status": "NOT_AVAILABLE",
+          "provenance": [],
+          "candidate_count": 0
+        }
+      },
+      "inference_allowed": false,
+      "fabricated_values": false,
+      "source_contract": {
+        "company_type": {
+          "allowed_sources": [
+            "knowledge_graph",
+            "case_graph",
+            "case_evidence",
+            "company_registry",
+            "document_evidence"
+          ],
+          "description": "Verified company/entity type from evidence or registry."
+        },
+        "jurisdiction": {
+          "allowed_sources": [
+            "ner",
+            "hybrid_rules",
+            "knowledge_graph",
+            "case_graph",
+            "case_evidence",
+            "company_registry",
+            "document_evidence"
+          ],
+          "description": "Verified jurisdiction evidence."
+        },
+        "country_codes": {
+          "allowed_sources": [
+            "ner",
+            "knowledge_graph",
+            "case_graph",
+            "case_evidence",
+            "company_registry",
+            "document_evidence"
+          ],
+          "description": "Verified country/country-code evidence."
+        },
+        "sourceID": {
+          "allowed_sources": [
+            "knowledge_graph",
+            "case_graph",
+            "source_registry",
+            "case_evidence"
+          ],
+          "description": "Identifier of the evidence/source record."
+        },
+        "service_provider": {
+          "allowed_sources": [
+            "knowledge_graph",
+            "case_graph",
+            "case_evidence",
+            "company_registry",
+            "document_evidence"
+          ],
+          "description": "Verified service provider associated with the entity."
+        },
+        "company_age": {
+          "allowed_sources": [
+            "knowledge_graph",
+            "case_graph",
+            "case_evidence",
+            "company_registry",
+            "document_evidence"
+          ],
+          "description": "Verified company age derived from reliable dates."
+        },
+        "is_tax_haven": {
+          "allowed_sources": [
+            "knowledge_graph",
+            "case_graph",
+            "case_evidence",
+            "verified_jurisdiction_reference"
+          ],
+          "description": "Tax-haven classification supported by a verified reference."
+        },
+        "is_sanctioned": {
+          "allowed_sources": [
+            "ner",
+            "knowledge_graph",
+            "case_graph",
+            "case_evidence",
+            "sanctions_evidence",
+            "verified_sanctions_source"
+          ],
+          "description": "Sanctions status supported by actual evidence."
+        }
+      },
+      "notes": [
+        "No missing value was converted to zero.",
+        "No feature value was guessed.",
+        "Exact field matches remain UNVERIFIED unless independently verified.",
+        "Conflicting values block inference.",
+        "Missing provenance blocks inference.",
+        "No XGBoost model inference was executed."
+      ]
+    },
+    "resolution_validation": {
+      "validation": "PASS",
+      "errors": [],
+      "feature_count": 8,
+      "feature_order_verified": true,
+      "inference_allowed": false,
+      "fabricated_values": false,
+      "gpu_used": false,
+      "model_loading": false,
+      "model_inference": false,
+      "training": false,
+      "resolved_count": 0,
+      "unverified_count": 0,
+      "not_available_count": 8,
+      "conflicting_count": 0
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "package_name": "trustcircle_ner_hybrid_rules_adapter_v1",
+  "version": "1.0.0",
+  "created_utc": "2026-10-01T14:20:50.176729+00:00",
+  "cpu_only": true,
+  "gpu_used": false,
+  "model_loading": false,
+  "model_inference": false,
+  "training": false,
+  "fabricated_case_data": false,
+  "fabricated_rules": false,
+  "source_rules_version": "3.0.0",
+  "source_rule_engine": "post_processing",
+  "files": [
+    {
+      "file": "risk_xgboost_handoff_contract.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/risk_xgboost_handoff_contract.json",
+      "size_bytes": 845,
+      "sha256": "53e5552cb4083e6f8bfe0c95ba028f5add757b473904795a5c3130446bdcdac2"
+    },
+    {
+      "file": "adapter_contract.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/adapter_contract.json",
+      "size_bytes": 2589,
+      "sha256": "efe42f56070fec8ae4130a3783238e3b73ab6de889c774b54dcde72f1a8f440b"
+    },
+    {
+      "file": "validation_report.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/validation_report.json",
+      "size_bytes": 634,
+      "sha256": "80b2fc9457afd9363f7ad3c8f30284a6617c17e10abf89c3a70dc447e555b766"
+    }
+  ]
+}

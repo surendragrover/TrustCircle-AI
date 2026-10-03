@@ -1,0 +1,39 @@
+{
+  "contract_name": "Investigator Risk XGBoost Upstream Handoff",
+  "version": "1.0.0",
+  "source_adapter": "trustcircle_ner_hybrid_rules_adapter_v1",
+  "input_features": {
+    "entities": {
+      "source": "NER + Hybrid Rules",
+      "fields": [
+        "entity_id",
+        "text",
+        "label",
+        "bio_label",
+        "token_start",
+        "token_end",
+        "source",
+        "cleanup_applied",
+        "applied_rules",
+        "rule_processed"
+      ]
+    },
+    "hybrid_rule_signals": {
+      "source": "Hybrid Rules V3",
+      "fields": [
+        "signal_id",
+        "rule_id",
+        "signal_type",
+        "entity_id",
+        "entity_text",
+        "original_label",
+        "result_label",
+        "source",
+        "description"
+      ]
+    }
+  },
+  "model_execution": false,
+  "gpu_used": false,
+  "training": false
+}

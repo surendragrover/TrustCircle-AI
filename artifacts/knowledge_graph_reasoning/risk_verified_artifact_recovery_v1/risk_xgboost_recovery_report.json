@@ -1,0 +1,1613 @@
+{
+  "name": "risk_xgboost_verified_artifact_recovery_v1",
+  "timestamp_utc": "2026-10-01T14:29:08.530032+00:00",
+  "search_roots": [
+    "/kaggle/working",
+    "/kaggle/input/datasets/surendragrover"
+  ],
+  "candidate_count": 64,
+  "content_hit_count": 13,
+  "content_hits": [
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/risk_xgboost_handoff_v1.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 3929
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_inference_gate.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 600
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_feature_builder_contract.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 5972
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolution_source_contract.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 1999
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/knowledge_graph_risk_feature_handoff.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 594
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/manifest.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 1910
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolved_risk_features.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 3176
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_exact_contract.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 2466
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_feature_inventory.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 1712
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 853278
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_evidence_inventory.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 3802
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_source_structure.json",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "size": 5344
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-averitec-nli/trustcircle_averitec_nli_release/model/tokenizer.json",
+      "features": [
+        "jurisdiction"
+      ],
+      "size": 8332214
+    }
+  ],
+  "top_candidates": [
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/risk_xgboost_handoff_v1.json",
+      "filename": "risk_xgboost_handoff_v1.json",
+      "extension": ".json",
+      "size": 3929,
+      "matched_terms": [
+        "risk",
+        "xgboost",
+        "feature"
+      ],
+      "strong_matches": [
+        "risk_xgboost",
+        "risk_feature",
+        "risk_feature_resolution"
+      ],
+      "score": 18
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_inference_gate.json",
+      "filename": "risk_inference_gate.json",
+      "extension": ".json",
+      "size": 600,
+      "matched_terms": [
+        "risk",
+        "feature"
+      ],
+      "strong_matches": [
+        "risk_feature",
+        "risk_inference",
+        "risk_feature_builder"
+      ],
+      "score": 17
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_feature_builder_contract.json",
+      "filename": "risk_feature_builder_contract.json",
+      "extension": ".json",
+      "size": 5972,
+      "matched_terms": [
+        "risk",
+        "feature",
+        "contract"
+      ],
+      "strong_matches": [
+        "risk_feature",
+        "risk_feature_builder"
+      ],
+      "score": 13
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolution_source_contract.json",
+      "filename": "resolution_source_contract.json",
+      "extension": ".json",
+      "size": 1999,
+      "matched_terms": [
+        "risk",
+        "feature",
+        "contract"
+      ],
+      "strong_matches": [
+        "risk_feature",
+        "risk_feature_resolution"
+      ],
+      "score": 13
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/knowledge_graph_risk_feature_handoff.json",
+      "filename": "knowledge_graph_risk_feature_handoff.json",
+      "extension": ".json",
+      "size": 594,
+      "matched_terms": [
+        "risk",
+        "feature"
+      ],
+      "strong_matches": [
+        "risk_feature",
+        "risk_feature_builder"
+      ],
+      "score": 12
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/manifest.json",
+      "filename": "manifest.json",
+      "extension": ".json",
+      "size": 1910,
+      "matched_terms": [
+        "risk",
+        "feature"
+      ],
+      "strong_matches": [
+        "risk_feature",
+        "risk_feature_builder"
+      ],
+      "score": 12
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/validation_report.json",
+      "filename": "validation_report.json",
+      "extension": ".json",
+      "size": 620,
+      "matched_terms": [
+        "risk",
+        "feature"
+      ],
+      "strong_matches": [
+        "risk_feature",
+        "risk_feature_builder"
+      ],
+      "score": 12
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolution_validation_report.json",
+      "filename": "resolution_validation_report.json",
+      "extension": ".json",
+      "size": 356,
+      "matched_terms": [
+        "risk",
+        "feature"
+      ],
+      "strong_matches": [
+        "risk_feature",
+        "risk_feature_resolution"
+      ],
+      "score": 12
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolved_risk_features.json",
+      "filename": "resolved_risk_features.json",
+      "extension": ".json",
+      "size": 3176,
+      "matched_terms": [
+        "risk",
+        "feature"
+      ],
+      "strong_matches": [
+        "risk_feature",
+        "risk_feature_resolution"
+      ],
+      "score": 12
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_exact_contract.json",
+      "filename": "risk_xgboost_exact_contract.json",
+      "extension": ".json",
+      "size": 2466,
+      "matched_terms": [
+        "risk",
+        "xgboost",
+        "contract",
+        "investigator"
+      ],
+      "strong_matches": [
+        "risk_xgboost"
+      ],
+      "score": 9
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_feature_inventory.json",
+      "filename": "risk_xgboost_feature_inventory.json",
+      "extension": ".json",
+      "size": 1712,
+      "matched_terms": [
+        "risk",
+        "xgboost",
+        "feature",
+        "investigator"
+      ],
+      "strong_matches": [
+        "risk_xgboost"
+      ],
+      "score": 9
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+      "filename": "risk_model.json",
+      "extension": ".json",
+      "size": 853278,
+      "matched_terms": [
+        "risk",
+        "model",
+        "investigator"
+      ],
+      "strong_matches": [
+        "risk_model"
+      ],
+      "score": 8
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/manifest.json",
+      "filename": "manifest.json",
+      "extension": ".json",
+      "size": 1376,
+      "matched_terms": [
+        "risk",
+        "xgboost",
+        "investigator"
+      ],
+      "strong_matches": [
+        "risk_xgboost"
+      ],
+      "score": 8
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/validation_report.json",
+      "filename": "validation_report.json",
+      "extension": ".json",
+      "size": 519,
+      "matched_terms": [
+        "risk",
+        "xgboost",
+        "investigator"
+      ],
+      "strong_matches": [
+        "risk_xgboost"
+      ],
+      "score": 8
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/risk_xgboost_handoff_contract.json",
+      "filename": "risk_xgboost_handoff_contract.json",
+      "extension": ".json",
+      "size": 845,
+      "matched_terms": [
+        "risk",
+        "xgboost",
+        "contract"
+      ],
+      "strong_matches": [
+        "risk_xgboost"
+      ],
+      "score": 8
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_evidence_inventory.json",
+      "filename": "risk_feature_evidence_inventory.json",
+      "extension": ".json",
+      "size": 3802,
+      "matched_terms": [
+        "risk",
+        "feature"
+      ],
+      "strong_matches": [
+        "risk_feature"
+      ],
+      "score": 7
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_evidence_validation.json",
+      "filename": "risk_feature_evidence_validation.json",
+      "extension": ".json",
+      "size": 246,
+      "matched_terms": [
+        "risk",
+        "feature"
+      ],
+      "strong_matches": [
+        "risk_feature"
+      ],
+      "score": 7
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_source_structure.json",
+      "filename": "risk_feature_source_structure.json",
+      "extension": ".json",
+      "size": 5344,
+      "matched_terms": [
+        "risk",
+        "feature"
+      ],
+      "strong_matches": [
+        "risk_feature"
+      ],
+      "score": 7
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/averitec-xgboost-pretraining-backup/TRUSTCIRCLE_AVERITEC_XGBOOST_PRETRAINING/averitec_claim_label_mapping.json",
+      "filename": "averitec_claim_label_mapping.json",
+      "extension": ".json",
+      "size": 13022,
+      "matched_terms": [
+        "xgboost",
+        "mapping",
+        "training"
+      ],
+      "strong_matches": [],
+      "score": 3
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/feature_importance.csv",
+      "filename": "feature_importance.csv",
+      "extension": ".csv",
+      "size": 663,
+      "matched_terms": [
+        "xgboost",
+        "feature",
+        "training"
+      ],
+      "strong_matches": [],
+      "score": 3
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/averitec-xgboost-pretraining-backup/TRUSTCIRCLE_AVERITEC_XGBOOST_PRETRAINING/BACKUP_MANIFEST.json",
+      "filename": "BACKUP_MANIFEST.json",
+      "extension": ".json",
+      "size": 1001,
+      "matched_terms": [
+        "xgboost",
+        "training"
+      ],
+      "strong_matches": [],
+      "score": 2
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/averitec-xgboost-pretraining-backup/TRUSTCIRCLE_AVERITEC_XGBOOST_PRETRAINING/averitec_xgboost_506640_labeled.csv",
+      "filename": "averitec_xgboost_506640_labeled.csv",
+      "extension": ".csv",
+      "size": 41593156,
+      "matched_terms": [
+        "xgboost",
+        "training"
+      ],
+      "strong_matches": [],
+      "score": 2
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/training_record.json",
+      "filename": "training_record.json",
+      "extension": ".json",
+      "size": 799,
+      "matched_terms": [
+        "xgboost",
+        "training"
+      ],
+      "strong_matches": [],
+      "score": 2
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/trustcircle_fever_xgboost_BEST.json",
+      "filename": "trustcircle_fever_xgboost_BEST.json",
+      "extension": ".json",
+      "size": 1325997,
+      "matched_terms": [
+        "xgboost",
+        "training"
+      ],
+      "strong_matches": [],
+      "score": 2
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/trustcircle_fever_xgboost_metrics.json",
+      "filename": "trustcircle_fever_xgboost_metrics.json",
+      "extension": ".json",
+      "size": 2324,
+      "matched_terms": [
+        "xgboost",
+        "training"
+      ],
+      "strong_matches": [],
+      "score": 2
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-v3-model/trustcircle_nli_v3_training_record.json",
+      "filename": "trustcircle_nli_v3_training_record.json",
+      "extension": ".json",
+      "size": 849,
+      "matched_terms": [
+        "training",
+        "model"
+      ],
+      "strong_matches": [],
+      "score": 2
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/feature_importance.csv",
+      "filename": "feature_importance.csv",
+      "extension": ".csv",
+      "size": 715,
+      "matched_terms": [
+        "xgboost",
+        "feature"
+      ],
+      "strong_matches": [],
+      "score": 2
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/xgboost_features.json",
+      "filename": "xgboost_features.json",
+      "extension": ".json",
+      "size": 1433,
+      "matched_terms": [
+        "xgboost",
+        "feature"
+      ],
+      "strong_matches": [],
+      "score": 2
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/verified_model_registry.json",
+      "filename": "verified_model_registry.json",
+      "extension": ".json",
+      "size": 2914,
+      "matched_terms": [
+        "verified",
+        "model"
+      ],
+      "strong_matches": [],
+      "score": 2
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/fever-new-v3-verified/trustcircle_fever_new_v3/metadata.json",
+      "filename": "metadata.json",
+      "extension": ".json",
+      "size": 1486,
+      "matched_terms": [
+        "verified"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/fever-new-v3-verified/trustcircle_fever_new_v3/trustcircle_fever_new_v3.csv",
+      "filename": "trustcircle_fever_new_v3.csv",
+      "extension": ".csv",
+      "size": 20041436,
+      "matched_terms": [
+        "verified"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/face/manifest.json",
+      "filename": "manifest.json",
+      "extension": ".json",
+      "size": 154,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/face/metadata.json",
+      "filename": "metadata.json",
+      "extension": ".json",
+      "size": 128,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/gradio_app.py",
+      "filename": "gradio_app.py",
+      "extension": ".py",
+      "size": 54153,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/hybrid_rules/hybrid_rules_v3.json",
+      "filename": "hybrid_rules_v3.json",
+      "extension": ".json",
+      "size": 1382,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/manifest.json",
+      "filename": "manifest.json",
+      "extension": ".json",
+      "size": 4554,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/config.json",
+      "filename": "config.json",
+      "extension": ".json",
+      "size": 2712,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/tokenizer.json",
+      "filename": "tokenizer.json",
+      "extension": ".json",
+      "size": 16034015,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/tokenizer_config.json",
+      "filename": "tokenizer_config.json",
+      "extension": ".json",
+      "size": 639,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ocr/config.json",
+      "filename": "config.json",
+      "extension": ".json",
+      "size": 3319,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ocr/generation_config.json",
+      "filename": "generation_config.json",
+      "extension": ".json",
+      "size": 234,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/voice/manifest.json",
+      "filename": "manifest.json",
+      "extension": ".json",
+      "size": 117,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/voice/metadata.json",
+      "filename": "metadata.json",
+      "extension": ".json",
+      "size": 129,
+      "matched_terms": [
+        "investigator"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-averitec-nli/trustcircle_averitec_nli_release/model/config.json",
+      "filename": "config.json",
+      "extension": ".json",
+      "size": 1117,
+      "matched_terms": [
+        "model"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-averitec-nli/trustcircle_averitec_nli_release/model/tokenizer.json",
+      "filename": "tokenizer.json",
+      "extension": ".json",
+      "size": 8332214,
+      "matched_terms": [
+        "model"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-averitec-nli/trustcircle_averitec_nli_release/model/tokenizer_config.json",
+      "filename": "tokenizer_config.json",
+      "extension": ".json",
+      "size": 641,
+      "matched_terms": [
+        "model"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-v2-pre-gpu-backup/TRUSTCIRCLE_FEVER_V2_PRE_GPU/trustcircle_fever_evidence_features_v2.csv",
+      "filename": "trustcircle_fever_evidence_features_v2.csv",
+      "extension": ".csv",
+      "size": 22378001,
+      "matched_terms": [
+        "feature"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v3/trustcircle_nli_v3_synthetic_release/training_record.json",
+      "filename": "training_record.json",
+      "extension": ".json",
+      "size": 1110,
+      "matched_terms": [
+        "training"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v4-release/trustcircle_nli_v4_release/model/architecture_audit.json",
+      "filename": "architecture_audit.json",
+      "extension": ".json",
+      "size": 2595,
+      "matched_terms": [
+        "model"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v4-release/trustcircle_nli_v4_release/model/config.json",
+      "filename": "config.json",
+      "extension": ".json",
+      "size": 1006,
+      "matched_terms": [
+        "model"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-v3-model/trustcircle_nli_v3_finetuned_tokenizer/tokenizer.json",
+      "filename": "tokenizer.json",
+      "extension": ".json",
+      "size": 16034280,
+      "matched_terms": [
+        "model"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-v3-model/trustcircle_nli_v3_finetuned_tokenizer/tokenizer_config.json",
+      "filename": "tokenizer_config.json",
+      "extension": ".json",
+      "size": 639,
+      "matched_terms": [
+        "model"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-v3-model/trustcircle_nli_v3_finetuning_manifest.json",
+      "filename": "trustcircle_nli_v3_finetuning_manifest.json",
+      "extension": ".json",
+      "size": 1702,
+      "matched_terms": [
+        "model"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/RELEASE_MANIFEST.json",
+      "filename": "RELEASE_MANIFEST.json",
+      "extension": ".json",
+      "size": 2472,
+      "matched_terms": [
+        "xgboost"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/SHA256SUMS.json",
+      "filename": "SHA256SUMS.json",
+      "extension": ".json",
+      "size": 773,
+      "matched_terms": [
+        "xgboost"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/metrics.json",
+      "filename": "metrics.json",
+      "extension": ".json",
+      "size": 2095,
+      "matched_terms": [
+        "xgboost"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/trustcircle_xgboost_final.json",
+      "filename": "trustcircle_xgboost_final.json",
+      "extension": ".json",
+      "size": 32740429,
+      "matched_terms": [
+        "xgboost"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/validation_predictions.csv",
+      "filename": "validation_predictions.csv",
+      "extension": ".csv",
+      "size": 2763100,
+      "matched_terms": [
+        "xgboost"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/case_ingestion_contract.json",
+      "filename": "case_ingestion_contract.json",
+      "extension": ".json",
+      "size": 1604,
+      "matched_terms": [
+        "contract"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/adapter_contract.json",
+      "filename": "adapter_contract.json",
+      "extension": ".json",
+      "size": 2236,
+      "matched_terms": [
+        "contract"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/adapter_contract.json",
+      "filename": "adapter_contract.json",
+      "extension": ".json",
+      "size": 2589,
+      "matched_terms": [
+        "contract"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v1/ner_hybrid_rules_integration_contract.json",
+      "filename": "ner_hybrid_rules_integration_contract.json",
+      "extension": ".json",
+      "size": 3244,
+      "matched_terms": [
+        "contract"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v1/verified_hybrid_rules_snapshot.json",
+      "filename": "verified_hybrid_rules_snapshot.json",
+      "extension": ".json",
+      "size": 1839,
+      "matched_terms": [
+        "verified"
+      ],
+      "strong_matches": [],
+      "score": 1
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v2/ner_hybrid_rules_exact_contract.json",
+      "filename": "ner_hybrid_rules_exact_contract.json",
+      "extension": ".json",
+      "size": 3218,
+      "matched_terms": [
+        "contract"
+      ],
+      "strong_matches": [],
+      "score": 1
+    }
+  ],
+  "inspected_json": [
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/risk_xgboost_handoff_v1.json",
+      "top_keys": [
+        "handoff_name",
+        "feature_count",
+        "feature_order",
+        "features",
+        "inference_allowed",
+        "fabricated_values",
+        "source_contract",
+        "notes"
+      ],
+      "relevant_keys": [
+        "feature_count",
+        "feature_order",
+        "features",
+        "source_contract"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_inference_gate.json",
+      "top_keys": [
+        "model",
+        "required_features",
+        "available_features",
+        "missing_features",
+        "inference_allowed",
+        "reason",
+        "gpu_required",
+        "training"
+      ],
+      "relevant_keys": [
+        "required_features",
+        "available_features",
+        "missing_features"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_feature_builder_contract.json",
+      "top_keys": [
+        "contract_name",
+        "version",
+        "created_utc",
+        "execution",
+        "verified_model",
+        "feature_sources",
+        "current_state",
+        "inference_gate",
+        "decision_boundary"
+      ],
+      "relevant_keys": [
+        "contract_name",
+        "verified_model",
+        "feature_sources"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/knowledge_graph_risk_feature_handoff.json",
+      "top_keys": [
+        "contract_name",
+        "version",
+        "required_entity_evidence",
+        "policy"
+      ],
+      "relevant_keys": [
+        "contract_name"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/manifest.json",
+      "top_keys": [
+        "package_name",
+        "version",
+        "created_utc",
+        "source_model",
+        "cpu_only",
+        "gpu_used",
+        "model_loading",
+        "model_inference",
+        "training",
+        "fabricated_feature_values",
+        "feature_count",
+        "feature_order",
+        "inference_allowed",
+        "files"
+      ],
+      "relevant_keys": [
+        "fabricated_feature_values",
+        "feature_count",
+        "feature_order"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/validation_report.json",
+      "top_keys": [
+        "report_name",
+        "timestamp_utc",
+        "status",
+        "feature_count",
+        "feature_order_verified",
+        "feature_types",
+        "missing_feature_count",
+        "inference_allowed",
+        "validation_errors",
+        "execution"
+      ],
+      "relevant_keys": [
+        "feature_count",
+        "feature_order_verified",
+        "feature_types",
+        "missing_feature_count"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolution_validation_report.json",
+      "top_keys": [
+        "validation",
+        "errors",
+        "feature_count",
+        "feature_order_verified",
+        "inference_allowed",
+        "fabricated_values",
+        "gpu_used",
+        "model_loading",
+        "model_inference",
+        "training",
+        "resolved_count",
+        "unverified_count",
+        "not_available_count",
+        "conflicting_count"
+      ],
+      "relevant_keys": [
+        "feature_count",
+        "feature_order_verified",
+        "unverified_count"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolved_risk_features.json",
+      "top_keys": [
+        "contract_name",
+        "created_at_utc",
+        "execution_mode",
+        "gpu_used",
+        "model_loading",
+        "model_inference",
+        "training",
+        "fabricated_values",
+        "risk_model_feature_count",
+        "feature_order",
+        "features",
+        "inference_gate"
+      ],
+      "relevant_keys": [
+        "contract_name",
+        "risk_model_feature_count",
+        "feature_order",
+        "features"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_exact_contract.json",
+      "top_keys": [
+        "contract_name",
+        "version",
+        "created_utc",
+        "source_artifact",
+        "execution_policy",
+        "model_metadata",
+        "feature_contract",
+        "class_metadata",
+        "upstream_contract",
+        "pipeline_position",
+        "decision_boundary"
+      ],
+      "relevant_keys": [
+        "contract_name",
+        "feature_contract",
+        "upstream_contract"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_feature_inventory.json",
+      "top_keys": [
+        "source",
+        "created_utc",
+        "feature_candidates",
+        "unique_features",
+        "feature_count",
+        "duplicate_features",
+        "feature_upstream_matches",
+        "fabricated"
+      ],
+      "relevant_keys": [
+        "feature_candidates",
+        "unique_features",
+        "feature_count",
+        "duplicate_features",
+        "feature_upstream_matches"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/manifest.json",
+      "top_keys": [
+        "package_name",
+        "version",
+        "created_utc",
+        "source",
+        "cpu_only",
+        "gpu_used",
+        "model_inference",
+        "training",
+        "fabricated_features",
+        "fabricated_case_data",
+        "files"
+      ],
+      "relevant_keys": [
+        "fabricated_features"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/validation_report.json",
+      "top_keys": [
+        "report_name",
+        "version",
+        "timestamp_utc",
+        "status",
+        "validation_errors",
+        "feature_collections",
+        "unique_features",
+        "duplicate_features",
+        "class_metadata_fields",
+        "model_metadata_fields",
+        "execution"
+      ],
+      "relevant_keys": [
+        "feature_collections",
+        "unique_features",
+        "duplicate_features"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/risk_xgboost_handoff_contract.json",
+      "top_keys": [
+        "contract_name",
+        "version",
+        "source_adapter",
+        "input_features",
+        "model_execution",
+        "gpu_used",
+        "training"
+      ],
+      "relevant_keys": [
+        "contract_name",
+        "input_features"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_evidence_inventory.json",
+      "top_keys": [
+        "contract_name",
+        "created_at_utc",
+        "execution",
+        "risk_model",
+        "feature_evidence",
+        "encoding_blockers",
+        "inference_gate"
+      ],
+      "relevant_keys": [
+        "contract_name",
+        "risk_model",
+        "feature_evidence",
+        "encoding_blockers"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_evidence_validation.json",
+      "top_keys": [
+        "validation",
+        "errors",
+        "feature_count",
+        "raw_evidence_feature_count",
+        "no_explicit_evidence_count",
+        "encoding_blocker_count",
+        "inference_allowed",
+        "fabricated_values",
+        "gpu_used"
+      ],
+      "relevant_keys": [
+        "feature_count",
+        "raw_evidence_feature_count",
+        "encoding_blocker_count"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_source_structure.json",
+      "top_keys": [
+        "created_at_utc",
+        "sources",
+        "exact_feature_matches",
+        "ner_discoveries"
+      ],
+      "relevant_keys": [
+        "exact_feature_matches"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/averitec-xgboost-pretraining-backup/TRUSTCIRCLE_AVERITEC_XGBOOST_PRETRAINING/averitec_claim_label_mapping.json",
+      "top_keys": [
+        "source",
+        "local_source",
+        "dev_claim_count",
+        "mapping_method",
+        "label_to_id",
+        "claim_to_label"
+      ],
+      "relevant_keys": [
+        "mapping_method"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/averitec-xgboost-pretraining-backup/TRUSTCIRCLE_AVERITEC_XGBOOST_PRETRAINING/BACKUP_MANIFEST.json",
+      "top_keys": [
+        "package",
+        "created_utc",
+        "training_performed",
+        "gpu_used",
+        "source",
+        "rows",
+        "claims",
+        "features",
+        "total_columns",
+        "target_columns",
+        "target_mapping",
+        "files"
+      ],
+      "relevant_keys": [
+        "features",
+        "target_mapping"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/training_record.json",
+      "top_keys": [
+        "project",
+        "stage",
+        "timestamp",
+        "dataset_path",
+        "dataset_rows",
+        "feature_count",
+        "labels",
+        "claim_level_split",
+        "claim_overlap",
+        "device",
+        "xgboost_version",
+        "best_iteration",
+        "best_score",
+        "metrics_file",
+        "model_file"
+      ],
+      "relevant_keys": [
+        "feature_count",
+        "xgboost_version"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/trustcircle_fever_xgboost_metrics.json",
+      "top_keys": [
+        "status",
+        "dataset",
+        "split",
+        "labels",
+        "training",
+        "metrics",
+        "confusion_matrix",
+        "model_path",
+        "xgboost_version"
+      ],
+      "relevant_keys": [
+        "xgboost_version"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/xgboost_features.json",
+      "top_keys": [
+        "dataset",
+        "source_rows",
+        "train_rows",
+        "validation_rows",
+        "split_method",
+        "group_column",
+        "random_state",
+        "test_size",
+        "claim_overlap",
+        "feature_count",
+        "features",
+        "removed_redundant_features",
+        "nli_features",
+        "target",
+        "labels",
+        "status"
+      ],
+      "relevant_keys": [
+        "feature_count",
+        "features",
+        "removed_redundant_features",
+        "nli_features"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/fever-new-v3-verified/trustcircle_fever_new_v3/metadata.json",
+      "top_keys": [
+        "dataset_name",
+        "status",
+        "fever_source",
+        "records",
+        "columns",
+        "wikipedia_pages_loaded",
+        "resolved_evidence_references",
+        "unresolved_evidence_references",
+        "records_with_resolved_evidence",
+        "label_mapping",
+        "verified_feVER_mapping",
+        "verified_wikipedia_lookup",
+        "nli_status",
+        "xgboost_status",
+        "parquet_sha256",
+        "csv_sha256",
+        "features"
+      ],
+      "relevant_keys": [
+        "label_mapping",
+        "verified_feVER_mapping",
+        "verified_wikipedia_lookup",
+        "xgboost_status",
+        "features"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/RELEASE_MANIFEST.json",
+      "top_keys": [
+        "release_name",
+        "status",
+        "dataset",
+        "xgboost_version",
+        "gpu_used_for_training",
+        "train_rows",
+        "validation_rows",
+        "feature_count",
+        "features",
+        "best_iteration",
+        "boosted_rounds",
+        "validation_logloss",
+        "accuracy",
+        "balanced_accuracy",
+        "macro_f1",
+        "weighted_f1",
+        "macro_precision",
+        "macro_recall",
+        "f1_entailment",
+        "f1_neutral",
+        "f1_contradiction",
+        "confusion_matrix",
+        "claim_overlap",
+        "model_sha256",
+        "artifacts",
+        "training_repeated_after_audit",
+        "nli_model_retrained",
+        "release_frozen",
+        "finalized_utc"
+      ],
+      "relevant_keys": [
+        "xgboost_version",
+        "feature_count",
+        "features"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/SHA256SUMS.json",
+      "top_keys": [
+        "RELEASE_MANIFEST.json",
+        "feature_importance.csv",
+        "metrics.json",
+        "trustcircle_xgboost_final.json",
+        "validation_predictions.csv",
+        "xgboost_features.json",
+        "xgboost_train.parquet",
+        "xgboost_validation.parquet"
+      ],
+      "relevant_keys": [
+        "feature_importance.csv",
+        "trustcircle_xgboost_final.json",
+        "xgboost_features.json",
+        "xgboost_train.parquet",
+        "xgboost_validation.parquet"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/metrics.json",
+      "top_keys": [
+        "dataset",
+        "train_rows",
+        "validation_rows",
+        "feature_count",
+        "features",
+        "claim_overlap",
+        "best_iteration",
+        "best_validation_mlogloss",
+        "accuracy",
+        "balanced_accuracy",
+        "macro_f1",
+        "weighted_f1",
+        "macro_precision",
+        "macro_recall",
+        "f1_entailment",
+        "f1_neutral",
+        "f1_contradiction",
+        "confusion_matrix",
+        "xgboost_version",
+        "gpu",
+        "parameters",
+        "status",
+        "validation_logloss",
+        "boosted_rounds",
+        "model_sha256",
+        "audit_status",
+        "retraining_performed_after_audit",
+        "training_history_available_in_saved_json",
+        "validation_recomputed_from_saved_model",
+        "finalized_utc"
+      ],
+      "relevant_keys": [
+        "feature_count",
+        "features",
+        "xgboost_version"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/case_ingestion_contract.json",
+      "top_keys": [
+        "contract_version",
+        "case_id_required",
+        "accepted_records",
+        "provenance_required",
+        "allowed_provenance_origins"
+      ],
+      "relevant_keys": [
+        "contract_version"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/adapter_contract.json",
+      "top_keys": [
+        "contract_name",
+        "contract_version",
+        "created_utc",
+        "contracts"
+      ],
+      "relevant_keys": [
+        "contract_name",
+        "contract_version",
+        "contracts"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/adapter_contract.json",
+      "top_keys": [
+        "adapter_name",
+        "version",
+        "created_utc",
+        "source_artifacts",
+        "verified_rule_behavior",
+        "pipeline",
+        "boundaries"
+      ],
+      "relevant_keys": [
+        "verified_rule_behavior"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v1/ner_hybrid_rules_integration_contract.json",
+      "top_keys": [
+        "contract_name",
+        "contract_version",
+        "created_utc",
+        "execution_policy",
+        "upstream",
+        "rule_engine",
+        "pipeline",
+        "output_contract",
+        "decision_boundary"
+      ],
+      "relevant_keys": [
+        "contract_name",
+        "contract_version",
+        "output_contract"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v2/ner_hybrid_rules_exact_contract.json",
+      "top_keys": [
+        "contract_name",
+        "version",
+        "created_utc",
+        "execution",
+        "ner",
+        "hybrid_rules",
+        "pipeline",
+        "decision_boundary"
+      ],
+      "relevant_keys": [
+        "contract_name"
+      ]
+    }
+  ],
+  "known_directories": {
+    "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1": true,
+    "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1": true,
+    "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1": true,
+    "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1": true,
+    "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_model_encoding_audit_v1": false
+  },
+  "execution": {
+    "cpu_only": true,
+    "gpu_used": false,
+    "model_loaded": false,
+    "model_inference": false,
+    "training": false,
+    "file_modified": false
+  }
+}

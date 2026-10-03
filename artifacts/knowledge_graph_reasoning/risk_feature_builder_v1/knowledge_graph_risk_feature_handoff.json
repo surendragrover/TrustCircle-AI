@@ -1,0 +1,20 @@
+{
+  "contract_name": "TrustCircle Knowledge Graph → Risk Feature Builder",
+  "version": "1.0.0",
+  "required_entity_evidence": {
+    "company_type": "company_type",
+    "jurisdiction": "jurisdiction",
+    "country_codes": "country_codes",
+    "sourceID": "sourceID",
+    "service_provider": "service_provider",
+    "company_age": "company_age",
+    "is_tax_haven": "is_tax_haven",
+    "is_sanctioned": "is_sanctioned"
+  },
+  "policy": {
+    "missing_value": "NOT_AVAILABLE",
+    "unknown_value_is_not_zero": true,
+    "unknown_value_is_not_false": true,
+    "fabrication_allowed": false
+  }
+}

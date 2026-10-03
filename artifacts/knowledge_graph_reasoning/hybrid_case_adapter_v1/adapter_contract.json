@@ -1,0 +1,121 @@
+{
+  "contract_name": "TrustCircle Hybrid Adapter Contract",
+  "contract_version": "1.0.0",
+  "created_utc": "2026-10-01T14:14:53.450543+00:00",
+  "contracts": {
+    "ner.entities": {
+      "required": [
+        "entity_id",
+        "text",
+        "label",
+        "source"
+      ],
+      "optional": [
+        "start",
+        "end",
+        "confidence",
+        "claim_id",
+        "case_id"
+      ]
+    },
+    "risk_signals.rule_signals": {
+      "required": [
+        "signal_id",
+        "rule_id",
+        "signal_type",
+        "source"
+      ],
+      "optional": [
+        "severity",
+        "description",
+        "claim_id",
+        "entity_id",
+        "case_id"
+      ]
+    },
+    "risk_signals.investigator_risk": {
+      "required": [
+        "signal_id",
+        "risk_type",
+        "source"
+      ],
+      "optional": [
+        "score",
+        "severity",
+        "features",
+        "claim_id",
+        "case_id"
+      ]
+    },
+    "nli_results": {
+      "required": [
+        "claim_id",
+        "evidence_id",
+        "label",
+        "source"
+      ],
+      "optional": [
+        "entailment",
+        "neutral",
+        "contradiction",
+        "confidence",
+        "case_id"
+      ]
+    },
+    "claim_evidence_assessment": {
+      "required": [
+        "claim_id",
+        "assessment",
+        "source"
+      ],
+      "optional": [
+        "score",
+        "confidence",
+        "supporting_evidence",
+        "contradicting_evidence",
+        "case_id"
+      ]
+    },
+    "multimodal_signals.face": {
+      "required": [
+        "signal_id",
+        "signal_type",
+        "source"
+      ],
+      "optional": [
+        "score",
+        "label",
+        "confidence",
+        "timestamp",
+        "case_id"
+      ]
+    },
+    "multimodal_signals.voice": {
+      "required": [
+        "signal_id",
+        "signal_type",
+        "source"
+      ],
+      "optional": [
+        "score",
+        "label",
+        "confidence",
+        "timestamp",
+        "speaker_id",
+        "case_id"
+      ]
+    },
+    "document_signals.ocr": {
+      "required": [
+        "document_id",
+        "text",
+        "source"
+      ],
+      "optional": [
+        "page",
+        "confidence",
+        "case_id"
+      ]
+    }
+  }
+}

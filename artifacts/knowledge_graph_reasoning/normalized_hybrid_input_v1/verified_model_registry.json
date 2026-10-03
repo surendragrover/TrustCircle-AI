@@ -1,0 +1,88 @@
+{
+  "registry_version": "1.0",
+  "execution": {
+    "device": "CPU",
+    "gpu_used": false,
+    "inference_executed": false,
+    "training_executed": false
+  },
+  "models": [
+    {
+      "id": "investigator_ner",
+      "name": "Investigator NER",
+      "component": "NER",
+      "origin": "verified_model",
+      "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8",
+      "status": "VERIFIED_FOUNDATION"
+    },
+    {
+      "id": "investigator_hybrid_rules",
+      "name": "Investigator Hybrid Rules",
+      "component": "Hybrid Rules",
+      "origin": "verified_model",
+      "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8",
+      "status": "VERIFIED_FOUNDATION"
+    },
+    {
+      "id": "investigator_risk_xgboost",
+      "name": "Investigator Risk XGBoost",
+      "component": "Risk Classification",
+      "origin": "verified_model",
+      "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8",
+      "status": "VERIFIED_FOUNDATION"
+    },
+    {
+      "id": "trustcircle_nli_v3",
+      "name": "TrustCircle NLI V3",
+      "component": "Claim Evidence NLI",
+      "checkpoint": "Best Step 8000",
+      "labels": {
+        "0": "entailment",
+        "1": "neutral",
+        "2": "contradiction"
+      },
+      "origin": "verified_model",
+      "source": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v3-fever-best-step/trustcircle_nli_v3_fever_best_step8000",
+      "status": "VERIFIED_FOUNDATION"
+    },
+    {
+      "id": "trustcircle_final_xgboost",
+      "name": "TrustCircle Final XGBoost",
+      "component": "Claim Evidence Assessment",
+      "origin": "verified_model",
+      "source": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release",
+      "status": "VERIFIED_FOUNDATION"
+    },
+    {
+      "id": "investigator_face",
+      "name": "Investigator Face Model",
+      "component": "Face Signal",
+      "origin": "verified_model",
+      "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8",
+      "status": "VERIFIED_FOUNDATION"
+    },
+    {
+      "id": "investigator_voice",
+      "name": "Investigator Voice Model",
+      "component": "Voice Signal",
+      "origin": "verified_model",
+      "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8",
+      "status": "VERIFIED_FOUNDATION"
+    },
+    {
+      "id": "investigator_ocr",
+      "name": "Investigator OCR",
+      "component": "OCR",
+      "origin": "verified_model",
+      "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8",
+      "status": "VERIFIED_FOUNDATION"
+    }
+  ],
+  "excluded_models": [
+    {
+      "name": "Whisper Large-v3-Turbo",
+      "reason": "Explicitly excluded from TrustCircle Hybrid",
+      "origin": "excluded"
+    }
+  ]
+}

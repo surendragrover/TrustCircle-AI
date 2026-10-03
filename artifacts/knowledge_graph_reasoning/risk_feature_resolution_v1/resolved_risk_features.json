@@ -1,0 +1,141 @@
+{
+  "contract_name": "investigator_risk_xgboost_feature_resolution_v1",
+  "created_at_utc": "2026-10-01T14:25:30.161876+00:00",
+  "execution_mode": "CPU_ONLY",
+  "gpu_used": false,
+  "model_loading": false,
+  "model_inference": false,
+  "training": false,
+  "fabricated_values": false,
+  "risk_model_feature_count": 8,
+  "feature_order": [
+    "company_type",
+    "jurisdiction",
+    "country_codes",
+    "sourceID",
+    "service_provider",
+    "company_age",
+    "is_tax_haven",
+    "is_sanctioned"
+  ],
+  "features": {
+    "company_type": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "jurisdiction": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "country_codes": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "sourceID": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "service_provider": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "company_age": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "is_tax_haven": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "is_sanctioned": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    }
+  },
+  "inference_gate": {
+    "inference_allowed": false,
+    "blockers": [
+      {
+        "feature": "company_type",
+        "reason": "NOT_AVAILABLE"
+      },
+      {
+        "feature": "company_type",
+        "reason": "MISSING_PROVENANCE"
+      },
+      {
+        "feature": "jurisdiction",
+        "reason": "NOT_AVAILABLE"
+      },
+      {
+        "feature": "jurisdiction",
+        "reason": "MISSING_PROVENANCE"
+      },
+      {
+        "feature": "country_codes",
+        "reason": "NOT_AVAILABLE"
+      },
+      {
+        "feature": "country_codes",
+        "reason": "MISSING_PROVENANCE"
+      },
+      {
+        "feature": "sourceID",
+        "reason": "NOT_AVAILABLE"
+      },
+      {
+        "feature": "sourceID",
+        "reason": "MISSING_PROVENANCE"
+      },
+      {
+        "feature": "service_provider",
+        "reason": "NOT_AVAILABLE"
+      },
+      {
+        "feature": "service_provider",
+        "reason": "MISSING_PROVENANCE"
+      },
+      {
+        "feature": "company_age",
+        "reason": "NOT_AVAILABLE"
+      },
+      {
+        "feature": "company_age",
+        "reason": "MISSING_PROVENANCE"
+      },
+      {
+        "feature": "is_tax_haven",
+        "reason": "NOT_AVAILABLE"
+      },
+      {
+        "feature": "is_tax_haven",
+        "reason": "MISSING_PROVENANCE"
+      },
+      {
+        "feature": "is_sanctioned",
+        "reason": "NOT_AVAILABLE"
+      },
+      {
+        "feature": "is_sanctioned",
+        "reason": "MISSING_PROVENANCE"
+      }
+    ],
+    "policy": "ALL_FEATURES_MUST_BE_RESOLVED_VERIFIED_AND_PROVENANCE_BACKED"
+  }
+}

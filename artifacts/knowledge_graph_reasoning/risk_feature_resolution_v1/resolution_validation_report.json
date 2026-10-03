@@ -1,0 +1,16 @@
+{
+  "validation": "PASS",
+  "errors": [],
+  "feature_count": 8,
+  "feature_order_verified": true,
+  "inference_allowed": false,
+  "fabricated_values": false,
+  "gpu_used": false,
+  "model_loading": false,
+  "model_inference": false,
+  "training": false,
+  "resolved_count": 0,
+  "unverified_count": 0,
+  "not_available_count": 8,
+  "conflicting_count": 0
+}

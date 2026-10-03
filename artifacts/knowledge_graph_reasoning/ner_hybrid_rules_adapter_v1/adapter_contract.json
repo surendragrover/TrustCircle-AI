@@ -1,0 +1,107 @@
+{
+  "adapter_name": "trustcircle_ner_hybrid_rules_adapter_v1",
+  "version": "1.0.0",
+  "created_utc": "2026-10-01T14:20:50.175238+00:00",
+  "source_artifacts": {
+    "ner_config": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/config.json",
+    "hybrid_rules": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/hybrid_rules/hybrid_rules_v3.json",
+    "risk_model": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json"
+  },
+  "verified_rule_behavior": {
+    "entity_cleanup": {
+      "LOC": {
+        "remove_trailing_punctuation": true
+      },
+      "NATL": {
+        "remove_trailing_punctuation": true
+      },
+      "PER": {
+        "remove_trailing_punctuation": true
+      },
+      "ORG": {
+        "remove_trailing_punctuation": true
+      },
+      "EMAIL": {
+        "remove_trailing_punctuation": true
+      },
+      "UPI": {
+        "remove_trailing_punctuation": true
+      },
+      "DOMAIN": {
+        "remove_trailing_punctuation": true
+      },
+      "URL": {
+        "remove_trailing_punctuation": true
+      },
+      "IP": {
+        "remove_trailing_punctuation": true
+      }
+    },
+    "context_rules": [
+      {
+        "name": "city_override",
+        "entity": "LOC",
+        "values": [
+          "Dubai",
+          "Bangkok",
+          "Delhi",
+          "Mumbai",
+          "Yangon",
+          "Karachi"
+        ]
+      },
+      {
+        "name": "country_override",
+        "entity": "NATL",
+        "values": [
+          "India",
+          "Myanmar",
+          "Thailand",
+          "Pakistan",
+          "North Korea",
+          "China"
+        ]
+      }
+    ],
+    "rule_engine": "post_processing",
+    "strip_entity_suffix_punctuation": true,
+    "ignored_tokens": [
+      ".",
+      ",",
+      ";",
+      ":",
+      "!",
+      "?",
+      "(",
+      ")",
+      "[",
+      "]",
+      "{",
+      "}"
+    ],
+    "drop_special_tokens": true,
+    "special_tokens": [
+      "[CLS]",
+      "[SEP]",
+      "<s>",
+      "</s>",
+      "<pad>"
+    ]
+  },
+  "pipeline": [
+    "BIO NER output",
+    "BIO entity reconstruction",
+    "verified entity_cleanup",
+    "verified city_override",
+    "verified country_override",
+    "structured hybrid rule signals",
+    "Investigator Risk XGBoost handoff"
+  ],
+  "boundaries": {
+    "adapter_produces_lie_verdict": false,
+    "adapter_produces_person_verdict": false,
+    "adapter_produces_risk_verdict": false,
+    "adapter_runs_model": false,
+    "adapter_fabricates_case_data": false
+  }
+}

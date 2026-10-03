@@ -1,0 +1,37 @@
+{
+  "name": "TrustCircle Reasoning Engine",
+  "version": "1.0.0",
+  "execution": {
+    "device": "CPU",
+    "gpu_required": false,
+    "gpu_used": false
+  },
+  "components": [
+    "Case Ingestion Contract",
+    "Typed Case Ingestion",
+    "Claim-Evidence Reasoning",
+    "Support Detection",
+    "Contradiction Detection",
+    "Mixed Evidence Detection",
+    "Insufficient Evidence Detection",
+    "Temporal Consistency",
+    "Entity Consistency",
+    "Source Corroboration",
+    "Verification Handoff",
+    "Reasoning Trace",
+    "Person-Level Decision Boundary"
+  ],
+  "model_execution": {
+    "nli": "NOT_EXECUTED",
+    "risk_xgboost": "NOT_EXECUTED",
+    "final_xgboost": "NOT_EXECUTED",
+    "whisper": "NOT_INCLUDED"
+  },
+  "outputs": {
+    "contract": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/case_ingestion_contract.json",
+    "reasoning_graph": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/reasoning_graph.json",
+    "reasoning_trace": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/reasoning_trace.jsonl",
+    "reasoning_report": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/reasoning_report.json",
+    "verification_requirements": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/verification_requirements.json"
+  }
+}

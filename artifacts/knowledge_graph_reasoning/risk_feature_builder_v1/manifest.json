@@ -1,0 +1,50 @@
+{
+  "package_name": "trustcircle_risk_feature_builder_v1",
+  "version": "1.0.0",
+  "created_utc": "2026-10-01T14:23:59.212892+00:00",
+  "source_model": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+  "cpu_only": true,
+  "gpu_used": false,
+  "model_loading": false,
+  "model_inference": false,
+  "training": false,
+  "fabricated_feature_values": false,
+  "feature_count": 8,
+  "feature_order": [
+    "company_type",
+    "jurisdiction",
+    "country_codes",
+    "sourceID",
+    "service_provider",
+    "company_age",
+    "is_tax_haven",
+    "is_sanctioned"
+  ],
+  "inference_allowed": false,
+  "files": [
+    {
+      "file": "knowledge_graph_risk_feature_handoff.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/knowledge_graph_risk_feature_handoff.json",
+      "size_bytes": 594,
+      "sha256": "3edb740d3d604fada16521b76a9611d74d2d1266dfbc617beb127dc75c8b1d20"
+    },
+    {
+      "file": "risk_inference_gate.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_inference_gate.json",
+      "size_bytes": 600,
+      "sha256": "7057a94ab895db4ed9972e163ecc9bb7b5b1af459cc01c7bf47211bfaf452bcd"
+    },
+    {
+      "file": "risk_feature_builder_contract.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_feature_builder_contract.json",
+      "size_bytes": 5972,
+      "sha256": "6e9270871709088c658b28f3b6c335f2d4e0bf355c280c67c8b68a1246235034"
+    },
+    {
+      "file": "validation_report.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/validation_report.json",
+      "size_bytes": 620,
+      "sha256": "70733edc52ac98ab0035fcf1a3729f36293a1dbb12ababdee991266471bfccbb"
+    }
+  ]
+}

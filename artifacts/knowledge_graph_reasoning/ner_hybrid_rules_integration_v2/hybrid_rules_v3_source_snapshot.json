@@ -1,0 +1,89 @@
+{
+  "snapshot_name": "verified_hybrid_rules_v3_source_snapshot",
+  "created_utc": "2026-10-01T14:19:23.565454+00:00",
+  "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/hybrid_rules/hybrid_rules_v3.json",
+  "fabricated": false,
+  "modified": false,
+  "content": {
+    "version": "3.0.0",
+    "rule_engine": "post_processing",
+    "strip_entity_suffix_punctuation": true,
+    "ignored_tokens": [
+      ".",
+      ",",
+      ";",
+      ":",
+      "!",
+      "?",
+      "(",
+      ")",
+      "[",
+      "]",
+      "{",
+      "}"
+    ],
+    "drop_special_tokens": true,
+    "special_tokens": [
+      "[CLS]",
+      "[SEP]",
+      "<s>",
+      "</s>",
+      "<pad>"
+    ],
+    "entity_cleanup": {
+      "LOC": {
+        "remove_trailing_punctuation": true
+      },
+      "NATL": {
+        "remove_trailing_punctuation": true
+      },
+      "PER": {
+        "remove_trailing_punctuation": true
+      },
+      "ORG": {
+        "remove_trailing_punctuation": true
+      },
+      "EMAIL": {
+        "remove_trailing_punctuation": true
+      },
+      "UPI": {
+        "remove_trailing_punctuation": true
+      },
+      "DOMAIN": {
+        "remove_trailing_punctuation": true
+      },
+      "URL": {
+        "remove_trailing_punctuation": true
+      },
+      "IP": {
+        "remove_trailing_punctuation": true
+      }
+    },
+    "context_rules": [
+      {
+        "name": "city_override",
+        "entity": "LOC",
+        "values": [
+          "Dubai",
+          "Bangkok",
+          "Delhi",
+          "Mumbai",
+          "Yangon",
+          "Karachi"
+        ]
+      },
+      {
+        "name": "country_override",
+        "entity": "NATL",
+        "values": [
+          "India",
+          "Myanmar",
+          "Thailand",
+          "Pakistan",
+          "North Korea",
+          "China"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "release": "TRUSTCIRCLE_HYBRID_V1",
+  "checks": {
+    "INVESTIGATOR_V8": {
+      "status": "PASS",
+      "details": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8"
+    },
+    "NER_CONFIG": {
+      "status": "PASS",
+      "details": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/config.json"
+    },
+    "NER_LABEL_COUNT": {
+      "status": "PASS",
+      "details": "expected=43 actual=43"
+    },
+    "NER_WEIGHTS": {
+      "status": "PASS",
+      "details": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/model.safetensors"
+    },
+    "HYBRID_RULES_V3": {
+      "status": "PASS",
+      "details": "version=3.0.0"
+    },
+    "RISK_XGBOOST": {
+      "status": "PASS",
+      "details": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json"
+    },
+    "RISK_FEATURE_COUNT": {
+      "status": "PASS",
+      "details": "features=8"
+    },
+    "NLI_STEP_8000": {
+      "status": "PASS",
+      "details": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v3-fever-best-step/trustcircle_nli_v3_fever_best_step8000"
+    },
+    "FINAL_XGBOOST": {
+      "status": "PASS",
+      "details": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/trustcircle_xgboost_final.json"
+    },
+    "FINAL_XGBOOST_SHA256": {
+      "status": "PASS",
+      "details": "sha256=5b327026b0656e3d0937c0d4a75bff93556b429b6917ca717cd28398f7c5f58a"
+    },
+    "FINAL_XGBOOST_FEATURES": {
+      "status": "PASS",
+      "details": "features=20"
+    },
+    "KNOWLEDGE_GRAPH": {
+      "status": "PASS",
+      "details": "/kaggle/working/trustcircle_knowledge_graph_v1"
+    },
+    "REASONING_ENGINE": {
+      "status": "PASS",
+      "details": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1"
+    },
+    "WHISPER_EXCLUDED": {
+      "status": "PASS",
+      "details": "Whisper is not part of Hybrid V1 architecture."
+    },
+    "RELEASE_MANIFEST": {
+      "status": "PASS",
+      "details": "/kaggle/working/TRUSTCIRCLE_HYBRID_V1_RELEASE/manifest/trustcircle_hybrid_v1_manifest.json"
+    }
+  },
+  "all_checks_passed": true,
+  "final_status": "VERIFIED_RELEASE"
+}

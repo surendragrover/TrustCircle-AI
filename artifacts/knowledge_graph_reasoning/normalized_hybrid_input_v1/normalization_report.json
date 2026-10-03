@@ -1,0 +1,44 @@
+{
+  "status": "SUCCESS",
+  "execution": {
+    "device": "CPU",
+    "gpu_used": false,
+    "training": false,
+    "inference": false
+  },
+  "sources_verified": {
+    "investigator_hybrid_v8": true,
+    "trustcircle_nli_v3": true,
+    "trustcircle_final_xgboost": true
+  },
+  "artifacts_discovered": 39,
+  "classification_counts": {
+    "supporting_artifact": 2,
+    "face": 3,
+    "manifest": 4,
+    "hybrid_rules": 1,
+    "ner": 6,
+    "ocr": 2,
+    "investigator_risk_xgboost": 1,
+    "voice": 3,
+    "trustcircle_nli_v3": 9,
+    "trustcircle_final_xgboost": 8
+  },
+  "normalized_schema": {
+    "persons": 0,
+    "statements": 0,
+    "claims": 0,
+    "evidence": 0,
+    "sources": 0,
+    "documents": 0,
+    "entities": 0,
+    "events": 0,
+    "transactions": 0,
+    "verifications": 0
+  },
+  "verified_models_registered": 8,
+  "excluded_models": [
+    "Whisper Large-v3-Turbo"
+  ],
+  "important_note": "This cell registers and normalizes existing verified artifacts only. It does not fabricate case data and does not execute model inference."
+}

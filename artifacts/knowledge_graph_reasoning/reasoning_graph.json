@@ -1,0 +1,22 @@
+{
+  "schema_version": "trustcircle_reasoning_graph_v1",
+  "case_id": "TRUSTCIRCLE_REASONING_TEST_CASE",
+  "execution": {
+    "device": "CPU",
+    "gpu_used": false
+  },
+  "nodes": [],
+  "edges": [],
+  "claim_assessments": {},
+  "temporal_checks": [],
+  "entity_checks": [],
+  "source_checks": [],
+  "person_assessments": {},
+  "verification_requirements": [],
+  "reasoning_principles": [
+    "Signal != Proof",
+    "Pattern != Verdict",
+    "Risk != Guilt",
+    "AI != Decision Maker"
+  ]
+}

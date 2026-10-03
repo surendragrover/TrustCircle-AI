@@ -1,0 +1,731 @@
+{
+  "report_name": "TrustCircle Risk XGBoost Notebook Source Format Recovery V5",
+  "version": "5.0.0",
+  "created_utc": "2026-10-01T14:35:47.763547+00:00",
+  "execution": {
+    "cpu_only": true,
+    "gpu_used": false,
+    "model_inference": false,
+    "training": false,
+    "existing_files_modified": false,
+    "fabricated_values": false,
+    "fabricated_case_data": false
+  },
+  "source": {
+    "path": "/kaggle/working/.virtual_documents/__notebook_source__.ipynb",
+    "size_bytes": 47883,
+    "sha256": "91373d1ee7abd5d1f19a72deb9158e53c1bc48cda193e28e2f2b36e6be76fe93",
+    "detected_format": "PLAIN_TEXT_OR_NOTEBOOK_SOURCE"
+  },
+  "json_diagnostic": {
+    "valid": false,
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "object_type": null
+  },
+  "term_hits": [
+    {
+      "term": "risk_xgboost",
+      "position": 33455,
+      "line": 1409
+    },
+    {
+      "term": "risk model",
+      "position": 39464,
+      "line": 1637
+    },
+    {
+      "term": "risk_model",
+      "position": 39482,
+      "line": 1638
+    },
+    {
+      "term": "xgboost",
+      "position": 33460,
+      "line": 1409
+    },
+    {
+      "term": "XGBClassifier",
+      "position": 39515,
+      "line": 1640
+    },
+    {
+      "term": "XGBRegressor",
+      "position": 39536,
+      "line": 1641
+    },
+    {
+      "term": "booster.predict",
+      "position": 39556,
+      "line": 1642
+    },
+    {
+      "term": "predict_proba",
+      "position": 39579,
+      "line": 1643
+    },
+    {
+      "term": "predict(",
+      "position": 39600,
+      "line": 1644
+    },
+    {
+      "term": "feature_mapping",
+      "position": 39616,
+      "line": 1645
+    },
+    {
+      "term": "feature mapping",
+      "position": 39639,
+      "line": 1646
+    },
+    {
+      "term": "categorical_mapping",
+      "position": 39662,
+      "line": 1647
+    },
+    {
+      "term": "category_mapping",
+      "position": 39689,
+      "line": 1648
+    },
+    {
+      "term": "encoding_map",
+      "position": 39713,
+      "line": 1649
+    },
+    {
+      "term": "feature_encoding",
+      "position": 39733,
+      "line": 1650
+    },
+    {
+      "term": "LabelEncoder",
+      "position": 39757,
+      "line": 1651
+    },
+    {
+      "term": "OrdinalEncoder",
+      "position": 39777,
+      "line": 1652
+    },
+    {
+      "term": "OneHotEncoder",
+      "position": 39799,
+      "line": 1653
+    },
+    {
+      "term": "test_vector",
+      "position": 39820,
+      "line": 1654
+    },
+    {
+      "term": "expected_prediction",
+      "position": 39839,
+      "line": 1655
+    },
+    {
+      "term": "feature_names",
+      "position": 39866,
+      "line": 1656
+    },
+    {
+      "term": "feature_types",
+      "position": 39887,
+      "line": 1657
+    },
+    {
+      "term": "company_type",
+      "position": 39908,
+      "line": 1658
+    },
+    {
+      "term": "jurisdiction",
+      "position": 39928,
+      "line": 1659
+    },
+    {
+      "term": "country_codes",
+      "position": 39948,
+      "line": 1660
+    },
+    {
+      "term": "sourceID",
+      "position": 39969,
+      "line": 1661
+    },
+    {
+      "term": "service_provider",
+      "position": 39985,
+      "line": 1662
+    },
+    {
+      "term": "company_age",
+      "position": 40009,
+      "line": 1663
+    },
+    {
+      "term": "is_tax_haven",
+      "position": 40028,
+      "line": 1664
+    },
+    {
+      "term": "is_sanctioned",
+      "position": 40048,
+      "line": 1665
+    }
+  ],
+  "important_context_blocks": [
+    {
+      "line": 1409,
+      "matched_terms": [
+        "risk_xgboost"
+      ],
+      "context": "001397:         \"Mixed Evidence Detection\",\n001398:         \"Insufficient Evidence Detection\",\n001399:         \"Temporal Consistency\",\n001400:         \"Entity Consistency\",\n001401:         \"Source Corroboration\",\n001402:         \"Verification Handoff\",\n001403:         \"Reasoning Trace\",\n001404:         \"Person-Level Decision Boundary\"\n001405:     ],\n001406: \n001407:     \"model_execution\": {\n001408:         \"nli\": \"NOT_EXECUTED\",\n001409:         \"risk_xgboost\": \"NOT_EXECUTED\",\n001410:         \"final_xgboost\": \"NOT_EXECUTED\",\n001411:         \"whisper\": \"NOT_INCLUDED\"\n001412:     },\n001413: \n001414:     \"outputs\": {\n001415:         \"contract\": str(INPUT_CONTRACT_FILE),\n001416:         \"reasoning_graph\": str(REASONING_GRAPH_FILE),\n001417:         \"reasoning_trace\": str(REASONING_TRACE_FILE),\n001418:         \"reasoning_report\": str(REASONING_REPORT_FILE),\n001419:         \"verification_requirements\": str(\n001420:             VERIFICATION_FILE\n001421:         )"
+    },
+    {
+      "line": 1636,
+      "matched_terms": [
+        "risk_xgboost"
+      ],
+      "context": "001624:     print(\"Reason:\", json_status[\"error\"])\n001625: \n001626: # -------------------------------------------------------------------------\n001627: # SEARCH RAW TEXT DIRECTLY\n001628: # No JSON parsing required.\n001629: # -------------------------------------------------------------------------\n001630: \n001631: print(\"\\n\" + \"=\" * 80)\n001632: print(\"RAW TEXT SEARCH\")\n001633: print(\"=\" * 80)\n001634: \n001635: TERMS = [\n001636:     \"risk_xgboost\",\n001637:     \"risk model\",\n001638:     \"risk_model\",\n001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\","
+    },
+    {
+      "line": 1638,
+      "matched_terms": [
+        "risk_model"
+      ],
+      "context": "001626: # -------------------------------------------------------------------------\n001627: # SEARCH RAW TEXT DIRECTLY\n001628: # No JSON parsing required.\n001629: # -------------------------------------------------------------------------\n001630: \n001631: print(\"\\n\" + \"=\" * 80)\n001632: print(\"RAW TEXT SEARCH\")\n001633: print(\"=\" * 80)\n001634: \n001635: TERMS = [\n001636:     \"risk_xgboost\",\n001637:     \"risk model\",\n001638:     \"risk_model\",\n001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\","
+    },
+    {
+      "line": 1640,
+      "matched_terms": [
+        "XGBClassifier"
+      ],
+      "context": "001628: # No JSON parsing required.\n001629: # -------------------------------------------------------------------------\n001630: \n001631: print(\"\\n\" + \"=\" * 80)\n001632: print(\"RAW TEXT SEARCH\")\n001633: print(\"=\" * 80)\n001634: \n001635: TERMS = [\n001636:     \"risk_xgboost\",\n001637:     \"risk model\",\n001638:     \"risk_model\",\n001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\","
+    },
+    {
+      "line": 1641,
+      "matched_terms": [
+        "XGBRegressor"
+      ],
+      "context": "001629: # -------------------------------------------------------------------------\n001630: \n001631: print(\"\\n\" + \"=\" * 80)\n001632: print(\"RAW TEXT SEARCH\")\n001633: print(\"=\" * 80)\n001634: \n001635: TERMS = [\n001636:     \"risk_xgboost\",\n001637:     \"risk model\",\n001638:     \"risk_model\",\n001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\","
+    },
+    {
+      "line": 1642,
+      "matched_terms": [
+        "booster.predict"
+      ],
+      "context": "001630: \n001631: print(\"\\n\" + \"=\" * 80)\n001632: print(\"RAW TEXT SEARCH\")\n001633: print(\"=\" * 80)\n001634: \n001635: TERMS = [\n001636:     \"risk_xgboost\",\n001637:     \"risk model\",\n001638:     \"risk_model\",\n001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\","
+    },
+    {
+      "line": 1643,
+      "matched_terms": [
+        "predict_proba"
+      ],
+      "context": "001631: print(\"\\n\" + \"=\" * 80)\n001632: print(\"RAW TEXT SEARCH\")\n001633: print(\"=\" * 80)\n001634: \n001635: TERMS = [\n001636:     \"risk_xgboost\",\n001637:     \"risk model\",\n001638:     \"risk_model\",\n001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\",\n001655:     \"expected_prediction\","
+    },
+    {
+      "line": 1645,
+      "matched_terms": [
+        "feature_mapping"
+      ],
+      "context": "001633: print(\"=\" * 80)\n001634: \n001635: TERMS = [\n001636:     \"risk_xgboost\",\n001637:     \"risk model\",\n001638:     \"risk_model\",\n001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\",\n001655:     \"expected_prediction\",\n001656:     \"feature_names\",\n001657:     \"feature_types\","
+    },
+    {
+      "line": 1647,
+      "matched_terms": [
+        "categorical_mapping"
+      ],
+      "context": "001635: TERMS = [\n001636:     \"risk_xgboost\",\n001637:     \"risk model\",\n001638:     \"risk_model\",\n001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\",\n001655:     \"expected_prediction\",\n001656:     \"feature_names\",\n001657:     \"feature_types\",\n001658:     \"company_type\",\n001659:     \"jurisdiction\","
+    },
+    {
+      "line": 1648,
+      "matched_terms": [
+        "category_mapping"
+      ],
+      "context": "001636:     \"risk_xgboost\",\n001637:     \"risk model\",\n001638:     \"risk_model\",\n001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\",\n001655:     \"expected_prediction\",\n001656:     \"feature_names\",\n001657:     \"feature_types\",\n001658:     \"company_type\",\n001659:     \"jurisdiction\",\n001660:     \"country_codes\","
+    },
+    {
+      "line": 1649,
+      "matched_terms": [
+        "encoding_map"
+      ],
+      "context": "001637:     \"risk model\",\n001638:     \"risk_model\",\n001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\",\n001655:     \"expected_prediction\",\n001656:     \"feature_names\",\n001657:     \"feature_types\",\n001658:     \"company_type\",\n001659:     \"jurisdiction\",\n001660:     \"country_codes\",\n001661:     \"sourceID\","
+    },
+    {
+      "line": 1650,
+      "matched_terms": [
+        "feature_encoding"
+      ],
+      "context": "001638:     \"risk_model\",\n001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\",\n001655:     \"expected_prediction\",\n001656:     \"feature_names\",\n001657:     \"feature_types\",\n001658:     \"company_type\",\n001659:     \"jurisdiction\",\n001660:     \"country_codes\",\n001661:     \"sourceID\",\n001662:     \"service_provider\","
+    },
+    {
+      "line": 1651,
+      "matched_terms": [
+        "LabelEncoder"
+      ],
+      "context": "001639:     \"xgboost\",\n001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\",\n001655:     \"expected_prediction\",\n001656:     \"feature_names\",\n001657:     \"feature_types\",\n001658:     \"company_type\",\n001659:     \"jurisdiction\",\n001660:     \"country_codes\",\n001661:     \"sourceID\",\n001662:     \"service_provider\",\n001663:     \"company_age\","
+    },
+    {
+      "line": 1652,
+      "matched_terms": [
+        "OrdinalEncoder"
+      ],
+      "context": "001640:     \"XGBClassifier\",\n001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\",\n001655:     \"expected_prediction\",\n001656:     \"feature_names\",\n001657:     \"feature_types\",\n001658:     \"company_type\",\n001659:     \"jurisdiction\",\n001660:     \"country_codes\",\n001661:     \"sourceID\",\n001662:     \"service_provider\",\n001663:     \"company_age\",\n001664:     \"is_tax_haven\","
+    },
+    {
+      "line": 1653,
+      "matched_terms": [
+        "OneHotEncoder"
+      ],
+      "context": "001641:     \"XGBRegressor\",\n001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\",\n001655:     \"expected_prediction\",\n001656:     \"feature_names\",\n001657:     \"feature_types\",\n001658:     \"company_type\",\n001659:     \"jurisdiction\",\n001660:     \"country_codes\",\n001661:     \"sourceID\",\n001662:     \"service_provider\",\n001663:     \"company_age\",\n001664:     \"is_tax_haven\",\n001665:     \"is_sanctioned\","
+    },
+    {
+      "line": 1654,
+      "matched_terms": [
+        "test_vector"
+      ],
+      "context": "001642:     \"booster.predict\",\n001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\",\n001655:     \"expected_prediction\",\n001656:     \"feature_names\",\n001657:     \"feature_types\",\n001658:     \"company_type\",\n001659:     \"jurisdiction\",\n001660:     \"country_codes\",\n001661:     \"sourceID\",\n001662:     \"service_provider\",\n001663:     \"company_age\",\n001664:     \"is_tax_haven\",\n001665:     \"is_sanctioned\",\n001666: ]"
+    },
+    {
+      "line": 1655,
+      "matched_terms": [
+        "expected_prediction"
+      ],
+      "context": "001643:     \"predict_proba\",\n001644:     \"predict(\",\n001645:     \"feature_mapping\",\n001646:     \"feature mapping\",\n001647:     \"categorical_mapping\",\n001648:     \"category_mapping\",\n001649:     \"encoding_map\",\n001650:     \"feature_encoding\",\n001651:     \"LabelEncoder\",\n001652:     \"OrdinalEncoder\",\n001653:     \"OneHotEncoder\",\n001654:     \"test_vector\",\n001655:     \"expected_prediction\",\n001656:     \"feature_names\",\n001657:     \"feature_types\",\n001658:     \"company_type\",\n001659:     \"jurisdiction\",\n001660:     \"country_codes\",\n001661:     \"sourceID\",\n001662:     \"service_provider\",\n001663:     \"company_age\",\n001664:     \"is_tax_haven\",\n001665:     \"is_sanctioned\",\n001666: ]\n001667: "
+    },
+    {
+      "line": 1703,
+      "matched_terms": [
+        "risk_xgboost"
+      ],
+      "context": "001691:         f\"{item['term']}\"\n001692:     )\n001693: \n001694: # -------------------------------------------------------------------------\n001695: # EXTRACT CONTEXT AROUND EACH HIT\n001696: # -------------------------------------------------------------------------\n001697: \n001698: print(\"\\n\" + \"=\" * 80)\n001699: print(\"CONTEXT AROUND IMPORTANT MATCHES\")\n001700: print(\"=\" * 80)\n001701: \n001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\","
+    },
+    {
+      "line": 1704,
+      "matched_terms": [
+        "risk_model"
+      ],
+      "context": "001692:     )\n001693: \n001694: # -------------------------------------------------------------------------\n001695: # EXTRACT CONTEXT AROUND EACH HIT\n001696: # -------------------------------------------------------------------------\n001697: \n001698: print(\"\\n\" + \"=\" * 80)\n001699: print(\"CONTEXT AROUND IMPORTANT MATCHES\")\n001700: print(\"=\" * 80)\n001701: \n001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\","
+    },
+    {
+      "line": 1705,
+      "matched_terms": [
+        "XGBClassifier"
+      ],
+      "context": "001693: \n001694: # -------------------------------------------------------------------------\n001695: # EXTRACT CONTEXT AROUND EACH HIT\n001696: # -------------------------------------------------------------------------\n001697: \n001698: print(\"\\n\" + \"=\" * 80)\n001699: print(\"CONTEXT AROUND IMPORTANT MATCHES\")\n001700: print(\"=\" * 80)\n001701: \n001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\","
+    },
+    {
+      "line": 1706,
+      "matched_terms": [
+        "XGBRegressor"
+      ],
+      "context": "001694: # -------------------------------------------------------------------------\n001695: # EXTRACT CONTEXT AROUND EACH HIT\n001696: # -------------------------------------------------------------------------\n001697: \n001698: print(\"\\n\" + \"=\" * 80)\n001699: print(\"CONTEXT AROUND IMPORTANT MATCHES\")\n001700: print(\"=\" * 80)\n001701: \n001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\","
+    },
+    {
+      "line": 1707,
+      "matched_terms": [
+        "booster.predict"
+      ],
+      "context": "001695: # EXTRACT CONTEXT AROUND EACH HIT\n001696: # -------------------------------------------------------------------------\n001697: \n001698: print(\"\\n\" + \"=\" * 80)\n001699: print(\"CONTEXT AROUND IMPORTANT MATCHES\")\n001700: print(\"=\" * 80)\n001701: \n001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]"
+    },
+    {
+      "line": 1708,
+      "matched_terms": [
+        "predict_proba"
+      ],
+      "context": "001696: # -------------------------------------------------------------------------\n001697: \n001698: print(\"\\n\" + \"=\" * 80)\n001699: print(\"CONTEXT AROUND IMPORTANT MATCHES\")\n001700: print(\"=\" * 80)\n001701: \n001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]\n001720: "
+    },
+    {
+      "line": 1709,
+      "matched_terms": [
+        "feature_mapping"
+      ],
+      "context": "001697: \n001698: print(\"\\n\" + \"=\" * 80)\n001699: print(\"CONTEXT AROUND IMPORTANT MATCHES\")\n001700: print(\"=\" * 80)\n001701: \n001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]\n001720: \n001721: context_blocks = []"
+    },
+    {
+      "line": 1710,
+      "matched_terms": [
+        "categorical_mapping"
+      ],
+      "context": "001698: print(\"\\n\" + \"=\" * 80)\n001699: print(\"CONTEXT AROUND IMPORTANT MATCHES\")\n001700: print(\"=\" * 80)\n001701: \n001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]\n001720: \n001721: context_blocks = []\n001722: "
+    },
+    {
+      "line": 1711,
+      "matched_terms": [
+        "category_mapping"
+      ],
+      "context": "001699: print(\"CONTEXT AROUND IMPORTANT MATCHES\")\n001700: print(\"=\" * 80)\n001701: \n001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]\n001720: \n001721: context_blocks = []\n001722: \n001723: lines = text.splitlines()"
+    },
+    {
+      "line": 1712,
+      "matched_terms": [
+        "encoding_map"
+      ],
+      "context": "001700: print(\"=\" * 80)\n001701: \n001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]\n001720: \n001721: context_blocks = []\n001722: \n001723: lines = text.splitlines()\n001724: "
+    },
+    {
+      "line": 1713,
+      "matched_terms": [
+        "feature_encoding"
+      ],
+      "context": "001701: \n001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]\n001720: \n001721: context_blocks = []\n001722: \n001723: lines = text.splitlines()\n001724: \n001725: for line_idx, line in enumerate(lines):"
+    },
+    {
+      "line": 1714,
+      "matched_terms": [
+        "LabelEncoder"
+      ],
+      "context": "001702: IMPORTANT_TERMS = [\n001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]\n001720: \n001721: context_blocks = []\n001722: \n001723: lines = text.splitlines()\n001724: \n001725: for line_idx, line in enumerate(lines):\n001726: "
+    },
+    {
+      "line": 1715,
+      "matched_terms": [
+        "OrdinalEncoder"
+      ],
+      "context": "001703:     \"risk_xgboost\",\n001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]\n001720: \n001721: context_blocks = []\n001722: \n001723: lines = text.splitlines()\n001724: \n001725: for line_idx, line in enumerate(lines):\n001726: \n001727:     low = line.lower()"
+    },
+    {
+      "line": 1716,
+      "matched_terms": [
+        "OneHotEncoder"
+      ],
+      "context": "001704:     \"risk_model\",\n001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]\n001720: \n001721: context_blocks = []\n001722: \n001723: lines = text.splitlines()\n001724: \n001725: for line_idx, line in enumerate(lines):\n001726: \n001727:     low = line.lower()\n001728: "
+    },
+    {
+      "line": 1717,
+      "matched_terms": [
+        "test_vector"
+      ],
+      "context": "001705:     \"XGBClassifier\",\n001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]\n001720: \n001721: context_blocks = []\n001722: \n001723: lines = text.splitlines()\n001724: \n001725: for line_idx, line in enumerate(lines):\n001726: \n001727:     low = line.lower()\n001728: \n001729:     matched = ["
+    },
+    {
+      "line": 1718,
+      "matched_terms": [
+        "expected_prediction"
+      ],
+      "context": "001706:     \"XGBRegressor\",\n001707:     \"booster.predict\",\n001708:     \"predict_proba\",\n001709:     \"feature_mapping\",\n001710:     \"categorical_mapping\",\n001711:     \"category_mapping\",\n001712:     \"encoding_map\",\n001713:     \"feature_encoding\",\n001714:     \"LabelEncoder\",\n001715:     \"OrdinalEncoder\",\n001716:     \"OneHotEncoder\",\n001717:     \"test_vector\",\n001718:     \"expected_prediction\",\n001719: ]\n001720: \n001721: context_blocks = []\n001722: \n001723: lines = text.splitlines()\n001724: \n001725: for line_idx, line in enumerate(lines):\n001726: \n001727:     low = line.lower()\n001728: \n001729:     matched = [\n001730:         term for term in IMPORTANT_TERMS"
+    },
+    {
+      "line": 1814,
+      "matched_terms": [
+        "risk_model"
+      ],
+      "context": "001802:             f\"{pattern:20s} -> \"\n001803:             f\"{len(found)} matches\"\n001804:         )\n001805: \n001806: # -------------------------------------------------------------------------\n001807: # LOOK FOR RISK MODEL JSON EMBEDDING\n001808: # -------------------------------------------------------------------------\n001809: \n001810: print(\"\\n\" + \"=\" * 80)\n001811: print(\"RISK MODEL REFERENCES\")\n001812: print(\"=\" * 80)\n001813: \n001814: risk_model_refs = []\n001815: \n001816: for match in re.finditer(\n001817:     r\".{0,250}(risk_model|risk_model\\.json|Investigator Risk|Risk XGBoost).{0,500}\",\n001818:     text,\n001819:     flags=re.IGNORECASE | re.DOTALL\n001820: ):\n001821: \n001822:     snippet = match.group(0)\n001823: \n001824:     risk_model_refs.append(snippet)\n001825: \n001826: for i, snippet in enumerate(risk_model_refs[:30], start=1):"
+    },
+    {
+      "line": 1817,
+      "matched_terms": [
+        "risk_model"
+      ],
+      "context": "001805: \n001806: # -------------------------------------------------------------------------\n001807: # LOOK FOR RISK MODEL JSON EMBEDDING\n001808: # -------------------------------------------------------------------------\n001809: \n001810: print(\"\\n\" + \"=\" * 80)\n001811: print(\"RISK MODEL REFERENCES\")\n001812: print(\"=\" * 80)\n001813: \n001814: risk_model_refs = []\n001815: \n001816: for match in re.finditer(\n001817:     r\".{0,250}(risk_model|risk_model\\.json|Investigator Risk|Risk XGBoost).{0,500}\",\n001818:     text,\n001819:     flags=re.IGNORECASE | re.DOTALL\n001820: ):\n001821: \n001822:     snippet = match.group(0)\n001823: \n001824:     risk_model_refs.append(snippet)\n001825: \n001826: for i, snippet in enumerate(risk_model_refs[:30], start=1):\n001827: \n001828:     print(\"\\n\" + \"-\" * 80)\n001829:     print(f\"REFERENCE {i}\")"
+    },
+    {
+      "line": 1824,
+      "matched_terms": [
+        "risk_model"
+      ],
+      "context": "001812: print(\"=\" * 80)\n001813: \n001814: risk_model_refs = []\n001815: \n001816: for match in re.finditer(\n001817:     r\".{0,250}(risk_model|risk_model\\.json|Investigator Risk|Risk XGBoost).{0,500}\",\n001818:     text,\n001819:     flags=re.IGNORECASE | re.DOTALL\n001820: ):\n001821: \n001822:     snippet = match.group(0)\n001823: \n001824:     risk_model_refs.append(snippet)\n001825: \n001826: for i, snippet in enumerate(risk_model_refs[:30], start=1):\n001827: \n001828:     print(\"\\n\" + \"-\" * 80)\n001829:     print(f\"REFERENCE {i}\")\n001830:     print(\"-\" * 80)\n001831:     print(snippet[:1500])\n001832: \n001833: # -------------------------------------------------------------------------\n001834: # LOOK FOR ACTUAL PREDICTION CODE\n001835: # -------------------------------------------------------------------------\n001836: "
+    },
+    {
+      "line": 1826,
+      "matched_terms": [
+        "risk_model"
+      ],
+      "context": "001814: risk_model_refs = []\n001815: \n001816: for match in re.finditer(\n001817:     r\".{0,250}(risk_model|risk_model\\.json|Investigator Risk|Risk XGBoost).{0,500}\",\n001818:     text,\n001819:     flags=re.IGNORECASE | re.DOTALL\n001820: ):\n001821: \n001822:     snippet = match.group(0)\n001823: \n001824:     risk_model_refs.append(snippet)\n001825: \n001826: for i, snippet in enumerate(risk_model_refs[:30], start=1):\n001827: \n001828:     print(\"\\n\" + \"-\" * 80)\n001829:     print(f\"REFERENCE {i}\")\n001830:     print(\"-\" * 80)\n001831:     print(snippet[:1500])\n001832: \n001833: # -------------------------------------------------------------------------\n001834: # LOOK FOR ACTUAL PREDICTION CODE\n001835: # -------------------------------------------------------------------------\n001836: \n001837: print(\"\\n\" + \"=\" * 80)\n001838: print(\"ACTUAL PREDICTION PATTERNS\")"
+    },
+    {
+      "line": 1843,
+      "matched_terms": [
+        "predict_proba"
+      ],
+      "context": "001831:     print(snippet[:1500])\n001832: \n001833: # -------------------------------------------------------------------------\n001834: # LOOK FOR ACTUAL PREDICTION CODE\n001835: # -------------------------------------------------------------------------\n001836: \n001837: print(\"\\n\" + \"=\" * 80)\n001838: print(\"ACTUAL PREDICTION PATTERNS\")\n001839: print(\"=\" * 80)\n001840: \n001841: prediction_regexes = [\n001842:     r\"\\.predict\\s*\\(\",\n001843:     r\"\\.predict_proba\\s*\\(\",\n001844:     r\"booster\\s*\\.\\s*predict\",\n001845:     r\"xgbclassifier\",\n001846:     r\"xgbregressor\",\n001847:     r\"expected_prediction\",\n001848:     r\"test_vector\",\n001849: ]\n001850: \n001851: prediction_hits = []\n001852: \n001853: for pattern in prediction_regexes:\n001854: \n001855:     found = list("
+    },
+    {
+      "line": 1845,
+      "matched_terms": [
+        "XGBClassifier"
+      ],
+      "context": "001833: # -------------------------------------------------------------------------\n001834: # LOOK FOR ACTUAL PREDICTION CODE\n001835: # -------------------------------------------------------------------------\n001836: \n001837: print(\"\\n\" + \"=\" * 80)\n001838: print(\"ACTUAL PREDICTION PATTERNS\")\n001839: print(\"=\" * 80)\n001840: \n001841: prediction_regexes = [\n001842:     r\"\\.predict\\s*\\(\",\n001843:     r\"\\.predict_proba\\s*\\(\",\n001844:     r\"booster\\s*\\.\\s*predict\",\n001845:     r\"xgbclassifier\",\n001846:     r\"xgbregressor\",\n001847:     r\"expected_prediction\",\n001848:     r\"test_vector\",\n001849: ]\n001850: \n001851: prediction_hits = []\n001852: \n001853: for pattern in prediction_regexes:\n001854: \n001855:     found = list(\n001856:         re.finditer(\n001857:             pattern,"
+    },
+    {
+      "line": 1846,
+      "matched_terms": [
+        "XGBRegressor"
+      ],
+      "context": "001834: # LOOK FOR ACTUAL PREDICTION CODE\n001835: # -------------------------------------------------------------------------\n001836: \n001837: print(\"\\n\" + \"=\" * 80)\n001838: print(\"ACTUAL PREDICTION PATTERNS\")\n001839: print(\"=\" * 80)\n001840: \n001841: prediction_regexes = [\n001842:     r\"\\.predict\\s*\\(\",\n001843:     r\"\\.predict_proba\\s*\\(\",\n001844:     r\"booster\\s*\\.\\s*predict\",\n001845:     r\"xgbclassifier\",\n001846:     r\"xgbregressor\",\n001847:     r\"expected_prediction\",\n001848:     r\"test_vector\",\n001849: ]\n001850: \n001851: prediction_hits = []\n001852: \n001853: for pattern in prediction_regexes:\n001854: \n001855:     found = list(\n001856:         re.finditer(\n001857:             pattern,\n001858:             text,"
+    },
+    {
+      "line": 1847,
+      "matched_terms": [
+        "expected_prediction"
+      ],
+      "context": "001835: # -------------------------------------------------------------------------\n001836: \n001837: print(\"\\n\" + \"=\" * 80)\n001838: print(\"ACTUAL PREDICTION PATTERNS\")\n001839: print(\"=\" * 80)\n001840: \n001841: prediction_regexes = [\n001842:     r\"\\.predict\\s*\\(\",\n001843:     r\"\\.predict_proba\\s*\\(\",\n001844:     r\"booster\\s*\\.\\s*predict\",\n001845:     r\"xgbclassifier\",\n001846:     r\"xgbregressor\",\n001847:     r\"expected_prediction\",\n001848:     r\"test_vector\",\n001849: ]\n001850: \n001851: prediction_hits = []\n001852: \n001853: for pattern in prediction_regexes:\n001854: \n001855:     found = list(\n001856:         re.finditer(\n001857:             pattern,\n001858:             text,\n001859:             flags=re.IGNORECASE"
+    },
+    {
+      "line": 1848,
+      "matched_terms": [
+        "test_vector"
+      ],
+      "context": "001836: \n001837: print(\"\\n\" + \"=\" * 80)\n001838: print(\"ACTUAL PREDICTION PATTERNS\")\n001839: print(\"=\" * 80)\n001840: \n001841: prediction_regexes = [\n001842:     r\"\\.predict\\s*\\(\",\n001843:     r\"\\.predict_proba\\s*\\(\",\n001844:     r\"booster\\s*\\.\\s*predict\",\n001845:     r\"xgbclassifier\",\n001846:     r\"xgbregressor\",\n001847:     r\"expected_prediction\",\n001848:     r\"test_vector\",\n001849: ]\n001850: \n001851: prediction_hits = []\n001852: \n001853: for pattern in prediction_regexes:\n001854: \n001855:     found = list(\n001856:         re.finditer(\n001857:             pattern,\n001858:             text,\n001859:             flags=re.IGNORECASE\n001860:         )"
+    },
+    {
+      "line": 1888,
+      "matched_terms": [
+        "LabelEncoder"
+      ],
+      "context": "001876:             f\"{len(found)} matches\"\n001877:         )\n001878: \n001879: # -------------------------------------------------------------------------\n001880: # LOOK FOR ENCODING / MAPPING\n001881: # -------------------------------------------------------------------------\n001882: \n001883: print(\"\\n\" + \"=\" * 80)\n001884: print(\"ENCODING / MAPPING PATTERNS\")\n001885: print(\"=\" * 80)\n001886: \n001887: mapping_regexes = [\n001888:     r\"LabelEncoder\",\n001889:     r\"OrdinalEncoder\",\n001890:     r\"OneHotEncoder\",\n001891:     r\"categorical_mapping\",\n001892:     r\"category_mapping\",\n001893:     r\"feature_mapping\",\n001894:     r\"encoding_map\",\n001895:     r\"feature_encoding\",\n001896:     r\"astype\\s*\\(\\s*int\",\n001897:     r\"\\.map\\s*\\(\",\n001898:     r\"mapping\\s*=\",\n001899: ]\n001900: "
+    },
+    {
+      "line": 1889,
+      "matched_terms": [
+        "OrdinalEncoder"
+      ],
+      "context": "001877:         )\n001878: \n001879: # -------------------------------------------------------------------------\n001880: # LOOK FOR ENCODING / MAPPING\n001881: # -------------------------------------------------------------------------\n001882: \n001883: print(\"\\n\" + \"=\" * 80)\n001884: print(\"ENCODING / MAPPING PATTERNS\")\n001885: print(\"=\" * 80)\n001886: \n001887: mapping_regexes = [\n001888:     r\"LabelEncoder\",\n001889:     r\"OrdinalEncoder\",\n001890:     r\"OneHotEncoder\",\n001891:     r\"categorical_mapping\",\n001892:     r\"category_mapping\",\n001893:     r\"feature_mapping\",\n001894:     r\"encoding_map\",\n001895:     r\"feature_encoding\",\n001896:     r\"astype\\s*\\(\\s*int\",\n001897:     r\"\\.map\\s*\\(\",\n001898:     r\"mapping\\s*=\",\n001899: ]\n001900: \n001901: mapping_hits = []"
+    },
+    {
+      "line": 1890,
+      "matched_terms": [
+        "OneHotEncoder"
+      ],
+      "context": "001878: \n001879: # -------------------------------------------------------------------------\n001880: # LOOK FOR ENCODING / MAPPING\n001881: # -------------------------------------------------------------------------\n001882: \n001883: print(\"\\n\" + \"=\" * 80)\n001884: print(\"ENCODING / MAPPING PATTERNS\")\n001885: print(\"=\" * 80)\n001886: \n001887: mapping_regexes = [\n001888:     r\"LabelEncoder\",\n001889:     r\"OrdinalEncoder\",\n001890:     r\"OneHotEncoder\",\n001891:     r\"categorical_mapping\",\n001892:     r\"category_mapping\",\n001893:     r\"feature_mapping\",\n001894:     r\"encoding_map\",\n001895:     r\"feature_encoding\",\n001896:     r\"astype\\s*\\(\\s*int\",\n001897:     r\"\\.map\\s*\\(\",\n001898:     r\"mapping\\s*=\",\n001899: ]\n001900: \n001901: mapping_hits = []\n001902: "
+    },
+    {
+      "line": 1891,
+      "matched_terms": [
+        "categorical_mapping"
+      ],
+      "context": "001879: # -------------------------------------------------------------------------\n001880: # LOOK FOR ENCODING / MAPPING\n001881: # -------------------------------------------------------------------------\n001882: \n001883: print(\"\\n\" + \"=\" * 80)\n001884: print(\"ENCODING / MAPPING PATTERNS\")\n001885: print(\"=\" * 80)\n001886: \n001887: mapping_regexes = [\n001888:     r\"LabelEncoder\",\n001889:     r\"OrdinalEncoder\",\n001890:     r\"OneHotEncoder\",\n001891:     r\"categorical_mapping\",\n001892:     r\"category_mapping\",\n001893:     r\"feature_mapping\",\n001894:     r\"encoding_map\",\n001895:     r\"feature_encoding\",\n001896:     r\"astype\\s*\\(\\s*int\",\n001897:     r\"\\.map\\s*\\(\",\n001898:     r\"mapping\\s*=\",\n001899: ]\n001900: \n001901: mapping_hits = []\n001902: \n001903: for pattern in mapping_regexes:"
+    },
+    {
+      "line": 1892,
+      "matched_terms": [
+        "category_mapping"
+      ],
+      "context": "001880: # LOOK FOR ENCODING / MAPPING\n001881: # -------------------------------------------------------------------------\n001882: \n001883: print(\"\\n\" + \"=\" * 80)\n001884: print(\"ENCODING / MAPPING PATTERNS\")\n001885: print(\"=\" * 80)\n001886: \n001887: mapping_regexes = [\n001888:     r\"LabelEncoder\",\n001889:     r\"OrdinalEncoder\",\n001890:     r\"OneHotEncoder\",\n001891:     r\"categorical_mapping\",\n001892:     r\"category_mapping\",\n001893:     r\"feature_mapping\",\n001894:     r\"encoding_map\",\n001895:     r\"feature_encoding\",\n001896:     r\"astype\\s*\\(\\s*int\",\n001897:     r\"\\.map\\s*\\(\",\n001898:     r\"mapping\\s*=\",\n001899: ]\n001900: \n001901: mapping_hits = []\n001902: \n001903: for pattern in mapping_regexes:\n001904: "
+    },
+    {
+      "line": 1893,
+      "matched_terms": [
+        "feature_mapping"
+      ],
+      "context": "001881: # -------------------------------------------------------------------------\n001882: \n001883: print(\"\\n\" + \"=\" * 80)\n001884: print(\"ENCODING / MAPPING PATTERNS\")\n001885: print(\"=\" * 80)\n001886: \n001887: mapping_regexes = [\n001888:     r\"LabelEncoder\",\n001889:     r\"OrdinalEncoder\",\n001890:     r\"OneHotEncoder\",\n001891:     r\"categorical_mapping\",\n001892:     r\"category_mapping\",\n001893:     r\"feature_mapping\",\n001894:     r\"encoding_map\",\n001895:     r\"feature_encoding\",\n001896:     r\"astype\\s*\\(\\s*int\",\n001897:     r\"\\.map\\s*\\(\",\n001898:     r\"mapping\\s*=\",\n001899: ]\n001900: \n001901: mapping_hits = []\n001902: \n001903: for pattern in mapping_regexes:\n001904: \n001905:     found = list("
+    },
+    {
+      "line": 1894,
+      "matched_terms": [
+        "encoding_map"
+      ],
+      "context": "001882: \n001883: print(\"\\n\" + \"=\" * 80)\n001884: print(\"ENCODING / MAPPING PATTERNS\")\n001885: print(\"=\" * 80)\n001886: \n001887: mapping_regexes = [\n001888:     r\"LabelEncoder\",\n001889:     r\"OrdinalEncoder\",\n001890:     r\"OneHotEncoder\",\n001891:     r\"categorical_mapping\",\n001892:     r\"category_mapping\",\n001893:     r\"feature_mapping\",\n001894:     r\"encoding_map\",\n001895:     r\"feature_encoding\",\n001896:     r\"astype\\s*\\(\\s*int\",\n001897:     r\"\\.map\\s*\\(\",\n001898:     r\"mapping\\s*=\",\n001899: ]\n001900: \n001901: mapping_hits = []\n001902: \n001903: for pattern in mapping_regexes:\n001904: \n001905:     found = list(\n001906:         re.finditer("
+    },
+    {
+      "line": 1895,
+      "matched_terms": [
+        "feature_encoding"
+      ],
+      "context": "001883: print(\"\\n\" + \"=\" * 80)\n001884: print(\"ENCODING / MAPPING PATTERNS\")\n001885: print(\"=\" * 80)\n001886: \n001887: mapping_regexes = [\n001888:     r\"LabelEncoder\",\n001889:     r\"OrdinalEncoder\",\n001890:     r\"OneHotEncoder\",\n001891:     r\"categorical_mapping\",\n001892:     r\"category_mapping\",\n001893:     r\"feature_mapping\",\n001894:     r\"encoding_map\",\n001895:     r\"feature_encoding\",\n001896:     r\"astype\\s*\\(\\s*int\",\n001897:     r\"\\.map\\s*\\(\",\n001898:     r\"mapping\\s*=\",\n001899: ]\n001900: \n001901: mapping_hits = []\n001902: \n001903: for pattern in mapping_regexes:\n001904: \n001905:     found = list(\n001906:         re.finditer(\n001907:             pattern,"
+    },
+    {
+      "line": 1968,
+      "matched_terms": [
+        "risk_model"
+      ],
+      "context": "001956:         \"sha256\": sha256,\n001957:         \"detected_format\": detected_format,\n001958:     },\n001959: \n001960:     \"json_diagnostic\": json_status,\n001961: \n001962:     \"term_hits\": hits,\n001963: \n001964:     \"important_context_blocks\": context_blocks,\n001965: \n001966:     \"boundary_hits\": boundary_hits,\n001967: \n001968:     \"risk_model_references\": risk_model_refs[:30],\n001969: \n001970:     \"prediction_hits\": prediction_hits,\n001971: \n001972:     \"mapping_hits\": mapping_hits,\n001973: \n001974:     \"raw_preview\": text[:5000],\n001975: }\n001976: \n001977: REPORT_PATH = (\n001978:     OUTPUT_DIR /\n001979:     \"risk_notebook_source_format_recovery_v5.json\"\n001980: )"
+    }
+  ],
+  "boundary_hits": [
+    {
+      "pattern": "cell_type",
+      "count": 1,
+      "positions": [
+        42134
+      ]
+    },
+    {
+      "pattern": "execution_count",
+      "count": 1,
+      "positions": [
+        42152
+      ]
+    },
+    {
+      "pattern": "source",
+      "count": 102,
+      "positions": [
+        3683,
+        3747,
+        4332,
+        4492,
+        4546,
+        4575,
+        5023,
+        5249,
+        6105,
+        6396,
+        6429,
+        8418,
+        8443,
+        9270,
+        9289,
+        9329,
+        9347,
+        10200,
+        10331,
+        10465
+      ]
+    },
+    {
+      "pattern": "outputs",
+      "count": 3,
+      "positions": [
+        33574,
+        35326,
+        42191
+      ]
+    },
+    {
+      "pattern": "Jupyter",
+      "count": 1,
+      "positions": [
+        42244
+      ]
+    },
+    {
+      "pattern": "nbformat",
+      "count": 1,
+      "positions": [
+        42260
+      ]
+    }
+  ],
+  "risk_model_references": [
+    "    : {len(source_checks)}\")\nprint(f\"  Reasoning trace     : {len(reasoning_trace)}\")\nprint(\n    f\"  Verification needs  : \"\n    f\"{len(verification_requirements)}\"\n)\n\nprint(\"\\nMODEL EXECUTION\")\nprint(\"  NLI                 : NOT EXECUTED\")\nprint(\"  Risk XGBoost        : NOT EXECUTED\")\nprint(\"  Final XGBoost       : NOT EXECUTED\")\nprint(\"  Whisper             : NOT INCLUDED\")\n\nprint(\"\\nOUTPUTS\")\nprint(f\"  {INPUT_CONTRACT_FILE}\")\nprint(f\"  {REASONING_GRAPH_FILE}\")\nprint(f\"  {REASONING_TRACE_FILE}\")\nprint(f\"  {REASONING_REPORT_FILE}\")\nprint(f\"  {VERIFICATION_FILE}\")\nprint(f\"  {MANIFEST_FILE}\")\n\nprint(\"\\nSTATUS\")\nprint(\"  CASE INGESTION      : READY\")\nprint(\"  REASONING ENGINE    : READY\")\nprint(\"  VERIFICATION HANDOFF: READY\")\nprint(\"  GPU               ",
+    "  : NOT USED\")\n\nprint(\"=\" * 80)\n\n\n# =============================================================================\n# TRUSTCIRCLE AI — RISK XGBOOST\n# NOTEBOOK SOURCE FORMAT RECOVERY V5\n# =============================================================================\n# PURPOSE:\n#   Diagnose the actual format of __notebook_source__.ipynb and extract\n#   Risk XGBoost-related source WITHOUT assuming valid JSON.\n#\n# POLICY:\n#   CPU ONLY\n#   NO MODEL INFERENCE\n#   NO TRAINING\n#   NO EXISTING FILE MODIFICATION\n# =============================================================================\n\nfrom pathlib import Path\nfrom datetime import datetime, tim",
+    "# SEARCH RAW TEXT DIRECTLY\n# No JSON parsing required.\n# -------------------------------------------------------------------------\n\nprint(\"\\n\" + \"=\" * 80)\nprint(\"RAW TEXT SEARCH\")\nprint(\"=\" * 80)\n\nTERMS = [\n    \"risk_xgboost\",\n    \"risk model\",\n    \"risk_model\",\n    \"xgboost\",\n    \"XGBClassifier\",\n    \"XGBRegressor\",\n    \"booster.predict\",\n    \"predict_proba\",\n    \"predict(\",\n    \"feature_mapping\",\n    \"feature mapping\",\n    \"categorical_mapping\",\n    \"category_mapping\",\n    \"encoding_map\",\n    \"feature_encoding\",\n    \"LabelEncoder\",\n    \"OrdinalEncoder\",\n    \"OneHotEncoder\",\n    \"test_vector\",\n    \"expected_prediction\",\n    \"feature_names\",\n    \"feature_types\",\n    \"company_type\",\n    \"jurisdiction\",\n    \"country_codes\",\n    \"sourceID\",\n    \"service",
+    "-----------\n# EXTRACT CONTEXT AROUND EACH HIT\n# -------------------------------------------------------------------------\n\nprint(\"\\n\" + \"=\" * 80)\nprint(\"CONTEXT AROUND IMPORTANT MATCHES\")\nprint(\"=\" * 80)\n\nIMPORTANT_TERMS = [\n    \"risk_xgboost\",\n    \"risk_model\",\n    \"XGBClassifier\",\n    \"XGBRegressor\",\n    \"booster.predict\",\n    \"predict_proba\",\n    \"feature_mapping\",\n    \"categorical_mapping\",\n    \"category_mapping\",\n    \"encoding_map\",\n    \"feature_encoding\",\n    \"LabelEncoder\",\n    \"OrdinalEncoder\",\n    \"OneHotEncoder\",\n    \"test_vector\",\n    \"expected_prediction\",\n]\n\ncontext_blocks = []\n\nlines = text.splitlines()\n\nfor line_idx, line in enumerate(lines):\n\n    low = line.lower()\n\n    matched = [\n        term for term in IMPORTANT_TERMS\n        if t",
+    "----------------------------------------------------------------\n# LOOK FOR RISK MODEL JSON EMBEDDING\n# -------------------------------------------------------------------------\n\nprint(\"\\n\" + \"=\" * 80)\nprint(\"RISK MODEL REFERENCES\")\nprint(\"=\" * 80)\n\nrisk_model_refs = []\n\nfor match in re.finditer(\n    r\".{0,250}(risk_model|risk_model\\.json|Investigator Risk|Risk XGBoost).{0,500}\",\n    text,\n    flags=re.IGNORECASE | re.DOTALL\n):\n\n    snippet = match.group(0)\n\n    risk_model_refs.append(snippet)\n\nfor i, snippet in enumerate(risk_model_refs[:30], start=1):\n\n    print(\"\\n\" + \"-\" * 80)\n    print(f\"REFERENCE {i}\")\n    print(\"-\" * 80)\n    print(snippet[:1500])\n\n# -------------------------------------------------------------------------\n# LOOK FOR ACTUAL PRE",
+    "ches\"\n        )\n\n# -------------------------------------------------------------------------\n# SAVE RAW EXTRACTION REPORT\n# -------------------------------------------------------------------------\n\nreport = {\n    \"report_name\":\n        \"TrustCircle Risk XGBoost Notebook Source Format Recovery V5\",\n\n    \"version\":\n        \"5.0.0\",\n\n    \"created_utc\":\n        datetime.now(timezone.utc).isoformat(),\n\n    \"execution\": {\n        \"cpu_only\": True,\n        \"gpu_used\": False,\n        \"model_inference\": False,\n        \"training\": False,\n        \"existing_files_modified\": False,\n        \"fabricated_values\": False,\n        \"fabricated_case_data\": False,\n    },\n\n    \"source\": {\n        \"path\": str(SOURCE),\n        \"size_bytes\": size,\n        \"sha256\": sha256,\n   ",
+    "     \"detected_format\": detected_format,\n    },\n\n    \"json_diagnostic\": json_status,\n\n    \"term_hits\": hits,\n\n    \"important_context_blocks\": context_blocks,\n\n    \"boundary_hits\": boundary_hits,\n\n    \"risk_model_references\": risk_model_refs[:30],\n\n    \"prediction_hits\": prediction_hits,\n\n    \"mapping_hits\": mapping_hits,\n\n    \"raw_preview\": text[:5000],\n}\n\nREPORT_PATH = (\n    OUTPUT_DIR /\n    \"risk_notebook_source_format_recovery_v5.json\"\n)\n\nwith REPORT_PATH.open(\"w\", encoding=\"utf-8\") as f:\n    json.dump(\n        report,\n        f,\n        indent=2,\n        ensure_ascii=False\n    )\n\n# -------------------------------------------------------------------------\n# FINAL STATUS\n# ---------------------------------------------------"
+  ],
+  "prediction_hits": [
+    {
+      "pattern": "booster\\s*\\.\\s*predict",
+      "count": 2,
+      "line_numbers": [
+        1642,
+        1707
+      ]
+    },
+    {
+      "pattern": "xgbclassifier",
+      "count": 3,
+      "line_numbers": [
+        1640,
+        1705,
+        1845
+      ]
+    },
+    {
+      "pattern": "xgbregressor",
+      "count": 3,
+      "line_numbers": [
+        1641,
+        1706,
+        1846
+      ]
+    },
+    {
+      "pattern": "expected_prediction",
+      "count": 3,
+      "line_numbers": [
+        1655,
+        1718,
+        1847
+      ]
+    },
+    {
+      "pattern": "test_vector",
+      "count": 3,
+      "line_numbers": [
+        1654,
+        1717,
+        1848
+      ]
+    }
+  ],
+  "mapping_hits": [
+    {
+      "pattern": "LabelEncoder",
+      "count": 3,
+      "line_numbers": [
+        1651,
+        1714,
+        1888
+      ]
+    },
+    {
+      "pattern": "OrdinalEncoder",
+      "count": 3,
+      "line_numbers": [
+        1652,
+        1715,
+        1889
+      ]
+    },
+    {
+      "pattern": "OneHotEncoder",
+      "count": 3,
+      "line_numbers": [
+        1653,
+        1716,
+        1890
+      ]
+    },
+    {
+      "pattern": "categorical_mapping",
+      "count": 3,
+      "line_numbers": [
+        1647,
+        1710,
+        1891
+      ]
+    },
+    {
+      "pattern": "category_mapping",
+      "count": 3,
+      "line_numbers": [
+        1648,
+        1711,
+        1892
+      ]
+    },
+    {
+      "pattern": "feature_mapping",
+      "count": 3,
+      "line_numbers": [
+        1645,
+        1709,
+        1893
+      ]
+    },
+    {
+      "pattern": "encoding_map",
+      "count": 3,
+      "line_numbers": [
+        1649,
+        1712,
+        1894
+      ]
+    },
+    {
+      "pattern": "feature_encoding",
+      "count": 3,
+      "line_numbers": [
+        1650,
+        1713,
+        1895
+      ]
+    }
+  ],
+  "raw_preview": "# =============================================================================\n# TRUSTCIRCLE AI — CASE INGESTION + REASONING ENGINE V1\n# CPU ONLY\n# =============================================================================\n\nimport os\nimport json\nimport re\nimport hashlib\nfrom pathlib import Path\nfrom collections import defaultdict, Counter\nfrom datetime import datetime\n\n# -----------------------------------------------------------------------------\n# HARD CPU ONLY\n# -----------------------------------------------------------------------------\nos.environ[\"CUDA_VISIBLE_DEVICES\"] = \"\"\n\nprint(\"=\" * 80)\nprint(\"TRUSTCIRCLE AI — CASE INGESTION + REASONING ENGINE V1\")\nprint(\"CPU ONLY\")\nprint(\"=\" * 80)\n\n# =============================================================================\n# PATHS\n# =============================================================================\n\nKG_ROOT = Path(\n    \"/kaggle/working/trustcircle_knowledge_graph_v1\"\n)\n\nCASE_GRAPH_FILE = KG_ROOT / \"case_graph.json\"\nCASE_NODES_FILE = KG_ROOT / \"case_nodes.jsonl\"\nCASE_EDGES_FILE = KG_ROOT / \"case_edges.jsonl\"\n\nREASONING_ROOT = KG_ROOT / \"reasoning_engine_v1\"\nREASONING_ROOT.mkdir(parents=True, exist_ok=True)\n\nINPUT_CONTRACT_FILE = (\n    REASONING_ROOT / \"case_ingestion_contract.json\"\n)\n\nREASONING_GRAPH_FILE = (\n    REASONING_ROOT / \"reasoning_graph.json\"\n)\n\nREASONING_TRACE_FILE = (\n    REASONING_ROOT / \"reasoning_trace.jsonl\"\n)\n\nREASONING_REPORT_FILE = (\n    REASONING_ROOT / \"reasoning_report.json\"\n)\n\nVERIFICATION_FILE = (\n    REASONING_ROOT / \"verification_requirements.json\"\n)\n\nMANIFEST_FILE = (\n    REASONING_ROOT / \"reasoning_engine_manifest.json\"\n)\n\n# =============================================================================\n# VERIFY CASE GRAPH\n# =============================================================================\n\nif not CASE_GRAPH_FILE.exists():\n    raise FileNotFoundError(\n        f\"Case Graph missing:\\n{CASE_GRAPH_FILE}\"\n    )\n\nwith open(CASE_GRAPH_FILE, \"r\", encoding=\"utf-8\") as f:\n    case_graph = json.load(f)\n\nbase_nodes = case_graph.get(\"nodes\", [])\nbase_edges = case_graph.get(\"edges\", [])\n\nprint(\"\\nCASE GRAPH LOADED\")\nprint(f\"  Nodes : {len(base_nodes)}\")\nprint(f\"  Edges : {len(base_edges)}\")\n\n# =============================================================================\n# HELPERS\n# =============================================================================\n\ndef clean(value):\n    if value is None:\n        return \"\"\n\n    value = str(value)\n    value = value.replace(\"\\x00\", \" \")\n    value = re.sub(r\"\\s+\", \" \", value)\n    return value.strip()\n\n\ndef normalize(value):\n    return clean(value).lower()\n\n\ndef stable_id(prefix, *parts):\n    raw = \"|\".join(\n        normalize(x)\n        for x in parts\n    )\n\n    digest = hashlib.sha256(\n        raw.encode(\"utf-8\")\n    ).hexdigest()[:24]\n\n    return f\"{prefix}_{digest}\"\n\n\ndef now_iso():\n    return datetime.utcnow().replace(\n        microsecond=0\n    ).isoformat() + \"Z\"\n\n\n# =============================================================================\n# INGESTION CONTRACT\n# =============================================================================\n\nINGESTION_CONTRACT = {\n    \"contract_version\": \"1.0\",\n\n    \"case_id_required\": True,\n\n    \"accepted_records\": {\n        \"person\": {\n            \"required\": [\"person_id\"],\n            \"optional\": [\n                \"name\",\n                \"identity\",\n                \"roles\",\n                \"organizations\",\n                \"locations\"\n            ]\n        },\n\n        \"statement\": {\n            \"required\": [\n                \"statement_id\",\n                \"person_id\",\n                \"text\"\n            ],\n            \"optional\": [\n                \"source_language\",\n                \"timestamp\",\n                \"source\"\n            ]\n        },\n\n        \"claim\": {\n            \"required\": [\n                \"claim_id\",\n                \"statement_id\",\n                \"text\"\n            ],\n            \"optional\": [\n                \"claim_type\",\n                \"subject\",\n                \"predicate\",\n                \"object\",\n                \"date\"\n            ]\n        },\n\n        \"evidence\": {\n            \"required\": [\n                \"evidence_id\",\n                \"claim_id\",\n                \"text\"\n            ],\n            \"optional\": [\n                \"evidence_type\",\n                \"source_id\",\n                \"supports\",\n                \"contradicts\",\n                \"date\",\n                \"document_id\"\n            ]\n        },\n\n        \"source\": {\n            \"required\": [\n                \"source_id\",\n                \"source_type\"\n            ],\n            \"optional\": [\n                \"reference\",\n                \"url\",\n                \"name\",\n                \"independence\"\n            ]\n        },\n\n        \"verification\": {\n            \"required\": [\n                \"verification_id\",\n                \"claim_id\",\n                \"verification_type\"\n            ],\n            \"optional\": [\n                \"status\",\n                \"res"
+}

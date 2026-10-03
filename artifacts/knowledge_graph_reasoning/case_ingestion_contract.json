@@ -1,0 +1,92 @@
+{
+  "contract_version": "1.0",
+  "case_id_required": true,
+  "accepted_records": {
+    "person": {
+      "required": [
+        "person_id"
+      ],
+      "optional": [
+        "name",
+        "identity",
+        "roles",
+        "organizations",
+        "locations"
+      ]
+    },
+    "statement": {
+      "required": [
+        "statement_id",
+        "person_id",
+        "text"
+      ],
+      "optional": [
+        "source_language",
+        "timestamp",
+        "source"
+      ]
+    },
+    "claim": {
+      "required": [
+        "claim_id",
+        "statement_id",
+        "text"
+      ],
+      "optional": [
+        "claim_type",
+        "subject",
+        "predicate",
+        "object",
+        "date"
+      ]
+    },
+    "evidence": {
+      "required": [
+        "evidence_id",
+        "claim_id",
+        "text"
+      ],
+      "optional": [
+        "evidence_type",
+        "source_id",
+        "supports",
+        "contradicts",
+        "date",
+        "document_id"
+      ]
+    },
+    "source": {
+      "required": [
+        "source_id",
+        "source_type"
+      ],
+      "optional": [
+        "reference",
+        "url",
+        "name",
+        "independence"
+      ]
+    },
+    "verification": {
+      "required": [
+        "verification_id",
+        "claim_id",
+        "verification_type"
+      ],
+      "optional": [
+        "status",
+        "result",
+        "source_id"
+      ]
+    }
+  },
+  "provenance_required": true,
+  "allowed_provenance_origins": [
+    "verified_model",
+    "heuristic_rule",
+    "fallback",
+    "human_input",
+    "external_source",
+    "derived_inference"
+  ]
+}

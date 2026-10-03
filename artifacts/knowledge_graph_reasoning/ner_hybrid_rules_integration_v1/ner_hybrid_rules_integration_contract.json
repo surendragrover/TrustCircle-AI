@@ -1,0 +1,139 @@
+{
+  "contract_name": "TrustCircle NER + Hybrid Rules Integration",
+  "contract_version": "1.0.0",
+  "created_utc": "2026-10-01T14:17:20.259983+00:00",
+  "execution_policy": {
+    "cpu_only": true,
+    "training_executed": false,
+    "model_inference_executed": false,
+    "fabricated_case_data": false,
+    "fabricated_rules": false
+  },
+  "upstream": {
+    "component": "Investigator NER",
+    "artifact": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/config.json",
+    "label_count": 43,
+    "labels": {
+      "0": "O",
+      "1": "B-PER",
+      "2": "I-PER",
+      "3": "B-ORG",
+      "4": "I-ORG",
+      "5": "B-LOC",
+      "6": "I-LOC",
+      "7": "B-NATL",
+      "8": "I-NATL",
+      "9": "B-ALIAS",
+      "10": "I-ALIAS",
+      "11": "B-AMOUNT",
+      "12": "I-AMOUNT",
+      "13": "B-EMAIL",
+      "14": "I-EMAIL",
+      "15": "B-UPI",
+      "16": "I-UPI",
+      "17": "B-CRYPTO_WALLET",
+      "18": "I-CRYPTO_WALLET",
+      "19": "B-PHONE",
+      "20": "I-PHONE",
+      "21": "B-IP",
+      "22": "I-IP",
+      "23": "B-DOMAIN",
+      "24": "I-DOMAIN",
+      "25": "B-URL",
+      "26": "I-URL",
+      "27": "B-ALIAS",
+      "28": "I-ALIAS",
+      "29": "B-JURISDICTION",
+      "30": "I-JURISDICTION",
+      "31": "B-SANCTION",
+      "32": "I-SANCTION",
+      "33": "B-RELATIONSHIP",
+      "34": "I-RELATIONSHIP",
+      "35": "B-SHELL_CO",
+      "36": "I-SHELL_CO",
+      "37": "B-OFFICER",
+      "38": "I-OFFICER",
+      "39": "B-INTERMEDIARY",
+      "40": "I-INTERMEDIARY",
+      "41": "B-ADDRESS",
+      "42": "I-ADDRESS"
+    }
+  },
+  "rule_engine": {
+    "component": "Investigator Hybrid Rules",
+    "artifact": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/hybrid_rules/hybrid_rules_v3.json",
+    "rule_records_discovered": 0,
+    "rule_containers_discovered": [],
+    "rule_keys": {}
+  },
+  "pipeline": [
+    {
+      "stage": 1,
+      "name": "NER",
+      "input": "text",
+      "output": "entities"
+    },
+    {
+      "stage": 2,
+      "name": "Hybrid Rules",
+      "input": [
+        "text",
+        "entities",
+        "case_context"
+      ],
+      "output": "structured_rule_signals"
+    },
+    {
+      "stage": 3,
+      "name": "Investigator Risk XGBoost",
+      "input": [
+        "entities",
+        "structured_rule_signals"
+      ],
+      "output": "risk_signals"
+    }
+  ],
+  "output_contract": {
+    "entities": {
+      "required": [
+        "entity_id",
+        "text",
+        "label",
+        "source"
+      ],
+      "optional": [
+        "start",
+        "end",
+        "confidence",
+        "case_id",
+        "claim_id"
+      ]
+    },
+    "rule_signals": {
+      "required": [
+        "signal_id",
+        "source",
+        "rule_id",
+        "signal_type"
+      ],
+      "optional": [
+        "severity",
+        "description",
+        "entity_ids",
+        "claim_id",
+        "case_id",
+        "evidence_ids"
+      ]
+    },
+    "risk_input": {
+      "entities": "entities",
+      "rule_signals": "structured_rule_signals"
+    }
+  },
+  "decision_boundary": {
+    "ner_is_not_verdict": true,
+    "rule_signal_is_not_verdict": true,
+    "risk_model_is_not_person_verdict": true,
+    "final_person_verdict_occurs_later": true
+  }
+}

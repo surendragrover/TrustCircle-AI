@@ -1,0 +1,20 @@
+{
+  "report_name": "Investigator Risk XGBoost Contract Inspection",
+  "version": "1.0.0",
+  "timestamp_utc": "2026-10-01T14:22:06.881455+00:00",
+  "status": "PASS",
+  "validation_errors": [],
+  "feature_collections": 1,
+  "unique_features": 8,
+  "duplicate_features": 0,
+  "class_metadata_fields": 0,
+  "model_metadata_fields": 2,
+  "execution": {
+    "cpu_only": true,
+    "gpu_used": false,
+    "model_inference": false,
+    "training": false,
+    "fabricated_features": false,
+    "fabricated_case_data": false
+  }
+}

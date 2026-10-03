@@ -1,0 +1,158 @@
+{
+  "handoff_name": "investigator_risk_xgboost_feature_handoff_v1",
+  "feature_count": 8,
+  "feature_order": [
+    "company_type",
+    "jurisdiction",
+    "country_codes",
+    "sourceID",
+    "service_provider",
+    "company_age",
+    "is_tax_haven",
+    "is_sanctioned"
+  ],
+  "features": {
+    "company_type": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "jurisdiction": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "country_codes": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "sourceID": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "service_provider": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "company_age": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "is_tax_haven": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    },
+    "is_sanctioned": {
+      "value": null,
+      "status": "NOT_AVAILABLE",
+      "provenance": [],
+      "candidate_count": 0
+    }
+  },
+  "inference_allowed": false,
+  "fabricated_values": false,
+  "source_contract": {
+    "company_type": {
+      "allowed_sources": [
+        "knowledge_graph",
+        "case_graph",
+        "case_evidence",
+        "company_registry",
+        "document_evidence"
+      ],
+      "description": "Verified company/entity type from evidence or registry."
+    },
+    "jurisdiction": {
+      "allowed_sources": [
+        "ner",
+        "hybrid_rules",
+        "knowledge_graph",
+        "case_graph",
+        "case_evidence",
+        "company_registry",
+        "document_evidence"
+      ],
+      "description": "Verified jurisdiction evidence."
+    },
+    "country_codes": {
+      "allowed_sources": [
+        "ner",
+        "knowledge_graph",
+        "case_graph",
+        "case_evidence",
+        "company_registry",
+        "document_evidence"
+      ],
+      "description": "Verified country/country-code evidence."
+    },
+    "sourceID": {
+      "allowed_sources": [
+        "knowledge_graph",
+        "case_graph",
+        "source_registry",
+        "case_evidence"
+      ],
+      "description": "Identifier of the evidence/source record."
+    },
+    "service_provider": {
+      "allowed_sources": [
+        "knowledge_graph",
+        "case_graph",
+        "case_evidence",
+        "company_registry",
+        "document_evidence"
+      ],
+      "description": "Verified service provider associated with the entity."
+    },
+    "company_age": {
+      "allowed_sources": [
+        "knowledge_graph",
+        "case_graph",
+        "case_evidence",
+        "company_registry",
+        "document_evidence"
+      ],
+      "description": "Verified company age derived from reliable dates."
+    },
+    "is_tax_haven": {
+      "allowed_sources": [
+        "knowledge_graph",
+        "case_graph",
+        "case_evidence",
+        "verified_jurisdiction_reference"
+      ],
+      "description": "Tax-haven classification supported by a verified reference."
+    },
+    "is_sanctioned": {
+      "allowed_sources": [
+        "ner",
+        "knowledge_graph",
+        "case_graph",
+        "case_evidence",
+        "sanctions_evidence",
+        "verified_sanctions_source"
+      ],
+      "description": "Sanctions status supported by actual evidence."
+    }
+  },
+  "notes": [
+    "No missing value was converted to zero.",
+    "No feature value was guessed.",
+    "Exact field matches remain UNVERIFIED unless independently verified.",
+    "Conflicting values block inference.",
+    "Missing provenance blocks inference.",
+    "No XGBoost model inference was executed."
+  ]
+}

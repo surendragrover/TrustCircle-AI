@@ -1,0 +1,24 @@
+[Unit]
+Description=TrustCircle AI Standalone Production Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+
+WorkingDirectory=/home/nexforensics/trustcircle
+
+Environment="PATH=/home/nexforensics/app/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Environment="PYTHONPATH=/home/nexforensics/trustcircle/src"
+
+Environment="HF_HUB_OFFLINE=1"
+Environment="TRANSFORMERS_OFFLINE=1"
+Environment="PYTHONWARNINGS=ignore"
+
+ExecStart=/home/nexforensics/app/venv/bin/python3 /home/nexforensics/trustcircle/service/trustcircle_service.py
+
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

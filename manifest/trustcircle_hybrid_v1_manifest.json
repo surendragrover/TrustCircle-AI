@@ -1,0 +1,196 @@
+{
+  "release_name": "TRUSTCIRCLE_HYBRID_V1",
+  "status": "VERIFIED_RELEASE",
+  "version": "1.0.0",
+  "finalized_utc": "2026-10-01T14:55:47.672152+00:00",
+  "execution_policy": {
+    "training": false,
+    "retraining": false,
+    "gpu": false,
+    "inference_during_build": false,
+    "model_modification": false,
+    "fabricated_features": false,
+    "whisper_large_v3_turbo": false
+  },
+  "architecture": [
+    "INPUT",
+    "NER",
+    "HYBRID_RULES_V3",
+    "INVESTIGATOR_RISK_XGBOOST",
+    "CLAIM_EVIDENCE_ENGINE",
+    "TRUSTCIRCLE_NLI_V3_STEP_8000",
+    "TRUSTCIRCLE_FINAL_XGBOOST",
+    "MULTIMODAL_SIGNALS",
+    "KNOWLEDGE_CASE_GRAPH",
+    "REASONING_ENGINE",
+    "TRUST_INTELLIGENCE",
+    "VERIFICATION_ENGINE",
+    "PERSON_TRUST_VERDICT"
+  ],
+  "components": {
+    "ner": {
+      "status": "VERIFIED_ARTIFACT",
+      "model_class": "DebertaV2ForTokenClassification",
+      "label_count": 43,
+      "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner"
+    },
+    "hybrid_rules": {
+      "status": "VERIFIED_ARTIFACT",
+      "version": "3.0.0",
+      "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/hybrid_rules/hybrid_rules_v3.json"
+    },
+    "investigator_risk_xgboost": {
+      "status": "VERIFIED_ARTIFACT",
+      "feature_count": 8,
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ],
+      "role": "RISK_SIGNAL_ONLY",
+      "person_verdict": false
+    },
+    "trustcircle_nli_v3": {
+      "status": "VERIFIED_ARTIFACT",
+      "checkpoint": "STEP_8000",
+      "source": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v3-fever-best-step/trustcircle_nli_v3_fever_best_step8000"
+    },
+    "trustcircle_final_xgboost": {
+      "status": "VERIFIED_FINAL",
+      "feature_count": 20,
+      "features": [
+        "evidence_count",
+        "unique_page_count",
+        "has_evidence",
+        "has_multiple_pages",
+        "has_multiple_evidence",
+        "total_evidence_characters",
+        "average_evidence_sentence_length",
+        "minimum_evidence_sentence_length",
+        "maximum_evidence_sentence_length",
+        "claim_word_count",
+        "evidence_claim_length_ratio",
+        "lexical_overlap_count",
+        "lexical_overlap_ratio",
+        "claim_negation_count",
+        "evidence_negation_count",
+        "evidence_positive_count",
+        "evidence_page_diversity",
+        "nli_entailment_prob",
+        "nli_neutral_prob",
+        "nli_contradiction_prob"
+      ],
+      "best_iteration": 700,
+      "boosted_rounds": 801,
+      "accuracy": 0.8899735331523047,
+      "balanced_accuracy": 0.8534264177328921,
+      "macro_f1": 0.866153838061952,
+      "weighted_f1": 0.8848363872970181,
+      "macro_precision": 0.8887695791641606,
+      "macro_recall": 0.8534264177328921,
+      "f1_entailment": 0.9052984895708464,
+      "f1_neutral": 0.9887484372829559,
+      "f1_contradiction": 0.7044145873320538,
+      "sha256": "5b327026b0656e3d0937c0d4a75bff93556b429b6917ca717cd28398f7c5f58a"
+    },
+    "knowledge_graph": {
+      "status": "VERIFIED_ARTIFACT",
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1"
+    },
+    "reasoning_engine": {
+      "status": "VERIFIED_ARTIFACT",
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1"
+    }
+  },
+  "artifacts": {
+    "ner_config": {
+      "name": "ner_config",
+      "component": "NER",
+      "required": true,
+      "status": "FOUND",
+      "source_path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/config.json",
+      "release_path": "/kaggle/working/TRUSTCIRCLE_HYBRID_V1_RELEASE/artifacts/ner/config.json",
+      "exists": true,
+      "size_bytes": 2712,
+      "sha256": "66b3eceb30d2bdebd0ef91f2fcdd1bd47e76c4dda8dee76b44bc568649c317d5"
+    },
+    "ner_weights": {
+      "name": "ner_weights",
+      "component": "NER",
+      "required": true,
+      "status": "FOUND",
+      "source_path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/model.safetensors",
+      "release_path": "/kaggle/working/TRUSTCIRCLE_HYBRID_V1_RELEASE/artifacts/ner/model.safetensors",
+      "exists": true,
+      "size_bytes": 1113031756,
+      "sha256": "a6bc2850438671f4b2ed3eee5cf59222821d7b7a0b3b8493d96eb0bf7ae12c97"
+    },
+    "hybrid_rules_v3": {
+      "name": "hybrid_rules_v3",
+      "component": "Hybrid Rules",
+      "required": true,
+      "status": "FOUND",
+      "source_path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/hybrid_rules/hybrid_rules_v3.json",
+      "release_path": "/kaggle/working/TRUSTCIRCLE_HYBRID_V1_RELEASE/artifacts/hybrid_rules/hybrid_rules_v3.json",
+      "exists": true,
+      "size_bytes": 1382,
+      "sha256": "62bf04e5077672d6c4ea2ce94f248cb978b8563b21b87d848becc3deecbc41da"
+    },
+    "investigator_risk_xgboost": {
+      "name": "investigator_risk_xgboost",
+      "component": "Investigator Risk XGBoost",
+      "required": true,
+      "status": "FOUND",
+      "source_path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+      "release_path": "/kaggle/working/TRUSTCIRCLE_HYBRID_V1_RELEASE/artifacts/investigator_risk_xgboost/risk_model.json",
+      "exists": true,
+      "size_bytes": 853278,
+      "sha256": "5bdd9f45252dc571ca39498553176b8f51e2bf6cc6bbdb5fe3fa6eed921a661b"
+    },
+    "trustcircle_nli_v3": {
+      "name": "trustcircle_nli_v3",
+      "component": "TrustCircle NLI V3",
+      "status": "VERIFIED",
+      "source_path": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v3-fever-best-step/trustcircle_nli_v3_fever_best_step8000",
+      "release_path": "/kaggle/working/TRUSTCIRCLE_HYBRID_V1_RELEASE/artifacts/trustcircle_nli_v3",
+      "checkpoint": "STEP_8000",
+      "weight_sha256": "9783e090a54c588cfe01672fee6c59bbe8ee0320ab97395ca679fcf3d83e46d8"
+    },
+    "trustcircle_final_xgboost": {
+      "name": "trustcircle_final_xgboost",
+      "component": "TrustCircle Final XGBoost",
+      "required": true,
+      "status": "FOUND",
+      "source_path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/trustcircle_xgboost_final.json",
+      "release_path": "/kaggle/working/TRUSTCIRCLE_HYBRID_V1_RELEASE/artifacts/trustcircle_final_xgboost/trustcircle_xgboost_final.json",
+      "exists": true,
+      "size_bytes": 32740429,
+      "sha256": "5b327026b0656e3d0937c0d4a75bff93556b429b6917ca717cd28398f7c5f58a"
+    },
+    "reasoning_engine_v1": {
+      "name": "reasoning_engine_v1",
+      "component": "Knowledge Graph / Reasoning Engine",
+      "status": "VERIFIED",
+      "source_path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1",
+      "release_path": "/kaggle/working/TRUSTCIRCLE_HYBRID_V1_RELEASE/artifacts/knowledge_graph_reasoning"
+    }
+  },
+  "design_principles": [
+    "Signal != Proof",
+    "Pattern != Verdict",
+    "Risk != Guilt",
+    "AI != Decision Maker"
+  ],
+  "person_verdict_policy": {
+    "single_model_verdict": false,
+    "requires_claim_evidence": true,
+    "requires_reasoning": true,
+    "requires_trust_intelligence": true,
+    "requires_verification": true
+  }
+}

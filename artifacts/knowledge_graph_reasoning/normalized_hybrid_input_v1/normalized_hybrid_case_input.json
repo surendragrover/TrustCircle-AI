@@ -1,0 +1,74 @@
+{
+  "schema_version": "trustcircle_normalized_case_input_v1",
+  "case_id": "CASE_PENDING_INGESTION",
+  "status": "READY_FOR_REAL_CASE_DATA",
+  "execution": {
+    "device": "CPU",
+    "gpu_used": false,
+    "model_inference_executed": false
+  },
+  "persons": [],
+  "statements": [],
+  "claims": [],
+  "evidence": [],
+  "sources": [],
+  "documents": [],
+  "entities": [],
+  "events": [],
+  "transactions": [],
+  "verifications": [],
+  "ner_results": [],
+  "hybrid_rule_signals": [],
+  "risk_signals": [],
+  "nli_results": [],
+  "claim_evidence_assessments": [],
+  "multimodal_signals": {
+    "face": [],
+    "voice": [],
+    "ocr": []
+  },
+  "reasoning_inputs": {
+    "supporting_evidence": [],
+    "contradictory_evidence": [],
+    "mixed_evidence": [],
+    "missing_information": [],
+    "temporal_checks": [],
+    "entity_consistency_checks": [],
+    "source_corroboration": []
+  },
+  "verification_requirements": [],
+  "provenance_policy": {
+    "verified_model": {
+      "allowed": true,
+      "meaning": "Output originating from a verified model."
+    },
+    "heuristic_rule": {
+      "allowed": true,
+      "meaning": "Deterministic rule-derived signal."
+    },
+    "fallback": {
+      "allowed": true,
+      "meaning": "Temporary non-model fallback."
+    },
+    "human_input": {
+      "allowed": true,
+      "meaning": "Explicit human-provided information."
+    },
+    "external_source": {
+      "allowed": true,
+      "meaning": "Information originating from an external source."
+    },
+    "derived_inference": {
+      "allowed": true,
+      "meaning": "Derived by reasoning over existing evidence."
+    }
+  },
+  "decision_boundary": {
+    "model_output_is_final_verdict": false,
+    "risk_signal_is_guilt": false,
+    "nli_is_final_verdict": false,
+    "reasoning_must_preserve_conflicts": true,
+    "verification_must_be_separate": true,
+    "human_review_supported": true
+  }
+}

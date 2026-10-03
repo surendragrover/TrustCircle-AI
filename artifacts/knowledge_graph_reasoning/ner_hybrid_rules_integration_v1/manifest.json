@@ -1,0 +1,33 @@
+{
+  "package_name": "trustcircle_ner_hybrid_rules_integration_v1",
+  "version": "1.0.0",
+  "created_utc": "2026-10-01T14:17:20.262184+00:00",
+  "cpu_only": true,
+  "gpu_used": false,
+  "training_executed": false,
+  "model_inference_executed": false,
+  "fabricated_rules": false,
+  "fabricated_case_data": false,
+  "ner_labels": 43,
+  "hybrid_rule_records": 0,
+  "files": [
+    {
+      "file": "ner_hybrid_rules_integration_contract.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v1/ner_hybrid_rules_integration_contract.json",
+      "size_bytes": 3244,
+      "sha256": "6d7a2fd164156b3994f6b5e0d5a8e88b44fef0a15ca475861216514672aead19"
+    },
+    {
+      "file": "verified_hybrid_rules_snapshot.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v1/verified_hybrid_rules_snapshot.json",
+      "size_bytes": 1839,
+      "sha256": "9eef2109d2f0dc8c2f97241b2cd4710667111aae79aa70fdb1835a6f04b93256"
+    },
+    {
+      "file": "validation_report.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v1/validation_report.json",
+      "size_bytes": 1651,
+      "sha256": "2888d20617c9908c2ef1f93a27e3d2ce6e360c2b29c189f1a4fe4dfcfc89f576"
+    }
+  ]
+}

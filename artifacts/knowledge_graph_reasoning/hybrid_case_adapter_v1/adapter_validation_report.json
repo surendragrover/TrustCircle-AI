@@ -1,0 +1,25 @@
+{
+  "report_name": "TrustCircle Hybrid Case Adapter V1 Validation",
+  "report_version": "1.0.0",
+  "timestamp_utc": "2026-10-01T14:14:53.451823+00:00",
+  "execution": {
+    "cpu_only": true,
+    "gpu_used": false,
+    "training": false,
+    "model_inference": false
+  },
+  "input_files": {
+    "normalized_input": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/normalized_hybrid_case_input.json",
+    "model_registry": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/verified_model_registry.json",
+    "artifact_index": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/artifact_index.json"
+  },
+  "adapter_count": 8,
+  "adapter_status_counts": {
+    "CONTRACT_READY": 8
+  },
+  "real_inference_output_discovered": false,
+  "output_discovery_count": 3,
+  "validation_errors": [],
+  "validation_status": "PASS",
+  "important_boundary": "Model artifacts were registered previously. This adapter stage defines normalization contracts only. It does not claim model inference without actual inference-output records."
+}

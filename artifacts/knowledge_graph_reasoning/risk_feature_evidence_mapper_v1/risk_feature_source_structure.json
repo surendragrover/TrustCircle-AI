@@ -1,0 +1,208 @@
+{
+  "created_at_utc": "2026-10-01T14:26:30.499094+00:00",
+  "sources": [
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/knowledge_graph.json",
+      "format": "json",
+      "type": "dict",
+      "top_level_keys": [
+        "schema_version",
+        "case_id",
+        "node_types",
+        "edge_types",
+        "nodes",
+        "edges",
+        "rules",
+        "privacy"
+      ]
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/nodes.jsonl",
+      "format": "jsonl",
+      "type": "jsonl",
+      "record_count": 6
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/edges.jsonl",
+      "format": "jsonl",
+      "type": "jsonl",
+      "record_count": 5
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/case_graph.json",
+      "format": "json",
+      "type": "dict",
+      "top_level_keys": [
+        "schema_version",
+        "case_id",
+        "graph_type",
+        "execution",
+        "nodes",
+        "edges",
+        "schema",
+        "ingestion_contract",
+        "privacy",
+        "decision_boundary"
+      ]
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/case_nodes.jsonl",
+      "format": "jsonl",
+      "type": "jsonl",
+      "record_count": 13
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/case_edges.jsonl",
+      "format": "jsonl",
+      "type": "jsonl",
+      "record_count": 11
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/case_graph_manifest.json",
+      "format": "json",
+      "type": "dict",
+      "top_level_keys": [
+        "name",
+        "version",
+        "status",
+        "execution",
+        "counts",
+        "foundation_sources",
+        "whisper",
+        "next_stage"
+      ]
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/reasoning_graph.json",
+      "format": "json",
+      "type": "dict",
+      "top_level_keys": [
+        "schema_version",
+        "case_id",
+        "execution",
+        "nodes",
+        "edges",
+        "claim_assessments",
+        "temporal_checks",
+        "entity_checks",
+        "source_checks",
+        "person_assessments",
+        "verification_requirements",
+        "reasoning_principles"
+      ]
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/reasoning_report.json",
+      "format": "json",
+      "type": "dict",
+      "top_level_keys": [
+        "status",
+        "engine",
+        "execution",
+        "case_id",
+        "input_counts",
+        "reasoning_counts",
+        "claim_assessments",
+        "person_assessments",
+        "validation_errors",
+        "decision_boundary"
+      ]
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/reasoning_trace.jsonl",
+      "format": "jsonl",
+      "type": "jsonl",
+      "record_count": 0
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/verification_requirements.json",
+      "format": "json",
+      "type": "dict",
+      "top_level_keys": [
+        "case_id",
+        "generated_by",
+        "requirements",
+        "status"
+      ]
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/normalized_hybrid_case_input.json",
+      "format": "json",
+      "type": "dict",
+      "top_level_keys": [
+        "schema_version",
+        "case_id",
+        "status",
+        "execution",
+        "persons",
+        "statements",
+        "claims",
+        "evidence",
+        "sources",
+        "documents",
+        "entities",
+        "events",
+        "transactions",
+        "verifications",
+        "ner_results",
+        "hybrid_rule_signals",
+        "risk_signals",
+        "nli_results",
+        "claim_evidence_assessments",
+        "multimodal_signals",
+        "reasoning_inputs",
+        "verification_requirements",
+        "provenance_policy",
+        "decision_boundary"
+      ]
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/normalized_adapter_output.json",
+      "format": "json",
+      "type": "dict",
+      "top_level_keys": [
+        "contract_name",
+        "contract_version",
+        "case_id",
+        "provenance",
+        "persons",
+        "statements",
+        "claims",
+        "evidence",
+        "sources",
+        "ner",
+        "risk_signals",
+        "nli_results",
+        "claim_evidence_assessment",
+        "multimodal_signals",
+        "document_signals",
+        "verification_requirements",
+        "reasoning_inputs",
+        "adapter_status"
+      ]
+    },
+    {
+      "source": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/adapter_registry.json",
+      "format": "json",
+      "type": "dict",
+      "top_level_keys": [
+        "registry_name",
+        "registry_version",
+        "created_utc",
+        "execution_policy",
+        "adapters"
+      ]
+    }
+  ],
+  "exact_feature_matches": {
+    "company_type": [],
+    "jurisdiction": [],
+    "country_codes": [],
+    "sourceID": [],
+    "service_provider": [],
+    "company_age": [],
+    "is_tax_haven": [],
+    "is_sanctioned": []
+  },
+  "ner_discoveries": []
+}

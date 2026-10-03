@@ -1,0 +1,25 @@
+{
+  "report_name": "NER + Hybrid Rules Executable Adapter V1",
+  "timestamp_utc": "2026-10-01T14:20:50.176169+00:00",
+  "status": "PASS",
+  "validation_errors": [],
+  "verified_rules_version": "3.0.0",
+  "verified_rule_engine": "post_processing",
+  "ner_label_count": 43,
+  "cleanup_rule_count": 9,
+  "context_rule_count": 2,
+  "empty_input_test": {
+    "entities": 0,
+    "rule_signals": 0,
+    "fabricated": false
+  },
+  "execution": {
+    "cpu_only": true,
+    "gpu_used": false,
+    "model_loading": false,
+    "model_inference": false,
+    "training": false,
+    "fabricated_case_data": false,
+    "fabricated_rules": false
+  }
+}

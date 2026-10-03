@@ -1,0 +1,11 @@
+{
+  "validation": "PASS",
+  "errors": [],
+  "feature_count": 8,
+  "raw_evidence_feature_count": 0,
+  "no_explicit_evidence_count": 8,
+  "encoding_blocker_count": 0,
+  "inference_allowed": false,
+  "fabricated_values": false,
+  "gpu_used": false
+}

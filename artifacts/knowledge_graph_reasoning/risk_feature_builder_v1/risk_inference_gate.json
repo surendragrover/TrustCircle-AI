@@ -1,0 +1,28 @@
+{
+  "model": "Investigator Risk XGBoost",
+  "required_features": [
+    "company_type",
+    "jurisdiction",
+    "country_codes",
+    "sourceID",
+    "service_provider",
+    "company_age",
+    "is_tax_haven",
+    "is_sanctioned"
+  ],
+  "available_features": [],
+  "missing_features": [
+    "company_type",
+    "jurisdiction",
+    "country_codes",
+    "sourceID",
+    "service_provider",
+    "company_age",
+    "is_tax_haven",
+    "is_sanctioned"
+  ],
+  "inference_allowed": false,
+  "reason": "All case-specific feature values are currently unavailable.",
+  "gpu_required": false,
+  "training": false
+}

@@ -1,0 +1,17 @@
+{
+  "report_name": "NER + Hybrid Rules V3 Deep Inspection",
+  "timestamp_utc": "2026-10-01T14:19:23.567341+00:00",
+  "status": "PASS",
+  "errors": [],
+  "ner_label_count": 43,
+  "ner_entity_type_count": 20,
+  "hybrid_rules_version": "3.0.0",
+  "context_rules_type": "list",
+  "context_rules_count": 2,
+  "cpu_only": true,
+  "gpu_used": false,
+  "model_inference": false,
+  "training": false,
+  "fabricated_rules": false,
+  "fabricated_case_data": false
+}

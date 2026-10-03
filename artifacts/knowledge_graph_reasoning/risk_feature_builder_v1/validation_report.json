@@ -1,0 +1,29 @@
+{
+  "report_name": "Investigator Risk XGBoost Feature Builder V1",
+  "timestamp_utc": "2026-10-01T14:23:59.212324+00:00",
+  "status": "PASS",
+  "feature_count": 8,
+  "feature_order_verified": true,
+  "feature_types": [
+    "int",
+    "int",
+    "int",
+    "int",
+    "int",
+    "int",
+    "int",
+    "int"
+  ],
+  "missing_feature_count": 8,
+  "inference_allowed": false,
+  "validation_errors": [],
+  "execution": {
+    "cpu_only": true,
+    "gpu_used": false,
+    "model_loading": false,
+    "model_inference": false,
+    "training": false,
+    "fabricated_feature_values": false,
+    "fabricated_case_data": false
+  }
+}

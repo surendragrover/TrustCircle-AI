@@ -1,0 +1,32 @@
+{
+  "package_name": "trustcircle_investigator_risk_xgboost_v1",
+  "version": "1.0.0",
+  "created_utc": "2026-10-01T14:22:06.882211+00:00",
+  "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+  "cpu_only": true,
+  "gpu_used": false,
+  "model_inference": false,
+  "training": false,
+  "fabricated_features": false,
+  "fabricated_case_data": false,
+  "files": [
+    {
+      "file": "risk_xgboost_exact_contract.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_exact_contract.json",
+      "size_bytes": 2466,
+      "sha256": "bc4717a1b5be8d0f06a6503fcb77a9dd2230fb8e74d2b657d7d5bb28eeff0a0c"
+    },
+    {
+      "file": "risk_xgboost_feature_inventory.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_feature_inventory.json",
+      "size_bytes": 1712,
+      "sha256": "af8882da65cf4c3f998261bdde9e72fed62c9565a22e67d203e908f565aecc0b"
+    },
+    {
+      "file": "validation_report.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/validation_report.json",
+      "size_bytes": 519,
+      "sha256": "41d56db806dc2a77665e9d37eaa85ef22d2d5e8a6b80d2466c975878d9ef5824"
+    }
+  ]
+}

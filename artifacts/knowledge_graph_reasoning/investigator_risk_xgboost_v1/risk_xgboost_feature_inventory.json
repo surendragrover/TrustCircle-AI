@@ -1,0 +1,78 @@
+{
+  "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+  "created_utc": "2026-10-01T14:22:06.880092+00:00",
+  "feature_candidates": [
+    {
+      "path": "root.learner.feature_names",
+      "features": [
+        "company_type",
+        "jurisdiction",
+        "country_codes",
+        "sourceID",
+        "service_provider",
+        "company_age",
+        "is_tax_haven",
+        "is_sanctioned"
+      ]
+    }
+  ],
+  "unique_features": [
+    "company_age",
+    "company_type",
+    "country_codes",
+    "is_sanctioned",
+    "is_tax_haven",
+    "jurisdiction",
+    "service_provider",
+    "sourceID"
+  ],
+  "feature_count": 8,
+  "duplicate_features": {},
+  "feature_upstream_matches": [
+    {
+      "feature": "company_age",
+      "matched_upstream_terms": [],
+      "match_found": false
+    },
+    {
+      "feature": "company_type",
+      "matched_upstream_terms": [],
+      "match_found": false
+    },
+    {
+      "feature": "country_codes",
+      "matched_upstream_terms": [],
+      "match_found": false
+    },
+    {
+      "feature": "is_sanctioned",
+      "matched_upstream_terms": [
+        "sanction"
+      ],
+      "match_found": true
+    },
+    {
+      "feature": "is_tax_haven",
+      "matched_upstream_terms": [],
+      "match_found": false
+    },
+    {
+      "feature": "jurisdiction",
+      "matched_upstream_terms": [
+        "jurisdiction"
+      ],
+      "match_found": true
+    },
+    {
+      "feature": "service_provider",
+      "matched_upstream_terms": [],
+      "match_found": false
+    },
+    {
+      "feature": "sourceID",
+      "matched_upstream_terms": [],
+      "match_found": false
+    }
+  ],
+  "fabricated": false
+}

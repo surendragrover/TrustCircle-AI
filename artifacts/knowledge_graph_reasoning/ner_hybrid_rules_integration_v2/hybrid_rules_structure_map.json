@@ -1,0 +1,123 @@
+{
+  "source_artifact": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/hybrid_rules/hybrid_rules_v3.json",
+  "source_version": "3.0.0",
+  "rule_engine": "post_processing",
+  "entity_cleanup": {
+    "LOC": {
+      "remove_trailing_punctuation": true
+    },
+    "NATL": {
+      "remove_trailing_punctuation": true
+    },
+    "PER": {
+      "remove_trailing_punctuation": true
+    },
+    "ORG": {
+      "remove_trailing_punctuation": true
+    },
+    "EMAIL": {
+      "remove_trailing_punctuation": true
+    },
+    "UPI": {
+      "remove_trailing_punctuation": true
+    },
+    "DOMAIN": {
+      "remove_trailing_punctuation": true
+    },
+    "URL": {
+      "remove_trailing_punctuation": true
+    },
+    "IP": {
+      "remove_trailing_punctuation": true
+    }
+  },
+  "context_rules_type": "list",
+  "context_rules_count": 2,
+  "context_rule_keys": [],
+  "ner_entity_types": [
+    "ADDRESS",
+    "ALIAS",
+    "AMOUNT",
+    "CRYPTO_WALLET",
+    "DOMAIN",
+    "EMAIL",
+    "INTERMEDIARY",
+    "IP",
+    "JURISDICTION",
+    "LOC",
+    "NATL",
+    "OFFICER",
+    "ORG",
+    "PER",
+    "PHONE",
+    "RELATIONSHIP",
+    "SANCTION",
+    "SHELL_CO",
+    "UPI",
+    "URL"
+  ],
+  "ner_rule_reference": {
+    "ADDRESS": {
+      "referenced": false
+    },
+    "ALIAS": {
+      "referenced": false
+    },
+    "AMOUNT": {
+      "referenced": false
+    },
+    "CRYPTO_WALLET": {
+      "referenced": false
+    },
+    "DOMAIN": {
+      "referenced": false
+    },
+    "EMAIL": {
+      "referenced": false
+    },
+    "INTERMEDIARY": {
+      "referenced": false
+    },
+    "IP": {
+      "referenced": false
+    },
+    "JURISDICTION": {
+      "referenced": false
+    },
+    "LOC": {
+      "referenced": true
+    },
+    "NATL": {
+      "referenced": true
+    },
+    "OFFICER": {
+      "referenced": false
+    },
+    "ORG": {
+      "referenced": false
+    },
+    "PER": {
+      "referenced": false
+    },
+    "PHONE": {
+      "referenced": false
+    },
+    "RELATIONSHIP": {
+      "referenced": false
+    },
+    "SANCTION": {
+      "referenced": false
+    },
+    "SHELL_CO": {
+      "referenced": false
+    },
+    "UPI": {
+      "referenced": false
+    },
+    "URL": {
+      "referenced": false
+    }
+  },
+  "fabricated": false,
+  "modified": false
+}

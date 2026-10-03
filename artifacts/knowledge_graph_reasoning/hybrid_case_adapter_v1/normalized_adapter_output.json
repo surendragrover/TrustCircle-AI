@@ -1,0 +1,88 @@
+{
+  "contract_name": "TrustCircle Hybrid Normalized Case Input",
+  "contract_version": "1.0.0",
+  "case_id": null,
+  "provenance": {
+    "case_sources": [],
+    "model_outputs": [],
+    "adapter_runs": [
+      {
+        "adapter_id": "adapter.investigator_ner.v1",
+        "status": "CONTRACT_READY",
+        "timestamp_utc": "2026-10-01T14:14:53.449090+00:00"
+      },
+      {
+        "adapter_id": "adapter.hybrid_rules.v1",
+        "status": "CONTRACT_READY",
+        "timestamp_utc": "2026-10-01T14:14:53.449107+00:00"
+      },
+      {
+        "adapter_id": "adapter.investigator_risk_xgboost.v1",
+        "status": "CONTRACT_READY",
+        "timestamp_utc": "2026-10-01T14:14:53.449112+00:00"
+      },
+      {
+        "adapter_id": "adapter.trustcircle_nli_v3.v1",
+        "status": "CONTRACT_READY",
+        "timestamp_utc": "2026-10-01T14:14:53.449115+00:00"
+      },
+      {
+        "adapter_id": "adapter.trustcircle_final_xgboost.v1",
+        "status": "CONTRACT_READY",
+        "timestamp_utc": "2026-10-01T14:14:53.449119+00:00"
+      },
+      {
+        "adapter_id": "adapter.investigator_face.v1",
+        "status": "CONTRACT_READY",
+        "timestamp_utc": "2026-10-01T14:14:53.449123+00:00"
+      },
+      {
+        "adapter_id": "adapter.investigator_voice.v1",
+        "status": "CONTRACT_READY",
+        "timestamp_utc": "2026-10-01T14:14:53.449126+00:00"
+      },
+      {
+        "adapter_id": "adapter.investigator_ocr.v1",
+        "status": "CONTRACT_READY",
+        "timestamp_utc": "2026-10-01T14:14:53.449129+00:00"
+      }
+    ]
+  },
+  "persons": [],
+  "statements": [],
+  "claims": [],
+  "evidence": [],
+  "sources": [],
+  "ner": {
+    "entities": []
+  },
+  "risk_signals": {
+    "rule_signals": [],
+    "investigator_risk": []
+  },
+  "nli_results": [],
+  "claim_evidence_assessment": [],
+  "multimodal_signals": {
+    "face": [],
+    "voice": []
+  },
+  "document_signals": {
+    "ocr": []
+  },
+  "verification_requirements": [],
+  "reasoning_inputs": {
+    "claim_assessments": [],
+    "temporal_checks": [],
+    "entity_checks": [],
+    "source_checks": [],
+    "risk_signals": [],
+    "multimodal_signals": [],
+    "verification_requirements": []
+  },
+  "adapter_status": {
+    "real_model_outputs_present": false,
+    "model_inference_executed": false,
+    "fabricated_case_data": false,
+    "whisper_included": false
+  }
+}

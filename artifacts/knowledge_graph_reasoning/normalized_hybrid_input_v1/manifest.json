@@ -1,0 +1,30 @@
+{
+  "name": "TrustCircle Verified Model Output Normalizer",
+  "version": "1.0.0",
+  "execution": {
+    "device": "CPU",
+    "gpu_required": false,
+    "gpu_used": false
+  },
+  "purpose": "Normalize verified model artifacts into the TrustCircle Case Ingestion contract.",
+  "models": [
+    "Investigator NER",
+    "Investigator Hybrid Rules",
+    "Investigator Risk XGBoost",
+    "TrustCircle NLI V3",
+    "TrustCircle Final XGBoost",
+    "Investigator Face Model",
+    "Investigator Voice Model",
+    "Investigator OCR"
+  ],
+  "excluded": [
+    "Whisper Large-v3-Turbo"
+  ],
+  "outputs": {
+    "normalized_case_input": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/normalized_hybrid_case_input.json",
+    "verified_model_registry": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/verified_model_registry.json",
+    "artifact_index": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/artifact_index.json",
+    "normalization_report": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/normalization_report.json"
+  },
+  "next_stage": "Real case data -> model adapters -> normalized outputs -> KG -> reasoning"
+}

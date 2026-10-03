@@ -1,0 +1,102 @@
+{
+  "registry_name": "TrustCircle Hybrid Adapter Registry",
+  "registry_version": "1.0.0",
+  "created_utc": "2026-10-01T14:14:53.449956+00:00",
+  "execution_policy": {
+    "cpu_only": true,
+    "training_executed": false,
+    "model_inference_executed": false,
+    "fabricated_case_data": false,
+    "whisper_included": false
+  },
+  "adapters": {
+    "investigator_ner": {
+      "adapter_id": "adapter.investigator_ner.v1",
+      "model_family": "NER",
+      "source_model": "Investigator NER",
+      "input_type": "text",
+      "output_domain": "entities",
+      "normalization_target": "ner.entities",
+      "inference_required": true,
+      "gpu_required_for_adapter": false,
+      "status": "CONTRACT_READY"
+    },
+    "hybrid_rules": {
+      "adapter_id": "adapter.hybrid_rules.v1",
+      "model_family": "Hybrid Rules",
+      "source_model": "Investigator Hybrid Rules",
+      "input_type": "structured_text_and_entities",
+      "output_domain": "rule_signals",
+      "normalization_target": "risk_signals.rule_signals",
+      "inference_required": true,
+      "gpu_required_for_adapter": false,
+      "status": "CONTRACT_READY"
+    },
+    "investigator_risk_xgboost": {
+      "adapter_id": "adapter.investigator_risk_xgboost.v1",
+      "model_family": "Risk XGBoost",
+      "source_model": "Investigator Risk XGBoost",
+      "input_type": "structured_signals",
+      "output_domain": "risk_signals",
+      "normalization_target": "risk_signals.investigator_risk",
+      "inference_required": true,
+      "gpu_required_for_adapter": false,
+      "status": "CONTRACT_READY"
+    },
+    "trustcircle_nli_v3": {
+      "adapter_id": "adapter.trustcircle_nli_v3.v1",
+      "model_family": "NLI",
+      "source_model": "TrustCircle NLI V3",
+      "input_type": "claim_evidence_pair",
+      "output_domain": "nli_results",
+      "normalization_target": "nli_results",
+      "inference_required": true,
+      "gpu_required_for_adapter": true,
+      "status": "CONTRACT_READY"
+    },
+    "trustcircle_final_xgboost": {
+      "adapter_id": "adapter.trustcircle_final_xgboost.v1",
+      "model_family": "Final XGBoost",
+      "source_model": "TrustCircle Final XGBoost",
+      "input_type": "evidence_features_and_nli",
+      "output_domain": "claim_evidence_assessment",
+      "normalization_target": "claim_evidence_assessment",
+      "inference_required": true,
+      "gpu_required_for_adapter": false,
+      "status": "CONTRACT_READY"
+    },
+    "investigator_face": {
+      "adapter_id": "adapter.investigator_face.v1",
+      "model_family": "Face",
+      "source_model": "Investigator Face Model",
+      "input_type": "image",
+      "output_domain": "facial_signals",
+      "normalization_target": "multimodal_signals.face",
+      "inference_required": true,
+      "gpu_required_for_adapter": true,
+      "status": "CONTRACT_READY"
+    },
+    "investigator_voice": {
+      "adapter_id": "adapter.investigator_voice.v1",
+      "model_family": "Voice",
+      "source_model": "Investigator Voice Model",
+      "input_type": "audio",
+      "output_domain": "voice_signals",
+      "normalization_target": "multimodal_signals.voice",
+      "inference_required": true,
+      "gpu_required_for_adapter": true,
+      "status": "CONTRACT_READY"
+    },
+    "investigator_ocr": {
+      "adapter_id": "adapter.investigator_ocr.v1",
+      "model_family": "OCR",
+      "source_model": "Investigator OCR",
+      "input_type": "image_or_document",
+      "output_domain": "ocr_text",
+      "normalization_target": "document_signals.ocr",
+      "inference_required": true,
+      "gpu_required_for_adapter": true,
+      "status": "CONTRACT_READY"
+    }
+  }
+}

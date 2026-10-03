@@ -1,0 +1,38 @@
+{
+  "package_name": "trustcircle_hybrid_case_adapter_v1",
+  "version": "1.0.0",
+  "created_utc": "2026-10-01T14:14:53.452355+00:00",
+  "cpu_only": true,
+  "gpu_used": false,
+  "training_executed": false,
+  "model_inference_executed": false,
+  "fabricated_case_data": false,
+  "whisper_included": false,
+  "adapter_count": 8,
+  "files": [
+    {
+      "file": "adapter_registry.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/adapter_registry.json",
+      "size_bytes": 3638,
+      "sha256": "973580c0483147614dea6bfe7281d674c262074a33510cf46a08714dab1354b1"
+    },
+    {
+      "file": "adapter_contract.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/adapter_contract.json",
+      "size_bytes": 2236,
+      "sha256": "5865f8f8e8dbde597c731524563c63528bce5772cad2f93d8f77f38c00a58cfb"
+    },
+    {
+      "file": "normalized_adapter_output.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/normalized_adapter_output.json",
+      "size_bytes": 2355,
+      "sha256": "8c3d830f36652780bc28c1b2eebb78421af845f82a34fdda1ae863f8a1eaf69f"
+    },
+    {
+      "file": "adapter_validation_report.json",
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/adapter_validation_report.json",
+      "size_bytes": 1153,
+      "sha256": "741b079464b55322be16b96b472a160045d4e3a75c47e2e0f3d0bf8a946b4af0"
+    }
+  ]
+}

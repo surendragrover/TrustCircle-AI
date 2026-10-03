@@ -1,0 +1,1489 @@
+{
+  "report_name": "TrustCircle Risk XGBoost Original Verification Artifact Recovery V3",
+  "version": "3.0.0",
+  "created_utc": "2026-10-01T14:33:22.511571+00:00",
+  "execution": {
+    "cpu_only": true,
+    "gpu_used": false,
+    "model_inference": false,
+    "training": false,
+    "existing_files_modified": false,
+    "fabricated_values": false,
+    "fabricated_case_data": false
+  },
+  "search_roots": [
+    "/kaggle/working",
+    "/kaggle/input/datasets/surendragrover"
+  ],
+  "candidate_count": 70,
+  "high_value_verification_count": 7,
+  "exact_evidence_count": 41,
+  "model_candidate_count": 14,
+  "top_candidates": [
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/risk_xgboost_handoff_v1.json",
+      "size_bytes": 3929,
+      "score": 48,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "content:xgboost",
+        "feature",
+        "risk_xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "fe5d3579dbdacd8439b0d47a38f7ed4e544c4ebc1639948cf0118dbc0d3a4d7b"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_feature_inventory.json",
+      "size_bytes": 1712,
+      "score": 48,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:feature_names",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "feature",
+        "risk_xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "af8882da65cf4c3f998261bdde9e72fed62c9565a22e67d203e908f565aecc0b"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_verified_artifact_recovery_v1/risk_xgboost_recovery_report.json",
+      "size_bytes": 46173,
+      "score": 48,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:encoding",
+        "content:feature_types",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:mapping",
+        "content:predict",
+        "content:prediction",
+        "content:service_provider",
+        "content:sourceid",
+        "content:xgboost",
+        "risk_xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "f476afd45e5141484b5f3fc220a14140783184afabdfba30cbc3d418db5686c8"
+    },
+    {
+      "path": "/kaggle/working/.virtual_documents/__notebook_source__.ipynb",
+      "size_bytes": 49677,
+      "score": 42,
+      "hits": [
+        "content:booster",
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:encoder",
+        "content:encoding",
+        "content:feature_names",
+        "content:feature_types",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:labelencoder",
+        "content:mapping",
+        "content:onehotencoder",
+        "content:ordinalencoder",
+        "content:predict",
+        "content:prediction",
+        "content:probability",
+        "content:service_provider",
+        "content:sourceid",
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "e7dd61acd06e5dfda8187b141274ce65cddae210262c2423ca18c4b58be4e626"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_exact_contract.json",
+      "size_bytes": 2466,
+      "score": 40,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:feature_names",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "content:xgboost",
+        "risk_xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "bc4717a1b5be8d0f06a6503fcb77a9dd2230fb8e74d2b657d7d5bb28eeff0a0c"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_inference_gate.json",
+      "size_bytes": 600,
+      "score": 38,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "content:xgboost",
+        "feature",
+        "inference"
+      ],
+      "read_error": null,
+      "sha256": "7057a94ab895db4ed9972e163ecc9bb7b5b1af459cc01c7bf47211bfaf452bcd"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_evidence_inventory.json",
+      "size_bytes": 3802,
+      "score": 36,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:encoding",
+        "content:feature_names",
+        "content:feature_types",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:mapping",
+        "content:service_provider",
+        "content:sourceid",
+        "content:xgboost",
+        "feature"
+      ],
+      "read_error": null,
+      "sha256": "8a92636d08a86fef642446c1f0e51f1eaf48af39645bdaa9492c862efbe18e6a"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+      "size_bytes": 853278,
+      "score": 32,
+      "hits": [
+        "content:booster",
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:feature_names",
+        "content:feature_types",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "risk_model"
+      ],
+      "read_error": null,
+      "sha256": "5bdd9f45252dc571ca39498553176b8f51e2bf6cc6bbdb5fe3fa6eed921a661b"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_feature_builder_contract.json",
+      "size_bytes": 5972,
+      "score": 30,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:feature_types",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "content:xgboost",
+        "feature"
+      ],
+      "read_error": null,
+      "sha256": "6e9270871709088c658b28f3b6c335f2d4e0bf355c280c67c8b68a1246235034"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolved_risk_features.json",
+      "size_bytes": 3176,
+      "score": 28,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "content:xgboost",
+        "feature"
+      ],
+      "read_error": null,
+      "sha256": "dbe2bf8ad73af48df7bb86893d3803f4b8d1ab03eb3289011d6cc4fbf50883c9"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/knowledge_graph_risk_feature_handoff.json",
+      "size_bytes": 594,
+      "score": 26,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "feature"
+      ],
+      "read_error": null,
+      "sha256": "3edb740d3d604fada16521b76a9611d74d2d1266dfbc617beb127dc75c8b1d20"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/manifest.json",
+      "size_bytes": 1910,
+      "score": 26,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "feature"
+      ],
+      "read_error": null,
+      "sha256": "e9e9bd99c13a308ca8a137b0eef65f2c35ddcdb0e1e8c8a35009dd9e9783f721"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolution_source_contract.json",
+      "size_bytes": 1999,
+      "score": 26,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "feature"
+      ],
+      "read_error": null,
+      "sha256": "bffe5bbf844a925521c38359bfe21d0cfd307b3a8f36603ddee578ab23f0cd83"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_source_structure.json",
+      "size_bytes": 5344,
+      "score": 26,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "feature"
+      ],
+      "read_error": null,
+      "sha256": "84b7ea8b03ca3b65ed3e057f0b72fb5f3c2e3033f5795afa661ac3a8d5338d8b"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/averitec-xgboost-pretraining-backup/TRUSTCIRCLE_AVERITEC_XGBOOST_PRETRAINING/averitec_claim_label_mapping.json",
+      "size_bytes": 13022,
+      "score": 24,
+      "hits": [
+        "content:mapping",
+        "content:xgboost",
+        "mapping",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "780cdbc32a9a379ebb586410fe646f4f0fafe6b5afe412a0db75d0afbca5e39c"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/validation_report.json",
+      "size_bytes": 519,
+      "score": 22,
+      "hits": [
+        "content:xgboost",
+        "risk_xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "41d56db806dc2a77665e9d37eaa85ef22d2d5e8a6b80d2466c975878d9ef5824"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/manifest.json",
+      "size_bytes": 1376,
+      "score": 22,
+      "hits": [
+        "content:xgboost",
+        "risk_xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "9c825ccf07458666931b6a9818b7b5ef1a4661070f754f03dcaaac74e4d8a4a1"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_verified_contract_recovery_v2/recovered_verified_risk_contracts.json",
+      "size_bytes": 36346,
+      "score": 22,
+      "hits": [
+        "content:company_age",
+        "content:company_type",
+        "content:country_codes",
+        "content:feature_names",
+        "content:feature_types",
+        "content:is_sanctioned",
+        "content:is_tax_haven",
+        "content:jurisdiction",
+        "content:service_provider",
+        "content:sourceid",
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "dd23c55bb80029e9d92373274cd48d604c70c678ab9d543539480748fdb2eefa"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/risk_xgboost_handoff_contract.json",
+      "size_bytes": 845,
+      "score": 22,
+      "hits": [
+        "content:xgboost",
+        "risk_xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "53e5552cb4083e6f8bfe0c95ba028f5add757b473904795a5c3130446bdcdac2"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/validation_predictions.csv",
+      "size_bytes": 2763100,
+      "score": 22,
+      "hits": [
+        "content:predict",
+        "prediction",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "7855554c041030efc488371a996cb297d358c4c4a942ff5deb9b2d0584666ea8"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/xgboost_features.json",
+      "size_bytes": 1433,
+      "score": 22,
+      "hits": [
+        "content:xgboost",
+        "feature",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "f1b25ca8b6fd0940c3a12b5ea1b8375f7e4fa83caf5e7a7e5d46b4070203b20f"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/feature_importance.csv",
+      "size_bytes": 715,
+      "score": 20,
+      "hits": [
+        "feature",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "382c1055f0b7395fc9ca1245101414046906111c4f2e0fb92b115b95670c452e"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/feature_importance.csv",
+      "size_bytes": 663,
+      "score": 20,
+      "hits": [
+        "feature",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "ed57afaa8f1fe3a07bd90b3514e5aa67963d79de1076248bee40f3a7ec6196e1"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/SHA256SUMS.json",
+      "size_bytes": 773,
+      "score": 16,
+      "hits": [
+        "content:predict",
+        "content:prediction",
+        "content:xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "89e4c65c03a0cc5e22f6f858f662def66336e6644f353470ff22848fddcc6ec7"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/RELEASE_MANIFEST.json",
+      "size_bytes": 2472,
+      "score": 16,
+      "hits": [
+        "content:predict",
+        "content:prediction",
+        "content:xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "1b4f8fbdedf80bd68fcb44e57368ac4e698a996dfac1152ed75e5f1e8ed617c8"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/trustcircle_fever_xgboost_BEST.json",
+      "size_bytes": 1325997,
+      "score": 16,
+      "hits": [
+        "content:booster",
+        "content:feature_names",
+        "content:feature_types",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "cf0873f544f66085dc75ec723977be20aebba25d34a1207749eca12ed240f915"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/validation_report.json",
+      "size_bytes": 620,
+      "score": 14,
+      "hits": [
+        "content:feature_types",
+        "content:xgboost",
+        "feature"
+      ],
+      "read_error": null,
+      "sha256": "70733edc52ac98ab0035fcf1a3729f36293a1dbb12ababdee991266471bfccbb"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/averitec-xgboost-pretraining-backup/TRUSTCIRCLE_AVERITEC_XGBOOST_PRETRAINING/BACKUP_MANIFEST.json",
+      "size_bytes": 1001,
+      "score": 14,
+      "hits": [
+        "content:mapping",
+        "content:xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "de1f3b1c41e3266cc8a8bc2ad7f81b1d8ca0955b02e6d09763d7b3e7fbb4a7a4"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_evidence_validation.json",
+      "size_bytes": 246,
+      "score": 12,
+      "hits": [
+        "content:encoding",
+        "feature"
+      ],
+      "read_error": null,
+      "sha256": "9b9bc1526b8d4c7f1bf1215191cd3d5eeb6a2c7bb8f93c156a08461aed988624"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/metrics.json",
+      "size_bytes": 2095,
+      "score": 12,
+      "hits": [
+        "content:xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "3700ef0bdfcb315ed7d854ef7dc9ee58f6ec9b0d64c0d584a78ba6a2f4dba4b7"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/training_record.json",
+      "size_bytes": 799,
+      "score": 12,
+      "hits": [
+        "content:xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "3c46493dcea145d957c8b95525691ec6d9981765a72b91d17ada9718da390d13"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/trustcircle_fever_xgboost_metrics.json",
+      "size_bytes": 2324,
+      "score": 12,
+      "hits": [
+        "content:xgboost",
+        "xgboost"
+      ],
+      "read_error": null,
+      "sha256": "4cdc197be07475b226bab422803b8ff74e27f55b9434f1f65075f374aaecc828"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/verification_requirements.json",
+      "size_bytes": 174,
+      "score": 10,
+      "hits": [
+        "verification"
+      ],
+      "read_error": null,
+      "sha256": "e1f71ce471530a861689799156e0d26091659567916cf747fd6db319974f6ddc"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolution_validation_report.json",
+      "size_bytes": 356,
+      "score": 10,
+      "hits": [
+        "feature"
+      ],
+      "read_error": null,
+      "sha256": "f48e5243f5ea9f722132f13913fe153339f5d8e951574f210c9694a22bf5ed1b"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/trustcircle_xgboost_final.json",
+      "size_bytes": 32740429,
+      "score": 10,
+      "hits": [
+        "xgboost"
+      ],
+      "read_error": "SKIPPED_LARGE_FILE:32740429",
+      "sha256": "5b327026b0656e3d0937c0d4a75bff93556b429b6917ca717cd28398f7c5f58a"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-v2-pre-gpu-backup/TRUSTCIRCLE_FEVER_V2_PRE_GPU/trustcircle_fever_evidence_features_v2.csv",
+      "size_bytes": 22378001,
+      "score": 10,
+      "hits": [
+        "feature"
+      ],
+      "read_error": "SKIPPED_LARGE_FILE:22378001",
+      "sha256": "2f34789928410b02e7ebe5474088c9986f80940a6960426ec9406b023e1dda18"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/averitec-xgboost-pretraining-backup/TRUSTCIRCLE_AVERITEC_XGBOOST_PRETRAINING/averitec_xgboost_506640_labeled.csv",
+      "size_bytes": 41593156,
+      "score": 10,
+      "hits": [
+        "xgboost"
+      ],
+      "read_error": "SKIPPED_LARGE_FILE:41593156",
+      "sha256": "fb06824bbf18c13a2f991aa54e42cf7333fe958c9442f7a0be4c879e24b673e2"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/artifact_index.json",
+      "size_bytes": 11548,
+      "score": 6,
+      "hits": [
+        "content:predict",
+        "content:prediction",
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "3968cad8c62a929f7ff241b036e52b44aafe03803706ca91789d8572ac52837a"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v4-release/trustcircle_nli_v4_release/model/architecture_audit.json",
+      "size_bytes": 2595,
+      "score": 6,
+      "hits": [
+        "content:predict",
+        "content:prediction",
+        "content:probability"
+      ],
+      "read_error": null,
+      "sha256": "35f92075d9fcb8b8978fe59c70ca0130530b53899fd9efd79ac449a1ca82ae7c"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/gradio_app.py",
+      "size_bytes": 54153,
+      "score": 6,
+      "hits": [
+        "content:encoder",
+        "content:predict",
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "fba8db0186d5630a807d7d23a8b8aa00270778b1377b8706144beecb4389aefb"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v2/ner_hybrid_rules_exact_contract.json",
+      "size_bytes": 3218,
+      "score": 4,
+      "hits": [
+        "content:jurisdiction",
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "314b6002db716c89f1758b1de884ba697e1272d78a9460503170edf2a091fd62"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v1/ner_hybrid_rules_integration_contract.json",
+      "size_bytes": 3244,
+      "score": 4,
+      "hits": [
+        "content:jurisdiction",
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "6d7a2fd164156b3994f6b5e0d5a8e88b44fef0a15ca475861216514672aead19"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/fever-new-v3-verified/trustcircle_fever_new_v3/metadata.json",
+      "size_bytes": 1486,
+      "score": 4,
+      "hits": [
+        "content:mapping",
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "413d5a069d87da1dcb8c9f701e1c863cae0d4d97e976a19b6f10bcafd2ee6690"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/case_edges.jsonl",
+      "size_bytes": 3148,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "b33a444128b57e4ed42b56d7889358bd4e2169cee12301976556ed3a21879d8e"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/case_graph.json",
+      "size_bytes": 19987,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "d8423490b05eb1e8d91c9066a8e291d6240ddf97cdc2689d2b858e498a1a9462"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/nodes.jsonl",
+      "size_bytes": 2661,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "5b4e69a8710a54a36ad3f012c8fd7a21120ab7128c8ebb324d7652aa0d99bcf8"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/manifest.json",
+      "size_bytes": 2677,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "977a2eb6a820e4fd2bd96a431607b34ea86784a072f1e7705f65e6dd341df5b9"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/case_nodes.jsonl",
+      "size_bytes": 8384,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "3b554ac1140363686b3005b5713fb529b8da7caa9bfa95d7feed8dfdc7fee405"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/case_graph_manifest.json",
+      "size_bytes": 1012,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "78aedf5659bef65c0f35a74fe3af69068c65ade23f73c9dcc62fd97a2ba9241a"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/knowledge_graph.json",
+      "size_bytes": 6897,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "1b1125c20f92d4d5bad75982206340df5e914167bfa1f1f6691104ca496a693e"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/reasoning_engine_manifest.json",
+      "size_bytes": 1340,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "cf7a99253da3ff654cad221eabec459513dd34ce080dd58e4747c57b3672d7a2"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/verified_model_registry.json",
+      "size_bytes": 2914,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "a2017a6d78499418c2e9dc567a4c00502ffef00bd06a363b783a4f7d0e1630a9"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/normalization_report.json",
+      "size_bytes": 1055,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "9e3bf766fc7db3f95aa992f6fe3f87b41b76b06294f30ab7c33d02ebfd55e369"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/manifest.json",
+      "size_bytes": 1294,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "70bcefd83b532afd48024c8b1f918afd67000c17395a02c225929d50c6154ee6"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/normalized_adapter_output.json",
+      "size_bytes": 2355,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "8c3d830f36652780bc28c1b2eebb78421af845f82a34fdda1ae863f8a1eaf69f"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/adapter_registry.json",
+      "size_bytes": 3638,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "973580c0483147614dea6bfe7281d674c262074a33510cf46a08714dab1354b1"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v2/hybrid_rules_structure_map.json",
+      "size_bytes": 2259,
+      "score": 2,
+      "hits": [
+        "content:jurisdiction"
+      ],
+      "read_error": null,
+      "sha256": "a30d29e8a316ce44d0ce2e665520279de7458cc38a46ba979482daf9e717315d"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v1/validation_report.json",
+      "size_bytes": 1651,
+      "score": 2,
+      "hits": [
+        "content:jurisdiction"
+      ],
+      "read_error": null,
+      "sha256": "2888d20617c9908c2ef1f93a27e3d2ce6e360c2b29c189f1a4fe4dfcfc89f576"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/adapter_contract.json",
+      "size_bytes": 2589,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "efe42f56070fec8ae4130a3783238e3b73ab6de889c774b54dcde72f1a8f440b"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/manifest.json",
+      "size_bytes": 1322,
+      "score": 2,
+      "hits": [
+        "content:xgboost"
+      ],
+      "read_error": null,
+      "sha256": "d138bc567eee43dc97f95a6f5b2d29835108fe3f45dda620e190efed7e2ddf5a"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-v3-model/trustcircle_nli_v3_finetuning_manifest.json",
+      "size_bytes": 1702,
+      "score": 2,
+      "hits": [
+        "content:mapping"
+      ],
+      "read_error": null,
+      "sha256": "36d2db17eaee96c8474ce69cd51ae743d6b7f45a7d297b314e215c1252b9e583"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-final-evidence-dataset-v1/final_claim_registry_v1.jsonl",
+      "size_bytes": 144387,
+      "score": 2,
+      "hits": [
+        "content:predict"
+      ],
+      "read_error": null,
+      "sha256": "a8fb9b9b12ac9d630a47056067f3f8d4b111b1c7aae8e0f3d2ff49eb9e5c91e9"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/config.json",
+      "size_bytes": 2712,
+      "score": 2,
+      "hits": [
+        "content:jurisdiction"
+      ],
+      "read_error": null,
+      "sha256": "66b3eceb30d2bdebd0ef91f2fcdd1bd47e76c4dda8dee76b44bc568649c317d5"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ocr/config.json",
+      "size_bytes": 3319,
+      "score": 2,
+      "hits": [
+        "content:encoder"
+      ],
+      "read_error": null,
+      "sha256": "7240c7eaf4e719f47031251a2296a58052c7caed1a175be343bc76eea683df5e"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v3/trustcircle_nli_v3_synthetic_release/architecture.json",
+      "size_bytes": 467,
+      "score": 2,
+      "hits": [
+        "content:encoder"
+      ],
+      "read_error": null,
+      "sha256": "5a48c575ed214d0333b6daada86500b87521e361f500b3c16d370eac704c2af5"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v3/trustcircle_nli_v3_synthetic_release/README.txt",
+      "size_bytes": 1313,
+      "score": 2,
+      "hits": [
+        "content:encoder"
+      ],
+      "read_error": null,
+      "sha256": "abb80c6e87ecc231905587d80a275cd7ea027eec6cbc89e9077e465d624afb1e"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v3/trustcircle_nli_v3_synthetic_release/training_record.json",
+      "size_bytes": 1110,
+      "score": 2,
+      "hits": [
+        "content:encoder"
+      ],
+      "read_error": null,
+      "sha256": "27e873a4f0db01958e77a0113644fda7f4e079263d171f248e3d1f974974ca39"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-evidence-index-v1/trustcircle_evidence_index_v1/claims.jsonl",
+      "size_bytes": 290827,
+      "score": 2,
+      "hits": [
+        "content:predict"
+      ],
+      "read_error": null,
+      "sha256": "90176f1543f403a6dc12e2e4a67651cf6e591457c82a763c99afc20f3c17d57a"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-final-v1/TrustCircle_FEVER_FINAL_V1/manifest.json",
+      "size_bytes": 863,
+      "score": 2,
+      "hits": [
+        "content:mapping"
+      ],
+      "read_error": null,
+      "sha256": "6f79919e6a8690847dca0ec0cdce1f324dcb14f003f4dcfbb048e14c2493b74c"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-final-v1/TrustCircle_FEVER_FINAL_V1/FINAL_FREEZE.json",
+      "size_bytes": 1468,
+      "score": 2,
+      "hits": [
+        "content:mapping"
+      ],
+      "read_error": null,
+      "sha256": "70821ce98e205888337dfe89f563a394258aa4b2b19533cbc40dc5cbe546c7b5"
+    }
+  ],
+  "high_value_verification_candidates": [
+    {
+      "path": "/kaggle/working/.virtual_documents/__notebook_source__.ipynb",
+      "score": 42,
+      "size_bytes": 49677,
+      "sha256": "e7dd61acd06e5dfda8187b141274ce65cddae210262c2423ca18c4b58be4e626",
+      "verification_terms": [
+        "booster",
+        "encoder",
+        "encoding",
+        "expected prediction",
+        "feature_names",
+        "feature_types",
+        "inference",
+        "mapping",
+        "predict",
+        "prediction",
+        "probability",
+        "test vector"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_verified_artifact_recovery_v1/risk_xgboost_recovery_report.json",
+      "score": 48,
+      "size_bytes": 46173,
+      "sha256": "f476afd45e5141484b5f3fc220a14140783184afabdfba30cbc3d418db5686c8",
+      "verification_terms": [
+        "encoding",
+        "feature_types",
+        "inference",
+        "mapping",
+        "predict",
+        "prediction"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_evidence_inventory.json",
+      "score": 36,
+      "size_bytes": 3802,
+      "sha256": "8a92636d08a86fef642446c1f0e51f1eaf48af39645bdaa9492c862efbe18e6a",
+      "verification_terms": [
+        "encoding",
+        "feature_names",
+        "feature_types",
+        "inference",
+        "mapping"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+      "score": 32,
+      "size_bytes": 853278,
+      "sha256": "5bdd9f45252dc571ca39498553176b8f51e2bf6cc6bbdb5fe3fa6eed921a661b",
+      "verification_terms": [
+        "booster",
+        "feature_names",
+        "feature_types"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_verified_contract_recovery_v2/recovered_verified_risk_contracts.json",
+      "score": 22,
+      "size_bytes": 36346,
+      "sha256": "dd23c55bb80029e9d92373274cd48d604c70c678ab9d543539480748fdb2eefa",
+      "verification_terms": [
+        "feature_names",
+        "feature_types",
+        "inference"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/trustcircle_fever_xgboost_BEST.json",
+      "score": 16,
+      "size_bytes": 1325997,
+      "sha256": "cf0873f544f66085dc75ec723977be20aebba25d34a1207749eca12ed240f915",
+      "verification_terms": [
+        "booster",
+        "feature_names",
+        "feature_types"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-nli-v4-release/trustcircle_nli_v4_release/model/architecture_audit.json",
+      "score": 6,
+      "size_bytes": 2595,
+      "sha256": "35f92075d9fcb8b8978fe59c70ca0130530b53899fd9efd79ac449a1ca82ae7c",
+      "verification_terms": [
+        "predict",
+        "prediction",
+        "probability"
+      ]
+    }
+  ],
+  "exact_encoding_prediction_evidence": [
+    {
+      "path": "/kaggle/working/.virtual_documents/__notebook_source__.ipynb",
+      "score": 42,
+      "size_bytes": 49677,
+      "sha256": "e7dd61acd06e5dfda8187b141274ce65cddae210262c2423ca18c4b58be4e626",
+      "matched_patterns": [
+        "booster.predict",
+        "categorical_mapping",
+        "category_mapping",
+        "encoding_map",
+        "expected_prediction",
+        "feature_encoding",
+        "feature_mapping",
+        "labelencoder",
+        "onehotencoder",
+        "ordinalencoder",
+        "predict(",
+        "predict_proba(",
+        "test_vector",
+        "xgbclassifier",
+        "xgboost",
+        "xgbregressor"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/gradio_app.py",
+      "score": 6,
+      "size_bytes": 54153,
+      "sha256": "fba8db0186d5630a807d7d23a8b8aa00270778b1377b8706144beecb4389aefb",
+      "matched_patterns": [
+        "predict(",
+        "predict_proba(",
+        "xgbclassifier",
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/risk_xgboost_handoff_v1.json",
+      "score": 48,
+      "size_bytes": 3929,
+      "sha256": "fe5d3579dbdacd8439b0d47a38f7ed4e544c4ebc1639948cf0118dbc0d3a4d7b",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_verified_artifact_recovery_v1/risk_xgboost_recovery_report.json",
+      "score": 48,
+      "size_bytes": 46173,
+      "sha256": "f476afd45e5141484b5f3fc220a14140783184afabdfba30cbc3d418db5686c8",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_exact_contract.json",
+      "score": 40,
+      "size_bytes": 2466,
+      "sha256": "bc4717a1b5be8d0f06a6503fcb77a9dd2230fb8e74d2b657d7d5bb28eeff0a0c",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_inference_gate.json",
+      "score": 38,
+      "size_bytes": 600,
+      "sha256": "7057a94ab895db4ed9972e163ecc9bb7b5b1af459cc01c7bf47211bfaf452bcd",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_evidence_inventory.json",
+      "score": 36,
+      "size_bytes": 3802,
+      "sha256": "8a92636d08a86fef642446c1f0e51f1eaf48af39645bdaa9492c862efbe18e6a",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_feature_builder_contract.json",
+      "score": 30,
+      "size_bytes": 5972,
+      "sha256": "6e9270871709088c658b28f3b6c335f2d4e0bf355c280c67c8b68a1246235034",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolved_risk_features.json",
+      "score": 28,
+      "size_bytes": 3176,
+      "sha256": "dbe2bf8ad73af48df7bb86893d3803f4b8d1ab03eb3289011d6cc4fbf50883c9",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/averitec-xgboost-pretraining-backup/TRUSTCIRCLE_AVERITEC_XGBOOST_PRETRAINING/averitec_claim_label_mapping.json",
+      "score": 24,
+      "size_bytes": 13022,
+      "sha256": "780cdbc32a9a379ebb586410fe646f4f0fafe6b5afe412a0db75d0afbca5e39c",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/validation_report.json",
+      "score": 22,
+      "size_bytes": 519,
+      "sha256": "41d56db806dc2a77665e9d37eaa85ef22d2d5e8a6b80d2466c975878d9ef5824",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/manifest.json",
+      "score": 22,
+      "size_bytes": 1376,
+      "sha256": "9c825ccf07458666931b6a9818b7b5ef1a4661070f754f03dcaaac74e4d8a4a1",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_verified_contract_recovery_v2/recovered_verified_risk_contracts.json",
+      "score": 22,
+      "size_bytes": 36346,
+      "sha256": "dd23c55bb80029e9d92373274cd48d604c70c678ab9d543539480748fdb2eefa",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/risk_xgboost_handoff_contract.json",
+      "score": 22,
+      "size_bytes": 845,
+      "sha256": "53e5552cb4083e6f8bfe0c95ba028f5add757b473904795a5c3130446bdcdac2",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/xgboost_features.json",
+      "score": 22,
+      "size_bytes": 1433,
+      "sha256": "f1b25ca8b6fd0940c3a12b5ea1b8375f7e4fa83caf5e7a7e5d46b4070203b20f",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/SHA256SUMS.json",
+      "score": 16,
+      "size_bytes": 773,
+      "sha256": "89e4c65c03a0cc5e22f6f858f662def66336e6644f353470ff22848fddcc6ec7",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/RELEASE_MANIFEST.json",
+      "score": 16,
+      "size_bytes": 2472,
+      "sha256": "1b4f8fbdedf80bd68fcb44e57368ac4e698a996dfac1152ed75e5f1e8ed617c8",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/validation_report.json",
+      "score": 14,
+      "size_bytes": 620,
+      "sha256": "70733edc52ac98ab0035fcf1a3729f36293a1dbb12ababdee991266471bfccbb",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/averitec-xgboost-pretraining-backup/TRUSTCIRCLE_AVERITEC_XGBOOST_PRETRAINING/BACKUP_MANIFEST.json",
+      "score": 14,
+      "size_bytes": 1001,
+      "sha256": "de1f3b1c41e3266cc8a8bc2ad7f81b1d8ca0955b02e6d09763d7b3e7fbb4a7a4",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-xgboost-final-release/metrics.json",
+      "score": 12,
+      "size_bytes": 2095,
+      "sha256": "3700ef0bdfcb315ed7d854ef7dc9ee58f6ec9b0d64c0d584a78ba6a2f4dba4b7",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/training_record.json",
+      "score": 12,
+      "size_bytes": 799,
+      "sha256": "3c46493dcea145d957c8b95525691ec6d9981765a72b91d17ada9718da390d13",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/trustcircle-fever-xgboost-training-backup/TRUSTCIRCLE_FEVER_XGBOOST_TRAINING/trustcircle_fever_xgboost_metrics.json",
+      "score": 12,
+      "size_bytes": 2324,
+      "sha256": "4cdc197be07475b226bab422803b8ff74e27f55b9434f1f65075f374aaecc828",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/artifact_index.json",
+      "score": 6,
+      "size_bytes": 11548,
+      "sha256": "3968cad8c62a929f7ff241b036e52b44aafe03803706ca91789d8572ac52837a",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v2/ner_hybrid_rules_exact_contract.json",
+      "score": 4,
+      "size_bytes": 3218,
+      "sha256": "314b6002db716c89f1758b1de884ba697e1272d78a9460503170edf2a091fd62",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_integration_v1/ner_hybrid_rules_integration_contract.json",
+      "score": 4,
+      "size_bytes": 3244,
+      "sha256": "6d7a2fd164156b3994f6b5e0d5a8e88b44fef0a15ca475861216514672aead19",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/fever-new-v3-verified/trustcircle_fever_new_v3/metadata.json",
+      "score": 4,
+      "size_bytes": 1486,
+      "sha256": "413d5a069d87da1dcb8c9f701e1c863cae0d4d97e976a19b6f10bcafd2ee6690",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/case_edges.jsonl",
+      "score": 2,
+      "size_bytes": 3148,
+      "sha256": "b33a444128b57e4ed42b56d7889358bd4e2169cee12301976556ed3a21879d8e",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/case_graph.json",
+      "score": 2,
+      "size_bytes": 19987,
+      "sha256": "d8423490b05eb1e8d91c9066a8e291d6240ddf97cdc2689d2b858e498a1a9462",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/nodes.jsonl",
+      "score": 2,
+      "size_bytes": 2661,
+      "sha256": "5b4e69a8710a54a36ad3f012c8fd7a21120ab7128c8ebb324d7652aa0d99bcf8",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/manifest.json",
+      "score": 2,
+      "size_bytes": 2677,
+      "sha256": "977a2eb6a820e4fd2bd96a431607b34ea86784a072f1e7705f65e6dd341df5b9",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/case_nodes.jsonl",
+      "score": 2,
+      "size_bytes": 8384,
+      "sha256": "3b554ac1140363686b3005b5713fb529b8da7caa9bfa95d7feed8dfdc7fee405",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/case_graph_manifest.json",
+      "score": 2,
+      "size_bytes": 1012,
+      "sha256": "78aedf5659bef65c0f35a74fe3af69068c65ade23f73c9dcc62fd97a2ba9241a",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/knowledge_graph.json",
+      "score": 2,
+      "size_bytes": 6897,
+      "sha256": "1b1125c20f92d4d5bad75982206340df5e914167bfa1f1f6691104ca496a693e",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/reasoning_engine_manifest.json",
+      "score": 2,
+      "size_bytes": 1340,
+      "sha256": "cf7a99253da3ff654cad221eabec459513dd34ce080dd58e4747c57b3672d7a2",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/verified_model_registry.json",
+      "score": 2,
+      "size_bytes": 2914,
+      "sha256": "a2017a6d78499418c2e9dc567a4c00502ffef00bd06a363b783a4f7d0e1630a9",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/normalization_report.json",
+      "score": 2,
+      "size_bytes": 1055,
+      "sha256": "9e3bf766fc7db3f95aa992f6fe3f87b41b76b06294f30ab7c33d02ebfd55e369",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/normalized_hybrid_input_v1/manifest.json",
+      "score": 2,
+      "size_bytes": 1294,
+      "sha256": "70bcefd83b532afd48024c8b1f918afd67000c17395a02c225929d50c6154ee6",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/normalized_adapter_output.json",
+      "score": 2,
+      "size_bytes": 2355,
+      "sha256": "8c3d830f36652780bc28c1b2eebb78421af845f82a34fdda1ae863f8a1eaf69f",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/hybrid_case_adapter_v1/adapter_registry.json",
+      "score": 2,
+      "size_bytes": 3638,
+      "sha256": "973580c0483147614dea6bfe7281d674c262074a33510cf46a08714dab1354b1",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/adapter_contract.json",
+      "score": 2,
+      "size_bytes": 2589,
+      "sha256": "efe42f56070fec8ae4130a3783238e3b73ab6de889c774b54dcde72f1a8f440b",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/manifest.json",
+      "score": 2,
+      "size_bytes": 1322,
+      "sha256": "d138bc567eee43dc97f95a6f5b2d29835108fe3f45dda620e190efed7e2ddf5a",
+      "matched_patterns": [
+        "xgboost"
+      ]
+    }
+  ],
+  "risk_model_candidates": [
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/knowledge_graph_risk_feature_handoff.json",
+      "size_bytes": 594,
+      "sha256": "3edb740d3d604fada16521b76a9611d74d2d1266dfbc617beb127dc75c8b1d20"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_inference_gate.json",
+      "size_bytes": 600,
+      "sha256": "7057a94ab895db4ed9972e163ecc9bb7b5b1af459cc01c7bf47211bfaf452bcd"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_builder_v1/risk_feature_builder_contract.json",
+      "size_bytes": 5972,
+      "sha256": "6e9270871709088c658b28f3b6c335f2d4e0bf355c280c67c8b68a1246235034"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/risk_xgboost_handoff_v1.json",
+      "size_bytes": 3929,
+      "sha256": "fe5d3579dbdacd8439b0d47a38f7ed4e544c4ebc1639948cf0118dbc0d3a4d7b"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_resolution_v1/resolved_risk_features.json",
+      "size_bytes": 3176,
+      "sha256": "dbe2bf8ad73af48df7bb86893d3803f4b8d1ab03eb3289011d6cc4fbf50883c9"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_exact_contract.json",
+      "size_bytes": 2466,
+      "sha256": "bc4717a1b5be8d0f06a6503fcb77a9dd2230fb8e74d2b657d7d5bb28eeff0a0c"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/investigator_risk_xgboost_v1/risk_xgboost_feature_inventory.json",
+      "size_bytes": 1712,
+      "sha256": "af8882da65cf4c3f998261bdde9e72fed62c9565a22e67d203e908f565aecc0b"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_verified_contract_recovery_v2/recovered_verified_risk_contracts.json",
+      "size_bytes": 36346,
+      "sha256": "dd23c55bb80029e9d92373274cd48d604c70c678ab9d543539480748fdb2eefa"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_evidence_inventory.json",
+      "size_bytes": 3802,
+      "sha256": "8a92636d08a86fef642446c1f0e51f1eaf48af39645bdaa9492c862efbe18e6a"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_source_structure.json",
+      "size_bytes": 5344,
+      "sha256": "84b7ea8b03ca3b65ed3e057f0b72fb5f3c2e3033f5795afa661ac3a8d5338d8b"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_feature_evidence_mapper_v1/risk_feature_evidence_validation.json",
+      "size_bytes": 246,
+      "sha256": "9b9bc1526b8d4c7f1bf1215191cd3d5eeb6a2c7bb8f93c156a08461aed988624"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/ner_hybrid_rules_adapter_v1/risk_xgboost_handoff_contract.json",
+      "size_bytes": 845,
+      "sha256": "53e5552cb4083e6f8bfe0c95ba028f5add757b473904795a5c3130446bdcdac2"
+    },
+    {
+      "path": "/kaggle/working/trustcircle_knowledge_graph_v1/reasoning_engine_v1/risk_verified_artifact_recovery_v1/risk_xgboost_recovery_report.json",
+      "size_bytes": 46173,
+      "sha256": "f476afd45e5141484b5f3fc220a14140783184afabdfba30cbc3d418db5686c8"
+    },
+    {
+      "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+      "size_bytes": 853278,
+      "sha256": "5bdd9f45252dc571ca39498553176b8f51e2bf6cc6bbdb5fe3fa6eed921a661b"
+    }
+  ],
+  "conclusion": {
+    "original_contract_recovered": true,
+    "encoding_mapping_recovered": true,
+    "verification_artifact_candidates_found": true,
+    "inference_executed": false,
+    "training_executed": false
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "index_version": "1.0",
+  "total_artifacts": 39,
+  "classification_counts": {
+    "supporting_artifact": 2,
+    "face": 3,
+    "manifest": 4,
+    "hybrid_rules": 1,
+    "ner": 6,
+    "ocr": 2,
+    "investigator_risk_xgboost": 1,
+    "voice": 3,
+    "trustcircle_nli_v3": 9,
+    "trustcircle_final_xgboost": 8
+  },
+  "artifacts": [
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "README.md.docx",
+      "filename": "README.md.docx",
+      "extension": ".docx",
+      "size_bytes": 8042,
+      "classification": "supporting_artifact"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "face/face_model_v7_masked.safetensors",
+      "filename": "face_model_v7_masked.safetensors",
+      "extension": ".safetensors",
+      "size_bytes": 45806608,
+      "classification": "face"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "face/hashes.sha256",
+      "filename": "hashes.sha256",
+      "extension": ".sha256",
+      "size_bytes": 99,
+      "sha256": "42492e8608a4f1f1728ce14fcc8b917c73175189868ce10e82b7c9ffbb7bb1f8",
+      "classification": "face"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "face/manifest.json",
+      "filename": "manifest.json",
+      "extension": ".json",
+      "size_bytes": 154,
+      "sha256": "7552e4472fbd7bd5a3e2618587e35b424ee427011a7402dd280804e74ffd75bc",
+      "classification": "manifest"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "face/metadata.json",
+      "filename": "metadata.json",
+      "extension": ".json",
+      "size_bytes": 128,
+      "sha256": "6679be5322bfcaea78f8d01073a5340331aa314f8496aefa12ebc86809c4d86c",
+      "classification": "face"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "gradio_app.py",
+      "filename": "gradio_app.py",
+      "extension": ".py",
+      "size_bytes": 54153,
+      "classification": "supporting_artifact"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "hybrid_rules/hybrid_rules_v3.json",
+      "filename": "hybrid_rules_v3.json",
+      "extension": ".json",
+      "size_bytes": 1382,
+      "sha256": "62bf04e5077672d6c4ea2ce94f248cb978b8563b21b87d848becc3deecbc41da",
+      "classification": "hybrid_rules"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "manifest.json",
+      "filename": "manifest.json",
+      "extension": ".json",
+      "size_bytes": 4554,
+      "sha256": "205ac7b17da79f2eaaffbf9436302b918de941dfb63ec2780ed103cb61216d51",
+      "classification": "manifest"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "ner/config.json",
+      "filename": "config.json",
+      "extension": ".json",
+      "size_bytes": 2712,
+      "sha256": "66b3eceb30d2bdebd0ef91f2fcdd1bd47e76c4dda8dee76b44bc568649c317d5",
+      "classification": "ner"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "ner/model.safetensors",
+      "filename": "model.safetensors",
+      "extension": ".safetensors",
+      "size_bytes": 1113031756,
+      "classification": "ner"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "ner/tokenizer.json",
+      "filename": "tokenizer.json",
+      "extension": ".json",
+      "size_bytes": 16034015,
+      "sha256": "7fa35d64acf61c7e0e64846d480e102e3943f5b7cbde0b7603bb17db8c65511f",
+      "classification": "ner"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "ner/tokenizer_config.json",
+      "filename": "tokenizer_config.json",
+      "extension": ".json",
+      "size_bytes": 639,
+      "sha256": "01fed9e88d8ac6bda7880662871b3737b9ec3ec6011ad667183e737c189558c0",
+      "classification": "ner"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "ocr/config.json",
+      "filename": "config.json",
+      "extension": ".json",
+      "size_bytes": 3319,
+      "sha256": "7240c7eaf4e719f47031251a2296a58052c7caed1a175be343bc76eea683df5e",
+      "classification": "ocr"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "ocr/generation_config.json",
+      "filename": "generation_config.json",
+      "extension": ".json",
+      "size_bytes": 234,
+      "sha256": "63b32c2d404ebd1402a2e02a0dff4e7f160d36a2d3ca91f3fa272db5f3788164",
+      "classification": "ner"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "ocr/model.safetensors",
+      "filename": "model.safetensors",
+      "extension": ".safetensors",
+      "size_bytes": 736354080,
+      "classification": "ocr"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "risk_model/risk_model.json",
+      "filename": "risk_model.json",
+      "extension": ".json",
+      "size_bytes": 853278,
+      "sha256": "5bdd9f45252dc571ca39498553176b8f51e2bf6cc6bbdb5fe3fa6eed921a661b",
+      "classification": "investigator_risk_xgboost"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "voice/hashes.sha256",
+      "filename": "hashes.sha256",
+      "extension": ".sha256",
+      "size_bytes": 82,
+      "sha256": "d76ea3f203ede7b047c67636e1d9174a8fee5da34591b77e1386feb0d2533ce8",
+      "classification": "voice"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "voice/manifest.json",
+      "filename": "manifest.json",
+      "extension": ".json",
+      "size_bytes": 117,
+      "sha256": "787e5db25fd1bb65b7cfaedec7fe932cc1496065e20cb0800841373a61ed6652",
+      "classification": "manifest"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "voice/metadata.json",
+      "filename": "metadata.json",
+      "extension": ".json",
+      "size_bytes": 129,
+      "sha256": "457e72582147535db08ccb9a05f099d49f37e45845b6de11608583e767de3891",
+      "classification": "voice"
+    },
+    {
+      "source": "investigator_hybrid_v8",
+      "relative_path": "voice/speaker_best.pt",
+      "filename": "speaker_best.pt",
+      "extension": ".pt",
+      "size_bytes": 18065319,
+      "classification": "voice"
+    },
+    {
+      "source": "trustcircle_nli_v3",
+      "relative_path": "config.json",
+      "filename": "config.json",
+      "extension": ".json",
+      "size_bytes": 1985,
+      "sha256": "e8e08bcd8fbffee6dd62804595c882f4b416dd0ddd3313cf51fc74b8031fd7fa",
+      "classification": "trustcircle_nli_v3"
+    },
+    {
+      "source": "trustcircle_nli_v3",
+      "relative_path": "model.safetensors",
+      "filename": "model.safetensors",
+      "extension": ".safetensors",
+      "size_bytes": 1112908948,
+      "classification": "trustcircle_nli_v3"
+    },
+    {
+      "source": "trustcircle_nli_v3",
+      "relative_path": "optimizer.pt",
+      "filename": "optimizer.pt",
+      "extension": ".pt",
+      "size_bytes": 340334283,
+      "classification": "trustcircle_nli_v3"
+    },
+    {
+      "source": "trustcircle_nli_v3",
+      "relative_path": "rng_state.pth",
+      "filename": "rng_state.pth",
+      "extension": ".pth",
+      "size_bytes": 14645,
+      "classification": "trustcircle_nli_v3"
+    },
+    {
+      "source": "trustcircle_nli_v3",
+      "relative_path": "scaler.pt",
+      "filename": "scaler.pt",
+      "extension": ".pt",
+      "size_bytes": 1383,
+      "classification": "trustcircle_nli_v3"
+    },
+    {
+      "source": "trustcircle_nli_v3",
+      "relative_path": "scheduler.pt",
+      "filename": "scheduler.pt",
+      "extension": ".pt",
+      "size_bytes": 1465,
+      "classification": "trustcircle_nli_v3"
+    },
+    {
+      "source": "trustcircle_nli_v3",
+      "relative_path": "tokenizer.json",
+      "filename": "tokenizer.json",
+      "extension": ".json",
+      "size_bytes": 16034113,
+      "sha256": "24f628601f31ee392883194e34d383f3a700d90cdab2146d65a07fc5ae469278",
+      "classification": "trustcircle_nli_v3"
+    },
+    {
+      "source": "trustcircle_nli_v3",
+      "relative_path": "tokenizer_config.json",
+      "filename": "tokenizer_config.json",
+      "extension": ".json",
+      "size_bytes": 639,
+      "sha256": "01fed9e88d8ac6bda7880662871b3737b9ec3ec6011ad667183e737c189558c0",
+      "classification": "trustcircle_nli_v3"
+    },
+    {
+      "source": "trustcircle_nli_v3",
+      "relative_path": "trainer_state.json",
+      "filename": "trainer_state.json",
+      "extension": ".json",
+      "size_bytes": 22117,
+      "sha256": "d72e4f67202308d2d656317c3285b3adb8ea2d185c7f2be1c6813843a833fcf6",
+      "classification": "ner"
+    },
+    {
+      "source": "trustcircle_nli_v3",
+      "relative_path": "training_args.bin",
+      "filename": "training_args.bin",
+      "extension": ".bin",
+      "size_bytes": 5201,
+      "classification": "trustcircle_nli_v3"
+    },
+    {
+      "source": "trustcircle_final_xgboost",
+      "relative_path": "RELEASE_MANIFEST.json",
+      "filename": "RELEASE_MANIFEST.json",
+      "extension": ".json",
+      "size_bytes": 2472,
+      "sha256": "1b4f8fbdedf80bd68fcb44e57368ac4e698a996dfac1152ed75e5f1e8ed617c8",
+      "classification": "manifest"
+    },
+    {
+      "source": "trustcircle_final_xgboost",
+      "relative_path": "SHA256SUMS.json",
+      "filename": "SHA256SUMS.json",
+      "extension": ".json",
+      "size_bytes": 773,
+      "sha256": "89e4c65c03a0cc5e22f6f858f662def66336e6644f353470ff22848fddcc6ec7",
+      "classification": "trustcircle_final_xgboost"
+    },
+    {
+      "source": "trustcircle_final_xgboost",
+      "relative_path": "feature_importance.csv",
+      "filename": "feature_importance.csv",
+      "extension": ".csv",
+      "size_bytes": 715,
+      "classification": "trustcircle_final_xgboost"
+    },
+    {
+      "source": "trustcircle_final_xgboost",
+      "relative_path": "metrics.json",
+      "filename": "metrics.json",
+      "extension": ".json",
+      "size_bytes": 2095,
+      "sha256": "3700ef0bdfcb315ed7d854ef7dc9ee58f6ec9b0d64c0d584a78ba6a2f4dba4b7",
+      "classification": "trustcircle_final_xgboost"
+    },
+    {
+      "source": "trustcircle_final_xgboost",
+      "relative_path": "trustcircle_xgboost_final.json",
+      "filename": "trustcircle_xgboost_final.json",
+      "extension": ".json",
+      "size_bytes": 32740429,
+      "sha256": "5b327026b0656e3d0937c0d4a75bff93556b429b6917ca717cd28398f7c5f58a",
+      "classification": "trustcircle_final_xgboost"
+    },
+    {
+      "source": "trustcircle_final_xgboost",
+      "relative_path": "validation_predictions.csv",
+      "filename": "validation_predictions.csv",
+      "extension": ".csv",
+      "size_bytes": 2763100,
+      "classification": "trustcircle_final_xgboost"
+    },
+    {
+      "source": "trustcircle_final_xgboost",
+      "relative_path": "xgboost_features.json",
+      "filename": "xgboost_features.json",
+      "extension": ".json",
+      "size_bytes": 1433,
+      "sha256": "f1b25ca8b6fd0940c3a12b5ea1b8375f7e4fa83caf5e7a7e5d46b4070203b20f",
+      "classification": "trustcircle_final_xgboost"
+    },
+    {
+      "source": "trustcircle_final_xgboost",
+      "relative_path": "xgboost_train.parquet",
+      "filename": "xgboost_train.parquet",
+      "extension": ".parquet",
+      "size_bytes": 8266596,
+      "classification": "trustcircle_final_xgboost"
+    },
+    {
+      "source": "trustcircle_final_xgboost",
+      "relative_path": "xgboost_validation.parquet",
+      "filename": "xgboost_validation.parquet",
+      "extension": ".parquet",
+      "size_bytes": 2075889,
+      "classification": "trustcircle_final_xgboost"
+    }
+  ]
+}

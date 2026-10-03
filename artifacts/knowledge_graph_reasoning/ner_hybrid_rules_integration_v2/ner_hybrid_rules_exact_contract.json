@@ -1,0 +1,138 @@
+{
+  "contract_name": "TrustCircle NER + Hybrid Rules Exact Integration Contract",
+  "version": "1.0.0",
+  "created_utc": "2026-10-01T14:19:23.566170+00:00",
+  "execution": {
+    "cpu_only": true,
+    "gpu_used": false,
+    "model_inference": false,
+    "training": false,
+    "fabricated_rules": false,
+    "fabricated_case_data": false
+  },
+  "ner": {
+    "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/ner/config.json",
+    "label_count": 43,
+    "entity_types": [
+      "ADDRESS",
+      "ALIAS",
+      "AMOUNT",
+      "CRYPTO_WALLET",
+      "DOMAIN",
+      "EMAIL",
+      "INTERMEDIARY",
+      "IP",
+      "JURISDICTION",
+      "LOC",
+      "NATL",
+      "OFFICER",
+      "ORG",
+      "PER",
+      "PHONE",
+      "RELATIONSHIP",
+      "SANCTION",
+      "SHELL_CO",
+      "UPI",
+      "URL"
+    ],
+    "label_map": {
+      "0": "O",
+      "1": "B-PER",
+      "2": "I-PER",
+      "3": "B-ORG",
+      "4": "I-ORG",
+      "5": "B-LOC",
+      "6": "I-LOC",
+      "7": "B-NATL",
+      "8": "I-NATL",
+      "9": "B-ALIAS",
+      "10": "I-ALIAS",
+      "11": "B-AMOUNT",
+      "12": "I-AMOUNT",
+      "13": "B-EMAIL",
+      "14": "I-EMAIL",
+      "15": "B-UPI",
+      "16": "I-UPI",
+      "17": "B-CRYPTO_WALLET",
+      "18": "I-CRYPTO_WALLET",
+      "19": "B-PHONE",
+      "20": "I-PHONE",
+      "21": "B-IP",
+      "22": "I-IP",
+      "23": "B-DOMAIN",
+      "24": "I-DOMAIN",
+      "25": "B-URL",
+      "26": "I-URL",
+      "27": "B-ALIAS",
+      "28": "I-ALIAS",
+      "29": "B-JURISDICTION",
+      "30": "I-JURISDICTION",
+      "31": "B-SANCTION",
+      "32": "I-SANCTION",
+      "33": "B-RELATIONSHIP",
+      "34": "I-RELATIONSHIP",
+      "35": "B-SHELL_CO",
+      "36": "I-SHELL_CO",
+      "37": "B-OFFICER",
+      "38": "I-OFFICER",
+      "39": "B-INTERMEDIARY",
+      "40": "I-INTERMEDIARY",
+      "41": "B-ADDRESS",
+      "42": "I-ADDRESS"
+    }
+  },
+  "hybrid_rules": {
+    "source": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/hybrid_rules/hybrid_rules_v3.json",
+    "version": "3.0.0",
+    "top_level_keys": [
+      "version",
+      "rule_engine",
+      "strip_entity_suffix_punctuation",
+      "ignored_tokens",
+      "drop_special_tokens",
+      "special_tokens",
+      "entity_cleanup",
+      "context_rules"
+    ],
+    "context_rules_type": "list",
+    "context_rules_count": 2
+  },
+  "pipeline": [
+    {
+      "stage": 1,
+      "component": "Investigator NER",
+      "input": "text",
+      "output": "ner_entities"
+    },
+    {
+      "stage": 2,
+      "component": "Entity Cleanup",
+      "input": "ner_entities",
+      "output": "clean_entities"
+    },
+    {
+      "stage": 3,
+      "component": "Hybrid Rules V3",
+      "input": [
+        "clean_entities",
+        "context"
+      ],
+      "output": "structured_rule_signals"
+    },
+    {
+      "stage": 4,
+      "component": "Investigator Risk XGBoost",
+      "input": [
+        "clean_entities",
+        "structured_rule_signals"
+      ],
+      "output": "risk_signals"
+    }
+  ],
+  "decision_boundary": {
+    "ner_is_signal": true,
+    "rule_output_is_signal": true,
+    "risk_xgboost_is_risk_assessment": true,
+    "none_of_above_is_person_verdict": true
+  }
+}

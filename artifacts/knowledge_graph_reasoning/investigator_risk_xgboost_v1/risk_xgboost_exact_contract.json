@@ -1,0 +1,108 @@
+{
+  "contract_name": "TrustCircle Investigator Risk XGBoost Exact Contract",
+  "version": "1.0.0",
+  "created_utc": "2026-10-01T14:22:06.878714+00:00",
+  "source_artifact": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+  "execution_policy": {
+    "cpu_only": true,
+    "gpu_used": false,
+    "model_inference_executed": false,
+    "training_executed": false,
+    "fabricated_features": false,
+    "fabricated_case_data": false
+  },
+  "model_metadata": {
+    "discovered_fields": [
+      {
+        "path": "root.learner.learner_model_param.num_class",
+        "key": "num_class"
+      },
+      {
+        "path": "root.learner.objective",
+        "key": "objective"
+      }
+    ]
+  },
+  "feature_contract": {
+    "feature_collections": [
+      {
+        "path": "root.learner.feature_names",
+        "count": 8,
+        "features": [
+          "company_type",
+          "jurisdiction",
+          "country_codes",
+          "sourceID",
+          "service_provider",
+          "company_age",
+          "is_tax_haven",
+          "is_sanctioned"
+        ]
+      }
+    ],
+    "unique_feature_names": [
+      "company_age",
+      "company_type",
+      "country_codes",
+      "is_sanctioned",
+      "is_tax_haven",
+      "jurisdiction",
+      "service_provider",
+      "sourceID"
+    ],
+    "feature_count": 8,
+    "duplicate_features": {}
+  },
+  "class_metadata": {
+    "discovered_fields": []
+  },
+  "upstream_contract": {
+    "ner": {
+      "label_count": 43,
+      "entity_types": [
+        "ADDRESS",
+        "ALIAS",
+        "AMOUNT",
+        "CRYPTO_WALLET",
+        "DOMAIN",
+        "EMAIL",
+        "INTERMEDIARY",
+        "IP",
+        "JURISDICTION",
+        "LOC",
+        "NATL",
+        "OFFICER",
+        "ORG",
+        "PER",
+        "PHONE",
+        "RELATIONSHIP",
+        "SANCTION",
+        "SHELL_CO",
+        "UPI",
+        "URL"
+      ]
+    },
+    "hybrid_rules": {
+      "version": "3.0.0",
+      "rule_engine": "post_processing",
+      "cleanup_rule_count": 9,
+      "context_rule_count": 2
+    }
+  },
+  "pipeline_position": {
+    "before": [
+      "NER",
+      "Hybrid Rules V3"
+    ],
+    "current": "Investigator Risk XGBoost",
+    "after": [
+      "Risk Signals",
+      "Claim + Evidence Engine"
+    ]
+  },
+  "decision_boundary": {
+    "risk_xgboost_is_person_verdict": false,
+    "risk_xgboost_is_lie_verdict": false,
+    "risk_xgboost_output_is_downstream_signal": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "SUCCESS",
+  "engine": "TrustCircle Reasoning Engine V1",
+  "execution": {
+    "device": "CPU",
+    "gpu_used": false
+  },
+  "case_id": "TRUSTCIRCLE_REASONING_TEST_CASE",
+  "input_counts": {
+    "persons": 0,
+    "statements": 0,
+    "claims": 0,
+    "evidence": 0,
+    "sources": 0,
+    "verifications": 0
+  },
+  "reasoning_counts": {
+    "reasoning_nodes": 0,
+    "reasoning_edges": 0,
+    "trace_steps": 0,
+    "verification_requirements": 0
+  },
+  "claim_assessments": {},
+  "person_assessments": {},
+  "validation_errors": [],
+  "decision_boundary": {
+    "kg_creates_final_verdict": false,
+    "reasoning_creates_inference": true,
+    "verification_engine_recommends_checks": true,
+    "human_review_supported": true
+  }
+}

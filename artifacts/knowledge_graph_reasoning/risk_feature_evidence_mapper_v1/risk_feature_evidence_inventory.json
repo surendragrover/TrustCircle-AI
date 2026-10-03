@@ -1,0 +1,135 @@
+{
+  "contract_name": "investigator_risk_xgboost_raw_evidence_mapper_v1",
+  "created_at_utc": "2026-10-01T14:26:30.499005+00:00",
+  "execution": {
+    "cpu_only": true,
+    "gpu_used": false,
+    "model_loading": false,
+    "model_inference": false,
+    "training": false,
+    "fabricated_values": false
+  },
+  "risk_model": {
+    "path": "/kaggle/input/datasets/surendragrover/investigator-hybrid-v8/Investigator_Hybrid_V8/risk_model/risk_model.json",
+    "feature_count": 8,
+    "feature_names": [
+      "company_type",
+      "jurisdiction",
+      "country_codes",
+      "sourceID",
+      "service_provider",
+      "company_age",
+      "is_tax_haven",
+      "is_sanctioned"
+    ],
+    "feature_types": [
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int"
+    ],
+    "objective": {
+      "name": "binary:logistic",
+      "reg_loss_param": {
+        "scale_pos_weight": "0.607735157"
+      }
+    }
+  },
+  "feature_evidence": {
+    "company_type": {
+      "feature": "company_type",
+      "required_type": "int",
+      "exact_field_matches": [],
+      "exact_match_count": 0,
+      "status": "NO_EXPLICIT_EVIDENCE",
+      "xgboost_numeric_value": null,
+      "encoding_status": "NOT_RESOLVED",
+      "provenance_required": true
+    },
+    "jurisdiction": {
+      "feature": "jurisdiction",
+      "required_type": "int",
+      "exact_field_matches": [],
+      "exact_match_count": 0,
+      "status": "NO_EXPLICIT_EVIDENCE",
+      "xgboost_numeric_value": null,
+      "encoding_status": "NOT_RESOLVED",
+      "provenance_required": true
+    },
+    "country_codes": {
+      "feature": "country_codes",
+      "required_type": "int",
+      "exact_field_matches": [],
+      "exact_match_count": 0,
+      "status": "NO_EXPLICIT_EVIDENCE",
+      "xgboost_numeric_value": null,
+      "encoding_status": "NOT_RESOLVED",
+      "provenance_required": true
+    },
+    "sourceID": {
+      "feature": "sourceID",
+      "required_type": "int",
+      "exact_field_matches": [],
+      "exact_match_count": 0,
+      "status": "NO_EXPLICIT_EVIDENCE",
+      "xgboost_numeric_value": null,
+      "encoding_status": "NOT_RESOLVED",
+      "provenance_required": true
+    },
+    "service_provider": {
+      "feature": "service_provider",
+      "required_type": "int",
+      "exact_field_matches": [],
+      "exact_match_count": 0,
+      "status": "NO_EXPLICIT_EVIDENCE",
+      "xgboost_numeric_value": null,
+      "encoding_status": "NOT_RESOLVED",
+      "provenance_required": true
+    },
+    "company_age": {
+      "feature": "company_age",
+      "required_type": "int",
+      "exact_field_matches": [],
+      "exact_match_count": 0,
+      "status": "NO_EXPLICIT_EVIDENCE",
+      "xgboost_numeric_value": null,
+      "encoding_status": "NOT_RESOLVED",
+      "provenance_required": true
+    },
+    "is_tax_haven": {
+      "feature": "is_tax_haven",
+      "required_type": "int",
+      "exact_field_matches": [],
+      "exact_match_count": 0,
+      "status": "NO_EXPLICIT_EVIDENCE",
+      "xgboost_numeric_value": null,
+      "encoding_status": "NOT_RESOLVED",
+      "provenance_required": true
+    },
+    "is_sanctioned": {
+      "feature": "is_sanctioned",
+      "required_type": "int",
+      "exact_field_matches": [],
+      "exact_match_count": 0,
+      "status": "NO_EXPLICIT_EVIDENCE",
+      "xgboost_numeric_value": null,
+      "encoding_status": "NOT_RESOLVED",
+      "provenance_required": true
+    }
+  },
+  "encoding_blockers": [],
+  "inference_gate": {
+    "inference_allowed": false,
+    "reasons": [
+      "No Risk XGBoost inference executed.",
+      "Raw evidence discovery only.",
+      "Numeric feature encoding is not assumed.",
+      "Categorical integer mappings are not documented by current contract.",
+      "Missing evidence remains missing."
+    ]
+  }
+}
